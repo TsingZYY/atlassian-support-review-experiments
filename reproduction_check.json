@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-12T07:04:11.553905+00:00",
+  "executed_at": "2026-09-12T07:48:03.654160+00:00",
   "steps_completed": [
     "inspect_case.py",
     "independent_check.py",
@@ -10,9 +10,11 @@
     "verify_competition_cases.py",
     "minimal_model/model.py",
     "minimal_model/verify.py",
-    "simulation/run_simulation.py"
+    "csat_context_v1/experiment.py"
   ],
   "key_snapshot_claims_verified": true,
+  "main_experiment_scope": "competition_csv_only",
+  "csat_hypothesis_supported": false,
   "business_efficacy": "UNVERIFIED",
   "real_customer_trial": "CANDIDATE-UNRUN"
 }

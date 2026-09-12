@@ -1,3 +1,5 @@
 * text=auto eol=lf
 # Preserve original CSV bytes so published source hashes remain meaningful.
-*.csv -text
+*.csv -text whitespace=cr-at-eol
+# Preserve audited snapshot bytes, including hashes of frozen model JSON.
+csat_context_v1/*.json -text whitespace=cr-at-eol

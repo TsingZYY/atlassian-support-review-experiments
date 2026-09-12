@@ -1,0 +1,133 @@
+{
+  "executed_at": "2026-09-12T07:48:03.534481+00:00",
+  "dataset_scope": "competition_csv_only",
+  "outcome_source": "unmodified CSV Customer Satisfaction Rating",
+  "new_synthetic_cases": 0,
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "cf4f72cc41e63ba2d48caef57566c3e70c40defd19777eadb90fac845cb79caa",
+    "protocol.md": "584521c043dc410bca1c5ae8f816b98bab679f30420fd3574f5bbb3d25bf31c0",
+    "experiment.py": "d9c10f530309c35f32ce5e71f34c08d837acb0b07e5adbfca5beee6c06a4b7b1"
+  },
+  "model_freeze_sha256": "82cc35aa7ce7cdcd5c7d4ea691da1bfef7591552323a09487ce29eab6f12e500",
+  "eligibility": {
+    "stages": [
+      {
+        "stage": "all_tickets",
+        "tickets": 8469,
+        "unique_emails": 8320
+      },
+      {
+        "stage": "closed",
+        "tickets": 2769,
+        "unique_emails": 2749
+      },
+      {
+        "stage": "valid_closed_rating",
+        "tickets": 2769,
+        "unique_emails": 2749
+      },
+      {
+        "stage": "identity_consistent",
+        "tickets": 2663,
+        "unique_emails": 2663
+      },
+      {
+        "stage": "valid_jan_apr_same_product_usage",
+        "tickets": 2644,
+        "unique_emails": 2644
+      }
+    ],
+    "first_rejection_counts": {
+      "customer_has_identity_field_conflict": 106,
+      "invalid_usage_value": 19
+    },
+    "identity_conflict_customers_all_tickets": 139,
+    "eligible_tickets": 2644,
+    "one_ticket_per_customer": 2644,
+    "additional_eligible_tickets_removed": 0
+  },
+  "split_n": {
+    "training": 2100,
+    "development": 524,
+    "test": 20
+  },
+  "test_metrics": {
+    "training_prevalence": {
+      "n": 20,
+      "low_rating_n": 6,
+      "brier": 0.21818594104308398,
+      "auc": 0.5,
+      "log_loss": 0.6286705717944606,
+      "accuracy_at_0_5": 0.7,
+      "top_5_observed_low_rating_n": 3
+    },
+    "ticket_only": {
+      "n": 20,
+      "low_rating_n": 6,
+      "brier": 0.21680389829439592,
+      "auc": 0.4523809523809524,
+      "log_loss": 0.6255714611920621,
+      "accuracy_at_0_5": 0.7,
+      "top_5_observed_low_rating_n": 0
+    },
+    "full_context": {
+      "n": 20,
+      "low_rating_n": 6,
+      "brier": 0.21843023161869,
+      "auc": 0.5,
+      "log_loss": 0.6284916662363514,
+      "accuracy_at_0_5": 0.7,
+      "top_5_observed_low_rating_n": 1
+    }
+  },
+  "selected_l2": {
+    "ticket_only": 0.1,
+    "full_context": 0.1
+  },
+  "unseen_test_category_counts": {
+    "ticket_only": {
+      "Product Purchased": 0,
+      "Ticket Type": 0,
+      "Ticket Subject": 0,
+      "Ticket Priority": 0,
+      "Ticket Channel": 0
+    },
+    "full_context": {
+      "Product Purchased": 0,
+      "Ticket Type": 0,
+      "Ticket Subject": 0,
+      "Ticket Priority": 0,
+      "Ticket Channel": 0,
+      "Plan Type": 0,
+      "Industry": 0,
+      "Region": 0,
+      "Company Size": 0
+    }
+  },
+  "brier_gain_ticket_minus_full": -0.0016263333242940588,
+  "paired_bootstrap_95_interval": [
+    -0.012795422517241166,
+    0.010225774932445976
+  ],
+  "gate_parts": {
+    "both_classes_present": true,
+    "brier_gain_at_least_0_02": false,
+    "paired_bootstrap_lower_bound_above_zero": false,
+    "beats_training_prevalence": false
+  },
+  "exploratory_gate_pass": false,
+  "decision": "NOT_SUPPORTED_BY_THIS_TEST",
+  "business_resolution_effect": "UNOBSERVED",
+  "temporal_prediction": "NOT_ESTABLISHED",
+  "limits": [
+    "20 held-out customers only; source dataset previously explored.",
+    "Complete, identity-consistent, closed and rated customers only.",
+    "Retrospective discrimination; feature availability before rating is unverified.",
+    "Bootstrap resamples original rows; it does not add observations."
+  ]
+}

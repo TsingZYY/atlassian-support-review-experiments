@@ -1,7 +1,7 @@
 {
   "study": "Offline exploratory validation v1",
   "seed": 20260912,
-  "executed_at": "2026-09-12T07:04:00.703622+00:00",
+  "executed_at": "2026-09-12T07:47:53.930116+00:00",
   "source": "https://drive.google.com/drive/folders/1NirfOKfM54cYeYXS3gn3azWznX1jaFiP",
   "limitations": [
     "Synthetic dataset.",
@@ -446,7 +446,7 @@
   "resource_use": {
     "paid_api_calls": 0,
     "customer_contacts": 0,
-    "wall_seconds": 2.436,
+    "wall_seconds": 2.358,
     "software": "Python stdlib, numpy, pandas"
   }
 }

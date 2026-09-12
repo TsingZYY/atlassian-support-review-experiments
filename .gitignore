@@ -11,3 +11,5 @@ sources.json
 chart.json
 prepare_delivery.py
 reproduction.log
+# Withdrawn self-authored scenarios: excluded from competition-only deliverable.
+clarification_v1/
