@@ -1,0 +1,13 @@
+{
+  "version": "profit-evidence-v2",
+  "products": ["Loom", "Trello", "Bitbucket", "Confluence", "Jira"],
+  "plan": "Free",
+  "ticket_type_signal": "Product inquiry",
+  "ticket_subject_signal": "Product recommendation",
+  "per_product": 4,
+  "hash_salt": "profit-demand-evidence-v2-20260912",
+  "months": ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05"],
+  "review_dimensions": ["specific_need", "explicit_purchase_intent", "paid_capability_fit", "profit_basis"],
+  "allowed_review_statuses": ["PRESENT", "ABSENT_FIELD", "NOT_ESTABLISHED"],
+  "business_efficacy_observed": false
+}

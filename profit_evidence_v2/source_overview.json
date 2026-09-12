@@ -1,0 +1,29 @@
+{
+  "source_counts": {
+    "customers": 8320,
+    "tickets": 8469,
+    "usage": 42210
+  },
+  "all_ticket_signal_counts": {
+    "neither": 6422,
+    "type_only": 1530,
+    "subject_only": 406,
+    "both": 111
+  },
+  "identity_consistent_free_customers": 1440,
+  "free_ticket_signal_counts": {
+    "neither": 1063,
+    "type_only": 295,
+    "subject_only": 64,
+    "both": 18
+  },
+  "eligible_candidate_tickets": 377,
+  "eligible_candidate_customers": 377,
+  "eligible_by_product": {
+    "Jira": 79,
+    "Bitbucket": 58,
+    "Confluence": 91,
+    "Loom": 80,
+    "Trello": 69
+  }
+}

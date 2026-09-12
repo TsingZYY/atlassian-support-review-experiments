@@ -1,0 +1,2266 @@
+[
+  {
+    "case_id": "PE2-01",
+    "customer_id": "CUST08305",
+    "ticket_id": "4615",
+    "product": "Loom",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Integration"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 42132,
+        "Product": "Loom",
+        "Month": "2023-01",
+        "Active Days": "6",
+        "Sessions": "9",
+        "Product Actions": "33",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 42133,
+        "Product": "Loom",
+        "Month": "2023-02",
+        "Active Days": "5",
+        "Sessions": "11",
+        "Product Actions": "82",
+        "Collaborators": "9",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 42134,
+        "Product": "Loom",
+        "Month": "2023-03",
+        "Active Days": "5",
+        "Sessions": "9",
+        "Product Actions": "64",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 42135,
+        "Product": "Loom",
+        "Month": "2023-04",
+        "Active Days": "3",
+        "Sessions": "5",
+        "Product Actions": "19",
+        "Collaborators": "11",
+        "Integrations Used": "4"
+      },
+      {
+        "source_row": 42136,
+        "Product": "Loom",
+        "Month": "2023-05",
+        "Active Days": "3",
+        "Sessions": "7",
+        "Product Actions": "43",
+        "Collaborators": "8",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          },
+          {
+            "field": "Resolution",
+            "text": "Begin blood hold get kind."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          },
+          {
+            "field": "Resolution",
+            "text": "Begin blood hold get kind."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-02",
+    "customer_id": "CUST04271",
+    "ticket_id": "5010",
+    "product": "Loom",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Software bug"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 21677,
+        "Product": "Loom",
+        "Month": "2023-01",
+        "Active Days": "7",
+        "Sessions": "14",
+        "Product Actions": "52",
+        "Collaborators": "14",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 21678,
+        "Product": "Loom",
+        "Month": "2023-02",
+        "Active Days": "5",
+        "Sessions": "11",
+        "Product Actions": "79",
+        "Collaborators": "12",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 21679,
+        "Product": "Loom",
+        "Month": "2023-03",
+        "Active Days": "11",
+        "Sessions": "19",
+        "Product Actions": "93",
+        "Collaborators": "14",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 21680,
+        "Product": "Loom",
+        "Month": "2023-04",
+        "Active Days": "7",
+        "Sessions": "14",
+        "Product Actions": "53",
+        "Collaborators": "10",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 21681,
+        "Product": "Loom",
+        "Month": "2023-05",
+        "Active Days": "7",
+        "Sessions": "14",
+        "Product Actions": "51",
+        "Collaborators": "12",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Software bug"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Software bug，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Software bug"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-03",
+    "customer_id": "CUST04847",
+    "ticket_id": "7951",
+    "product": "Loom",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Display issue"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 24592,
+        "Product": "Loom",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "8",
+        "Product Actions": "48",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 24593,
+        "Product": "Loom",
+        "Month": "2023-02",
+        "Active Days": "1",
+        "Sessions": "1",
+        "Product Actions": "5",
+        "Collaborators": "3",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 24594,
+        "Product": "Loom",
+        "Month": "2023-03",
+        "Active Days": "1",
+        "Sessions": "3",
+        "Product Actions": "19",
+        "Collaborators": "6",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 24595,
+        "Product": "Loom",
+        "Month": "2023-04",
+        "Active Days": "1",
+        "Sessions": "3",
+        "Product Actions": "16",
+        "Collaborators": "8",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 24596,
+        "Product": "Loom",
+        "Month": "2023-05",
+        "Active Days": "2",
+        "Sessions": "3",
+        "Product Actions": "10",
+        "Collaborators": "6",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Display issue"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Display issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Display issue"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-04",
+    "customer_id": "CUST01968",
+    "ticket_id": "6686",
+    "product": "Loom",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Device compatibility issue"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 9967,
+        "Product": "Loom",
+        "Month": "2023-01",
+        "Active Days": "5",
+        "Sessions": "11",
+        "Product Actions": "77",
+        "Collaborators": "12",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 9968,
+        "Product": "Loom",
+        "Month": "2023-02",
+        "Active Days": "5",
+        "Sessions": "10",
+        "Product Actions": "33",
+        "Collaborators": "4",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 9969,
+        "Product": "Loom",
+        "Month": "2023-03",
+        "Active Days": "5",
+        "Sessions": "10",
+        "Product Actions": "68",
+        "Collaborators": "10",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 9970,
+        "Product": "Loom",
+        "Month": "2023-04",
+        "Active Days": "7",
+        "Sessions": "14",
+        "Product Actions": "56",
+        "Collaborators": "12",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 9971,
+        "Product": "Loom",
+        "Month": "2023-05",
+        "Active Days": "4",
+        "Sessions": "10",
+        "Product Actions": "60",
+        "Collaborators": "13",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Device compatibility issue"
+          },
+          {
+            "field": "Resolution",
+            "text": "Pass animal Mr direction various century."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Device compatibility issue"
+          },
+          {
+            "field": "Resolution",
+            "text": "Pass animal Mr direction various century."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-05",
+    "customer_id": "CUST03984",
+    "ticket_id": "928",
+    "product": "Trello",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Account access"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 20197,
+        "Product": "Trello",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "30",
+        "Collaborators": "9",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 20198,
+        "Product": "Trello",
+        "Month": "2023-02",
+        "Active Days": "2",
+        "Sessions": "4",
+        "Product Actions": "18",
+        "Collaborators": "4",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 20199,
+        "Product": "Trello",
+        "Month": "2023-03",
+        "Active Days": "2",
+        "Sessions": "4",
+        "Product Actions": "23",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 20200,
+        "Product": "Trello",
+        "Month": "2023-04",
+        "Active Days": "5",
+        "Sessions": "9",
+        "Product Actions": "36",
+        "Collaborators": "9",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 20201,
+        "Product": "Trello",
+        "Month": "2023-05",
+        "Active Days": "3",
+        "Sessions": "6",
+        "Product Actions": "26",
+        "Collaborators": "4",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Account access"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Account access，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Account access"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-06",
+    "customer_id": "CUST01817",
+    "ticket_id": "5703",
+    "product": "Trello",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Data loss"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 9212,
+        "Product": "Trello",
+        "Month": "2023-01",
+        "Active Days": "5",
+        "Sessions": "9",
+        "Product Actions": "30",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 9213,
+        "Product": "Trello",
+        "Month": "2023-02",
+        "Active Days": "2",
+        "Sessions": "5",
+        "Product Actions": "26",
+        "Collaborators": "12",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 9214,
+        "Product": "Trello",
+        "Month": "2023-03",
+        "Active Days": "2",
+        "Sessions": "3",
+        "Product Actions": "16",
+        "Collaborators": "3",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 9215,
+        "Product": "Trello",
+        "Month": "2023-04",
+        "Active Days": "6",
+        "Sessions": "11",
+        "Product Actions": "54",
+        "Collaborators": "6",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 9216,
+        "Product": "Trello",
+        "Month": "2023-05",
+        "Active Days": "1",
+        "Sessions": "1",
+        "Product Actions": "5",
+        "Collaborators": "6",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Data loss"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Data loss，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Data loss"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-07",
+    "customer_id": "CUST05711",
+    "ticket_id": "690",
+    "product": "Trello",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Device compatibility issue"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 28992,
+        "Product": "Trello",
+        "Month": "2023-01",
+        "Active Days": "5",
+        "Sessions": "11",
+        "Product Actions": "48",
+        "Collaborators": "5",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 28993,
+        "Product": "Trello",
+        "Month": "2023-02",
+        "Active Days": "7",
+        "Sessions": "11",
+        "Product Actions": "49",
+        "Collaborators": "5",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 28994,
+        "Product": "Trello",
+        "Month": "2023-03",
+        "Active Days": "2",
+        "Sessions": "3",
+        "Product Actions": "24",
+        "Collaborators": "5",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 28995,
+        "Product": "Trello",
+        "Month": "2023-04",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "55",
+        "Collaborators": "12",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 28996,
+        "Product": "Trello",
+        "Month": "2023-05",
+        "Active Days": "3",
+        "Sessions": "6",
+        "Product Actions": "22",
+        "Collaborators": "8",
+        "Integrations Used": "3"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Device compatibility issue"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Device compatibility issue"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-08",
+    "customer_id": "CUST07278",
+    "ticket_id": "8017",
+    "product": "Trello",
+    "route": "SUPPORT_FIRST",
+    "source_basis": {
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Product recommendation"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 36902,
+        "Product": "Trello",
+        "Month": "2023-01",
+        "Active Days": "7",
+        "Sessions": "13",
+        "Product Actions": "100",
+        "Collaborators": "16",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 36903,
+        "Product": "Trello",
+        "Month": "2023-02",
+        "Active Days": "6",
+        "Sessions": "12",
+        "Product Actions": "63",
+        "Collaborators": "7",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 36904,
+        "Product": "Trello",
+        "Month": "2023-03",
+        "Active Days": "5",
+        "Sessions": "13",
+        "Product Actions": "99",
+        "Collaborators": "8",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 36905,
+        "Product": "Trello",
+        "Month": "2023-04",
+        "Active Days": "6",
+        "Sessions": "14",
+        "Product Actions": "46",
+        "Collaborators": "8",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 36906,
+        "Product": "Trello",
+        "Month": "2023-05",
+        "Active Days": "6",
+        "Sessions": "15",
+        "Product Actions": "56",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Cancellation request"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "类型为Cancellation request、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Cancellation request"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "记录包含退款或取消类别；先核实这项请求是否仍待处理。",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-09",
+    "customer_id": "CUST02330",
+    "ticket_id": "2602",
+    "product": "Bitbucket",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Integration"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 11812,
+        "Product": "Bitbucket",
+        "Month": "2023-01",
+        "Active Days": "9",
+        "Sessions": "23",
+        "Product Actions": "120",
+        "Collaborators": "17",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 11813,
+        "Product": "Bitbucket",
+        "Month": "2023-02",
+        "Active Days": "10",
+        "Sessions": "22",
+        "Product Actions": "122",
+        "Collaborators": "12",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 11814,
+        "Product": "Bitbucket",
+        "Month": "2023-03",
+        "Active Days": "13",
+        "Sessions": "23",
+        "Product Actions": "107",
+        "Collaborators": "7",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 11815,
+        "Product": "Bitbucket",
+        "Month": "2023-04",
+        "Active Days": "13",
+        "Sessions": "23",
+        "Product Actions": "146",
+        "Collaborators": "15",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 11816,
+        "Product": "Bitbucket",
+        "Month": "2023-05",
+        "Active Days": "11",
+        "Sessions": "20",
+        "Product Actions": "141",
+        "Collaborators": "19",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-10",
+    "customer_id": "CUST07387",
+    "ticket_id": "170",
+    "product": "Bitbucket",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Network problem"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 37447,
+        "Product": "Bitbucket",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "7",
+        "Product Actions": "21",
+        "Collaborators": "5",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 37448,
+        "Product": "Bitbucket",
+        "Month": "2023-02",
+        "Active Days": "3",
+        "Sessions": "8",
+        "Product Actions": "54",
+        "Collaborators": "15",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 37449,
+        "Product": "Bitbucket",
+        "Month": "2023-03",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "50",
+        "Collaborators": "10",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 37450,
+        "Product": "Bitbucket",
+        "Month": "2023-04",
+        "Active Days": "4",
+        "Sessions": "8",
+        "Product Actions": "58",
+        "Collaborators": "14",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 37451,
+        "Product": "Bitbucket",
+        "Month": "2023-05",
+        "Active Days": "6",
+        "Sessions": "10",
+        "Product Actions": "48",
+        "Collaborators": "12",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Network problem"
+          },
+          {
+            "field": "Resolution",
+            "text": "Your determine such summer young."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Network problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Network problem"
+          },
+          {
+            "field": "Resolution",
+            "text": "Your determine such summer young."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-11",
+    "customer_id": "CUST03429",
+    "ticket_id": "665",
+    "product": "Bitbucket",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product setup"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 17397,
+        "Product": "Bitbucket",
+        "Month": "2023-01",
+        "Active Days": "10",
+        "Sessions": "19",
+        "Product Actions": "64",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 17398,
+        "Product": "Bitbucket",
+        "Month": "2023-02",
+        "Active Days": "6",
+        "Sessions": "12",
+        "Product Actions": "90",
+        "Collaborators": "16",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 17399,
+        "Product": "Bitbucket",
+        "Month": "2023-03",
+        "Active Days": "8",
+        "Sessions": "14",
+        "Product Actions": "91",
+        "Collaborators": "12",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 17400,
+        "Product": "Bitbucket",
+        "Month": "2023-04",
+        "Active Days": "4",
+        "Sessions": "10",
+        "Product Actions": "41",
+        "Collaborators": "9",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 17401,
+        "Product": "Bitbucket",
+        "Month": "2023-05",
+        "Active Days": "10",
+        "Sessions": "17",
+        "Product Actions": "71",
+        "Collaborators": "14",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product setup"
+          },
+          {
+            "field": "Resolution",
+            "text": "Before receive cut ago."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product setup"
+          },
+          {
+            "field": "Resolution",
+            "text": "Before receive cut ago."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-12",
+    "customer_id": "CUST07948",
+    "ticket_id": "4179",
+    "product": "Bitbucket",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product setup"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 40287,
+        "Product": "Bitbucket",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "7",
+        "Product Actions": "55",
+        "Collaborators": "12",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 40288,
+        "Product": "Bitbucket",
+        "Month": "2023-02",
+        "Active Days": "4",
+        "Sessions": "10",
+        "Product Actions": "43",
+        "Collaborators": "13",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 40289,
+        "Product": "Bitbucket",
+        "Month": "2023-03",
+        "Active Days": "4",
+        "Sessions": "8",
+        "Product Actions": "50",
+        "Collaborators": "6",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 40290,
+        "Product": "Bitbucket",
+        "Month": "2023-04",
+        "Active Days": "7",
+        "Sessions": "12",
+        "Product Actions": "58",
+        "Collaborators": "14",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 40291,
+        "Product": "Bitbucket",
+        "Month": "2023-05",
+        "Active Days": "5",
+        "Sessions": "13",
+        "Product Actions": "91",
+        "Collaborators": "8",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product setup"
+          },
+          {
+            "field": "Resolution",
+            "text": "Congress treat stock effort."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product setup"
+          },
+          {
+            "field": "Resolution",
+            "text": "Congress treat stock effort."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-13",
+    "customer_id": "CUST08138",
+    "ticket_id": "884",
+    "product": "Confluence",
+    "route": "REQUIREMENT_REVIEW",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product recommendation"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 41267,
+        "Product": "Confluence",
+        "Month": "2023-01",
+        "Active Days": "3",
+        "Sessions": "5",
+        "Product Actions": "16",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 41268,
+        "Product": "Confluence",
+        "Month": "2023-02",
+        "Active Days": "3",
+        "Sessions": "5",
+        "Product Actions": "25",
+        "Collaborators": "9",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 41269,
+        "Product": "Confluence",
+        "Month": "2023-03",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "61",
+        "Collaborators": "12",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 41270,
+        "Product": "Confluence",
+        "Month": "2023-04",
+        "Active Days": "2",
+        "Sessions": "4",
+        "Product Actions": "21",
+        "Collaborators": "4",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 41271,
+        "Product": "Confluence",
+        "Month": "2023-05",
+        "Active Days": "2",
+        "Sessions": "4",
+        "Product Actions": "19",
+        "Collaborators": "6",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          },
+          {
+            "field": "Resolution",
+            "text": "Seek new whole teach yourself."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          },
+          {
+            "field": "Resolution",
+            "text": "Seek new whole teach yourself."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "需要完成的具体任务是什么，当前阻碍是什么，是否希望评估付费选项？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-14",
+    "customer_id": "CUST02353",
+    "ticket_id": "844",
+    "product": "Confluence",
+    "route": "SUPPORT_FIRST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Cancellation request"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 11927,
+        "Product": "Confluence",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "41",
+        "Collaborators": "14",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 11928,
+        "Product": "Confluence",
+        "Month": "2023-02",
+        "Active Days": "6",
+        "Sessions": "10",
+        "Product Actions": "39",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 11929,
+        "Product": "Confluence",
+        "Month": "2023-03",
+        "Active Days": "6",
+        "Sessions": "15",
+        "Product Actions": "52",
+        "Collaborators": "9",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 11930,
+        "Product": "Confluence",
+        "Month": "2023-04",
+        "Active Days": "7",
+        "Sessions": "13",
+        "Product Actions": "44",
+        "Collaborators": "14",
+        "Integrations Used": "4"
+      },
+      {
+        "source_row": 11931,
+        "Product": "Confluence",
+        "Month": "2023-05",
+        "Active Days": "6",
+        "Sessions": "10",
+        "Product Actions": "41",
+        "Collaborators": "14",
+        "Integrations Used": "4"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Cancellation request"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Cancellation request，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Cancellation request"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "记录包含退款或取消类别；先核实这项请求是否仍待处理。",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-15",
+    "customer_id": "CUST00609",
+    "ticket_id": "2125",
+    "product": "Confluence",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Product recommendation"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 3067,
+        "Product": "Confluence",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "8",
+        "Product Actions": "26",
+        "Collaborators": "5",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 3068,
+        "Product": "Confluence",
+        "Month": "2023-02",
+        "Active Days": "5",
+        "Sessions": "10",
+        "Product Actions": "78",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 3069,
+        "Product": "Confluence",
+        "Month": "2023-03",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "35",
+        "Collaborators": "7",
+        "Integrations Used": "3"
+      },
+      {
+        "source_row": 3070,
+        "Product": "Confluence",
+        "Month": "2023-04",
+        "Active Days": "3",
+        "Sessions": "5",
+        "Product Actions": "40",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 3071,
+        "Product": "Confluence",
+        "Month": "2023-05",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "30",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Technical issue"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          },
+          {
+            "field": "Resolution",
+            "text": "Produce free face majority."
+          }
+        ],
+        "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Technical issue"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          },
+          {
+            "field": "Resolution",
+            "text": "Produce free face majority."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-16",
+    "customer_id": "CUST05368",
+    "ticket_id": "8333",
+    "product": "Confluence",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Email delivery problem"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 27247,
+        "Product": "Confluence",
+        "Month": "2023-01",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "56",
+        "Collaborators": "11",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 27248,
+        "Product": "Confluence",
+        "Month": "2023-02",
+        "Active Days": "3",
+        "Sessions": "6",
+        "Product Actions": "39",
+        "Collaborators": "14",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 27249,
+        "Product": "Confluence",
+        "Month": "2023-03",
+        "Active Days": "6",
+        "Sessions": "10",
+        "Product Actions": "69",
+        "Collaborators": "13",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 27250,
+        "Product": "Confluence",
+        "Month": "2023-04",
+        "Active Days": "1",
+        "Sessions": "2",
+        "Product Actions": "13",
+        "Collaborators": "7",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 27251,
+        "Product": "Confluence",
+        "Month": "2023-05",
+        "Active Days": "7",
+        "Sessions": "14",
+        "Product Actions": "106",
+        "Collaborators": "11",
+        "Integrations Used": "2"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Email delivery problem"
+          },
+          {
+            "field": "Resolution",
+            "text": "Stand like quality firm."
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Email delivery problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Email delivery problem"
+          },
+          {
+            "field": "Resolution",
+            "text": "Stand like quality firm."
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-17",
+    "customer_id": "CUST07396",
+    "ticket_id": "503",
+    "product": "Jira",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Product recommendation"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 37492,
+        "Product": "Jira",
+        "Month": "2023-01",
+        "Active Days": "8",
+        "Sessions": "15",
+        "Product Actions": "57",
+        "Collaborators": "13",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 37493,
+        "Product": "Jira",
+        "Month": "2023-02",
+        "Active Days": "8",
+        "Sessions": "13",
+        "Product Actions": "106",
+        "Collaborators": "10",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 37494,
+        "Product": "Jira",
+        "Month": "2023-03",
+        "Active Days": "8",
+        "Sessions": "18",
+        "Product Actions": "75",
+        "Collaborators": "15",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 37495,
+        "Product": "Jira",
+        "Month": "2023-04",
+        "Active Days": "6",
+        "Sessions": "14",
+        "Product Actions": "103",
+        "Collaborators": "13",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 37496,
+        "Product": "Jira",
+        "Month": "2023-05",
+        "Active Days": "10",
+        "Sessions": "17",
+        "Product Actions": "125",
+        "Collaborators": "6",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Technical issue"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Technical issue"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-18",
+    "customer_id": "CUST06208",
+    "ticket_id": "5580",
+    "product": "Jira",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Product recommendation"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 31497,
+        "Product": "Jira",
+        "Month": "2023-01",
+        "Active Days": "12",
+        "Sessions": "22",
+        "Product Actions": "112",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 31498,
+        "Product": "Jira",
+        "Month": "2023-02",
+        "Active Days": "8",
+        "Sessions": "18",
+        "Product Actions": "106",
+        "Collaborators": "8",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 31499,
+        "Product": "Jira",
+        "Month": "2023-03",
+        "Active Days": "7",
+        "Sessions": "15",
+        "Product Actions": "60",
+        "Collaborators": "7",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 31500,
+        "Product": "Jira",
+        "Month": "2023-04",
+        "Active Days": "6",
+        "Sessions": "16",
+        "Product Actions": "82",
+        "Collaborators": "13",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 31501,
+        "Product": "Jira",
+        "Month": "2023-05",
+        "Active Days": "6",
+        "Sessions": "16",
+        "Product Actions": "75",
+        "Collaborators": "6",
+        "Integrations Used": "0"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Billing inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "类型为Billing inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Billing inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Product recommendation"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-19",
+    "customer_id": "CUST03390",
+    "ticket_id": "1739",
+    "product": "Jira",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Loading issue"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 17202,
+        "Product": "Jira",
+        "Month": "2023-01",
+        "Active Days": "6",
+        "Sessions": "13",
+        "Product Actions": "72",
+        "Collaborators": "6",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 17203,
+        "Product": "Jira",
+        "Month": "2023-02",
+        "Active Days": "6",
+        "Sessions": "12",
+        "Product Actions": "96",
+        "Collaborators": "11",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 17204,
+        "Product": "Jira",
+        "Month": "2023-03",
+        "Active Days": "4",
+        "Sessions": "8",
+        "Product Actions": "54",
+        "Collaborators": "10",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 17205,
+        "Product": "Jira",
+        "Month": "2023-04",
+        "Active Days": "10",
+        "Sessions": "18",
+        "Product Actions": "106",
+        "Collaborators": "11",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 17206,
+        "Product": "Jira",
+        "Month": "2023-05",
+        "Active Days": "5",
+        "Sessions": "12",
+        "Product Actions": "72",
+        "Collaborators": "12",
+        "Integrations Used": "3"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Loading issue"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Loading issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Loading issue"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  },
+  {
+    "case_id": "PE2-20",
+    "customer_id": "CUST03851",
+    "ticket_id": "709",
+    "product": "Jira",
+    "route": "CLARIFY_REQUEST",
+    "source_basis": {
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Integration"
+    },
+    "current_plan": "Free",
+    "usage_context": [
+      {
+        "source_row": 19527,
+        "Product": "Jira",
+        "Month": "2023-01",
+        "Active Days": "3",
+        "Sessions": "5",
+        "Product Actions": "29",
+        "Collaborators": "5",
+        "Integrations Used": "0"
+      },
+      {
+        "source_row": 19528,
+        "Product": "Jira",
+        "Month": "2023-02",
+        "Active Days": "6",
+        "Sessions": "10",
+        "Product Actions": "74",
+        "Collaborators": "15",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 19529,
+        "Product": "Jira",
+        "Month": "2023-03",
+        "Active Days": "1",
+        "Sessions": "1",
+        "Product Actions": "4",
+        "Collaborators": "5",
+        "Integrations Used": "2"
+      },
+      {
+        "source_row": 19530,
+        "Product": "Jira",
+        "Month": "2023-04",
+        "Active Days": "4",
+        "Sessions": "9",
+        "Product Actions": "28",
+        "Collaborators": "13",
+        "Integrations Used": "1"
+      },
+      {
+        "source_row": 19531,
+        "Product": "Jira",
+        "Month": "2023-05",
+        "Active Days": "4",
+        "Sessions": "11",
+        "Product Actions": "68",
+        "Collaborators": "9",
+        "Integrations Used": "1"
+      }
+    ],
+    "usage_quality_flags": [],
+    "evidence_review": {
+      "specific_need": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          }
+        ],
+        "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+      },
+      "explicit_purchase_intent": {
+        "status": "NOT_ESTABLISHED",
+        "quotes": [
+          {
+            "field": "Ticket Type",
+            "text": "Product inquiry"
+          },
+          {
+            "field": "Ticket Subject",
+            "text": "Integration"
+          }
+        ],
+        "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+      },
+      "paid_capability_fit": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+      },
+      "profit_basis": {
+        "status": "ABSENT_FIELD",
+        "quotes": [],
+        "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+      }
+    },
+    "next_question": "本次主要是产品选型咨询，还是现有使用或账务问题？",
+    "question_status": "PROPOSED_NOT_SENT",
+    "customer_answer": null,
+    "paid_recommendation": null,
+    "incremental_profit": null
+  }
+]

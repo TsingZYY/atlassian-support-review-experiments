@@ -1,0 +1,105 @@
+{
+  "frozen_at": "2026-09-12T12:37:26.309937+00:00",
+  "selected": [
+    {
+      "ticket_id": "4615",
+      "customer_id": "CUST08305",
+      "product": "Loom"
+    },
+    {
+      "ticket_id": "5010",
+      "customer_id": "CUST04271",
+      "product": "Loom"
+    },
+    {
+      "ticket_id": "7951",
+      "customer_id": "CUST04847",
+      "product": "Loom"
+    },
+    {
+      "ticket_id": "6686",
+      "customer_id": "CUST01968",
+      "product": "Loom"
+    },
+    {
+      "ticket_id": "928",
+      "customer_id": "CUST03984",
+      "product": "Trello"
+    },
+    {
+      "ticket_id": "5703",
+      "customer_id": "CUST01817",
+      "product": "Trello"
+    },
+    {
+      "ticket_id": "690",
+      "customer_id": "CUST05711",
+      "product": "Trello"
+    },
+    {
+      "ticket_id": "8017",
+      "customer_id": "CUST07278",
+      "product": "Trello"
+    },
+    {
+      "ticket_id": "2602",
+      "customer_id": "CUST02330",
+      "product": "Bitbucket"
+    },
+    {
+      "ticket_id": "170",
+      "customer_id": "CUST07387",
+      "product": "Bitbucket"
+    },
+    {
+      "ticket_id": "665",
+      "customer_id": "CUST03429",
+      "product": "Bitbucket"
+    },
+    {
+      "ticket_id": "4179",
+      "customer_id": "CUST07948",
+      "product": "Bitbucket"
+    },
+    {
+      "ticket_id": "884",
+      "customer_id": "CUST08138",
+      "product": "Confluence"
+    },
+    {
+      "ticket_id": "844",
+      "customer_id": "CUST02353",
+      "product": "Confluence"
+    },
+    {
+      "ticket_id": "2125",
+      "customer_id": "CUST00609",
+      "product": "Confluence"
+    },
+    {
+      "ticket_id": "8333",
+      "customer_id": "CUST05368",
+      "product": "Confluence"
+    },
+    {
+      "ticket_id": "503",
+      "customer_id": "CUST07396",
+      "product": "Jira"
+    },
+    {
+      "ticket_id": "5580",
+      "customer_id": "CUST06208",
+      "product": "Jira"
+    },
+    {
+      "ticket_id": "1739",
+      "customer_id": "CUST03390",
+      "product": "Jira"
+    },
+    {
+      "ticket_id": "709",
+      "customer_id": "CUST03851",
+      "product": "Jira"
+    }
+  ]
+}

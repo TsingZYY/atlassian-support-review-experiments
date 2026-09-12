@@ -13,6 +13,7 @@ STEPS = [
     'minimal_model/verify.py', 'csat_context_v1/experiment.py',
     'product_churn_v1/experiment.py',
     'profit_opportunity_v1/experiment.py',
+    'profit_evidence_v2/experiment.py',
 ]
 
 
@@ -28,6 +29,7 @@ def main():
     csat = read('csat_context_v1/results.json')
     products = read('product_churn_v1/results.json')
     profit = read('profit_opportunity_v1/results.json')
+    evidence = read('profit_evidence_v2/results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -51,11 +53,19 @@ def main():
     assert abs(profit['primary']['one_sided_exact_permutation_p'] - 0.2856224279835391) < 1e-12
     assert profit['primary']['exploratory_proxy_support'] is False
     assert profit['business_outcomes']['incremental_profit'] is None
+    assert evidence['dataset_scope'] == 'competition_csv_only' and evidence['new_synthetic_observations'] == 0
+    assert evidence['source_overview']['eligible_candidate_customers'] == 377 and evidence['case_count'] == 20
+    assert evidence['observed_five_month_context_n'] == 20
+    assert evidence['coverage']['ticket_only']['specific_need'] == {'NOT_ESTABLISHED':20}
+    assert evidence['coverage']['enriched']['specific_need'] == {'NOT_ESTABLISHED':20}
+    assert evidence['evidence_sufficient_for_paid_recommendation_n'] == 0 and evidence['profit_uplift'] is None
+    assert evidence['route_counts'] == {'CLARIFY_REQUEST':17,'SUPPORT_FIRST':2,'REQUIREMENT_REVIEW':1}
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
               'product_churn_ranking_established':False,
               'profit_screening_proxy_supported':False, 'profit_uplift_established':False,
+              'paid_reason_evidence_established':False, 'profit_evidence_cases_verified':20,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     (ROOT / 'reproduction_check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print('REPRODUCTION PASS: competition-data calculations verified; profit uplift remains unverified.')

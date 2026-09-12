@@ -1,0 +1,1816 @@
+{
+  "review_type": "source_evidence_review_not_customer_outcomes",
+  "reviewed_at": "2026-09-12T12:39:13.190000+00:00",
+  "method": "Primary analyst inspected all 20 raw ticket fields and all added usage/customer context; structured annotations serialized after review. Independent verification is recorded separately.",
+  "case_packets_sha256": "e58626962da6e91fd1e10f5eabcb5a0daf3bb5f27f1a8d6c966b62dd6dbcbadd",
+  "cases": [
+    {
+      "case_id": "PE2-01",
+      "ticket_id": "4615",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            },
+            {
+              "field": "Resolution",
+              "text": "Begin blood hold get kind."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            },
+            {
+              "field": "Resolution",
+              "text": "Begin blood hold get kind."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            },
+            {
+              "field": "Resolution",
+              "text": "Begin blood hold get kind."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            },
+            {
+              "field": "Resolution",
+              "text": "Begin blood hold get kind."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-02",
+      "ticket_id": "5010",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Software bug"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Software bug，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Software bug"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Software bug"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Software bug，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Software bug"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-03",
+      "ticket_id": "7951",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Display issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Display issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Display issue"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Display issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Display issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Display issue"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-04",
+      "ticket_id": "6686",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            },
+            {
+              "field": "Resolution",
+              "text": "Pass animal Mr direction various century."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            },
+            {
+              "field": "Resolution",
+              "text": "Pass animal Mr direction various century."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            },
+            {
+              "field": "Resolution",
+              "text": "Pass animal Mr direction various century."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            },
+            {
+              "field": "Resolution",
+              "text": "Pass animal Mr direction various century."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-05",
+      "ticket_id": "928",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Account access"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Account access，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Account access"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Account access"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Account access，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Account access"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-06",
+      "ticket_id": "5703",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Data loss"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Data loss，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Data loss"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Data loss"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Data loss，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Data loss"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-07",
+      "ticket_id": "690",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Device compatibility issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Device compatibility issue"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-08",
+      "ticket_id": "8017",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Cancellation request"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Cancellation request、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Cancellation request"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Cancellation request"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Cancellation request、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Cancellation request"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-09",
+      "ticket_id": "2602",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-10",
+      "ticket_id": "170",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Network problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Your determine such summer young."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Network problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Network problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Your determine such summer young."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Network problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Your determine such summer young."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Network problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Network problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Your determine such summer young."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-11",
+      "ticket_id": "665",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Before receive cut ago."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Before receive cut ago."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Before receive cut ago."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Before receive cut ago."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-12",
+      "ticket_id": "4179",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Congress treat stock effort."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Congress treat stock effort."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Congress treat stock effort."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product setup，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product setup"
+            },
+            {
+              "field": "Resolution",
+              "text": "Congress treat stock effort."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-13",
+      "ticket_id": "884",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Seek new whole teach yourself."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Seek new whole teach yourself."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Seek new whole teach yourself."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Seek new whole teach yourself."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-14",
+      "ticket_id": "844",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Cancellation request"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Cancellation request，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Cancellation request"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Cancellation request"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Cancellation request，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Cancellation request"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-15",
+      "ticket_id": "2125",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Produce free face majority."
+            }
+          ],
+          "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Produce free face majority."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Produce free face majority."
+            }
+          ],
+          "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            },
+            {
+              "field": "Resolution",
+              "text": "Produce free face majority."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-16",
+      "ticket_id": "8333",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Email delivery problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Stand like quality firm."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Email delivery problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Email delivery problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Stand like quality firm."
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Email delivery problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Stand like quality firm."
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Email delivery problem，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。已逐条检查Resolution，未表达与该客户相关的具体任务、购买意愿或套餐能力。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Email delivery problem"
+            },
+            {
+              "field": "Resolution",
+              "text": "Stand like quality firm."
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-17",
+      "ticket_id": "503",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Technical issue、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Technical issue"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-18",
+      "ticket_id": "5580",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Billing inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Billing inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Billing inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Billing inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "类型为Billing inquiry、主题为Product recommendation，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Billing inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Product recommendation"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-19",
+      "ticket_id": "1739",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Loading issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Loading issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Loading issue"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Loading issue"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Loading issue，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Loading issue"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    },
+    {
+      "case_id": "PE2-20",
+      "ticket_id": "709",
+      "ticket_only": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类别、主题及已检查的Resolution没有明确购买或升级表述；这不代表客户没有意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有套餐能力、限制或价格依据，无法把主题映射为付费解决理由。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "工单没有相对对照的转化增量、收入或成本记录。"
+        }
+      },
+      "enriched": {
+        "specific_need": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "类型为Product inquiry、主题为Integration，提供泛化话题，未说明具体使用任务、期望结果或可核验阻碍。Resolution为空。加入Free套餐、公司背景和五个月使用记录，只补充观察背景，不能确认这些数值背后的需求。"
+        },
+        "explicit_purchase_intent": {
+          "status": "NOT_ESTABLISHED",
+          "quotes": [
+            {
+              "field": "Ticket Type",
+              "text": "Product inquiry"
+            },
+            {
+              "field": "Ticket Subject",
+              "text": "Integration"
+            }
+          ],
+          "reason": "客户和使用表没有购买/升级意愿表述；Free或已有协作、集成使用不能代替购买意愿。"
+        },
+        "paid_capability_fit": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "已知当前Free套餐，但三表及字段说明没有付费套餐能力/限制映射，仍无法确认升级可以解决具体需求。"
+        },
+        "profit_basis": {
+          "status": "ABSENT_FIELD",
+          "quotes": [],
+          "reason": "三表没有升级或转化对照、收入与成本；新增使用背景没有补齐利润计算输入。"
+        }
+      }
+    }
+  ]
+}

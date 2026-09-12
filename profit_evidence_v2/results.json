@@ -1,0 +1,86 @@
+{
+  "executed_at": "2026-09-12T12:42:35.626576+00:00",
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "case_count": 20,
+  "source_overview": {
+    "source_counts": {
+      "customers": 8320,
+      "tickets": 8469,
+      "usage": 42210
+    },
+    "all_ticket_signal_counts": {
+      "neither": 6422,
+      "type_only": 1530,
+      "subject_only": 406,
+      "both": 111
+    },
+    "identity_consistent_free_customers": 1440,
+    "free_ticket_signal_counts": {
+      "neither": 1063,
+      "type_only": 295,
+      "subject_only": 64,
+      "both": 18
+    },
+    "eligible_candidate_tickets": 377,
+    "eligible_candidate_customers": 377,
+    "eligible_by_product": {
+      "Jira": 79,
+      "Bitbucket": 58,
+      "Confluence": 91,
+      "Loom": 80,
+      "Trello": 69
+    }
+  },
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "case_packets_sha256": "e58626962da6e91fd1e10f5eabcb5a0daf3bb5f27f1a8d6c966b62dd6dbcbadd",
+  "audit_annotations_sha256": "79fc75881a0a3795432f393cca4a8e286d6d9eba88e7fc334ac7510be340e0cb",
+  "coverage": {
+    "ticket_only": {
+      "specific_need": {
+        "NOT_ESTABLISHED": 20
+      },
+      "explicit_purchase_intent": {
+        "NOT_ESTABLISHED": 20
+      },
+      "paid_capability_fit": {
+        "ABSENT_FIELD": 20
+      },
+      "profit_basis": {
+        "ABSENT_FIELD": 20
+      }
+    },
+    "enriched": {
+      "specific_need": {
+        "NOT_ESTABLISHED": 20
+      },
+      "explicit_purchase_intent": {
+        "NOT_ESTABLISHED": 20
+      },
+      "paid_capability_fit": {
+        "ABSENT_FIELD": 20
+      },
+      "profit_basis": {
+        "ABSENT_FIELD": 20
+      }
+    }
+  },
+  "route_counts": {
+    "CLARIFY_REQUEST": 17,
+    "SUPPORT_FIRST": 2,
+    "REQUIREMENT_REVIEW": 1
+  },
+  "observed_current_plan_context_n": 20,
+  "observed_five_month_context_n": 20,
+  "usage_context_with_quality_flags_n": 0,
+  "evidence_sufficient_for_paid_recommendation_n": 0,
+  "generated_paid_recommendations_n": 0,
+  "business_efficacy": "UNVERIFIED",
+  "profit_uplift": null,
+  "statistical_significance_test": "NOT_APPLICABLE_TO_EVIDENCE_COVERAGE_AUDIT"
+}

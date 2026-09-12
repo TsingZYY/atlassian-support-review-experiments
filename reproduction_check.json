@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-12T08:47:21.180047+00:00",
+  "executed_at": "2026-09-12T12:42:35.791179+00:00",
   "steps_completed": [
     "inspect_case.py",
     "independent_check.py",
@@ -12,7 +12,8 @@
     "minimal_model/verify.py",
     "csat_context_v1/experiment.py",
     "product_churn_v1/experiment.py",
-    "profit_opportunity_v1/experiment.py"
+    "profit_opportunity_v1/experiment.py",
+    "profit_evidence_v2/experiment.py"
   ],
   "key_snapshot_claims_verified": true,
   "main_experiment_scope": "competition_csv_only",
@@ -20,6 +21,8 @@
   "product_churn_ranking_established": false,
   "profit_screening_proxy_supported": false,
   "profit_uplift_established": false,
+  "paid_reason_evidence_established": false,
+  "profit_evidence_cases_verified": 20,
   "business_efficacy": "UNVERIFIED",
   "real_customer_trial": "CANDIDATE-UNRUN"
 }
