@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-12T08:12:02.400974+00:00",
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "e2dfb05265764c1ee869424c661238746cbea733bbb4698d4d9ae122619b5728",
+    "protocol.md": "cd8405a503424f7d272f601fa16b873ec2fc660928bd940ad9683525c4854339",
+    "experiment.py": "f3817be5a27f497dad5d0ef4fb517582c53b8a97a71534ac2c1d2e200ceb33e4"
+  }
+}

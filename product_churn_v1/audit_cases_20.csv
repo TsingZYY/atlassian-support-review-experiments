@@ -1,0 +1,21 @@
+case_id,customer_id,product,ticket_ids,original_ticket_types,cancellation_request,usage_eligible,jan_active_days,feb_active_days,mar_active_days,apr_active_days,may_active_days,may_low_usage,persistent_decline,usage_stopped_pattern
+PROD-01,CUST07375,Loom,6969,Technical issue,0,True,13,10,9,9,8,0,0,0
+PROD-02,CUST02776,Loom,2157,Product inquiry,0,True,2,5,2,3,3,1,0,0
+PROD-03,CUST06437,Loom,8239,Billing inquiry,0,True,3,3,5,2,3,1,0,0
+PROD-04,CUST05094,Loom,764,Product inquiry,0,True,2,8,6,3,3,1,0,0
+PROD-05,CUST06893,Trello,1898,Technical issue,0,True,11,8,13,11,13,0,0,0
+PROD-06,CUST02920,Trello,1506,Technical issue,0,True,2,5,5,7,5,0,0,0
+PROD-07,CUST07461,Trello,5027,Cancellation request,1,True,5,5,5,6,7,0,0,0
+PROD-08,CUST05748,Trello,7744,Billing inquiry,0,True,3,3,6,9,3,1,0,0
+PROD-09,CUST05472,Bitbucket,5594,Refund request,0,True,8,6,10,7,6,0,0,0
+PROD-10,CUST01211,Bitbucket,3034,Refund request,0,True,9,5,6,5,11,0,0,0
+PROD-11,CUST03840,Bitbucket,4556,Cancellation request,1,True,15,18,15,12,15,0,0,0
+PROD-12,CUST00808,Bitbucket,2654,Refund request,0,True,3,6,8,3,10,0,0,0
+PROD-13,CUST03541,Confluence,3322,Refund request,0,True,12,20,18,21,19,0,0,0
+PROD-14,CUST00107,Confluence,3058,Technical issue,0,True,7,5,3,6,7,0,0,0
+PROD-15,CUST04521,Confluence,6775,Billing inquiry,0,True,7,3,3,4,4,0,0,0
+PROD-16,CUST02751,Confluence,2581,Refund request,0,True,10,8,15,13,14,0,0,0
+PROD-17,CUST06742,Jira,3973,Refund request,0,True,7,11,11,14,10,0,0,0
+PROD-18,CUST00223,Jira,4113,Cancellation request,1,True,11,9,11,10,14,0,0,0
+PROD-19,CUST07355,Jira,3774,Product inquiry,0,True,12,13,8,11,11,0,0,0
+PROD-20,CUST03862,Jira,6640,Cancellation request,1,True,12,15,16,19,14,0,0,0

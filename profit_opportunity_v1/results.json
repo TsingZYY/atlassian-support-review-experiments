@@ -1,0 +1,118 @@
+{
+  "executed_at": "2026-09-12T08:47:21.060252+00:00",
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "selection_sha256": "ba2267ca56665c974bf12ed052d8cd070d453edfc84bae7fc81ebc6f2be2dfdd",
+  "source_counts": {
+    "customers": 8320,
+    "tickets": 8469,
+    "usage": 42210
+  },
+  "plan_counts": {
+    "Standard": 3309,
+    "Free": 1472,
+    "Enterprise": 1202,
+    "Premium": 2337
+  },
+  "free_source_customers": 1472,
+  "free_eligible_customers": 1440,
+  "free_exclusions": {
+    "identity_conflict": 32
+  },
+  "selected_source_records": 20,
+  "primary": {
+    "complete": true,
+    "interpretation": "retrospective_association_only",
+    "priority_n": 10,
+    "comparison_n": 10,
+    "group_means": {
+      "priority": 12.1,
+      "comparison": 10.9
+    },
+    "difference": 1.1999999999999993,
+    "one_sided_exact_permutation_p": 0.2856224279835391,
+    "permutations": 7776,
+    "exploratory_proxy_support": false,
+    "selected_may_sum": {
+      "priority": 121,
+      "comparison": 109
+    }
+  },
+  "by_product": [
+    {
+      "product": "Loom",
+      "eligible_free_customers": 276,
+      "priority_may_mean": 8.5,
+      "comparison_may_mean": 12.0,
+      "difference": -3.5,
+      "remaining_pool_n": 274,
+      "remaining_pool_valid_may_n": 274,
+      "remaining_pool_may_mean": 9.124087591240876
+    },
+    {
+      "product": "Trello",
+      "eligible_free_customers": 290,
+      "priority_may_mean": 14.0,
+      "comparison_may_mean": 12.0,
+      "difference": 2.0,
+      "remaining_pool_n": 288,
+      "remaining_pool_valid_may_n": 288,
+      "remaining_pool_may_mean": 9.878472222222221
+    },
+    {
+      "product": "Bitbucket",
+      "eligible_free_customers": 241,
+      "priority_may_mean": 14.5,
+      "comparison_may_mean": 9.5,
+      "difference": 5.0,
+      "remaining_pool_n": 239,
+      "remaining_pool_valid_may_n": 239,
+      "remaining_pool_may_mean": 9.828451882845188
+    },
+    {
+      "product": "Confluence",
+      "eligible_free_customers": 329,
+      "priority_may_mean": 12.5,
+      "comparison_may_mean": 10.5,
+      "difference": 2.0,
+      "remaining_pool_n": 327,
+      "remaining_pool_valid_may_n": 327,
+      "remaining_pool_may_mean": 9.82262996941896
+    },
+    {
+      "product": "Jira",
+      "eligible_free_customers": 304,
+      "priority_may_mean": 11.0,
+      "comparison_may_mean": 10.5,
+      "difference": 0.5,
+      "remaining_pool_n": 302,
+      "remaining_pool_valid_may_n": 302,
+      "remaining_pool_may_mean": 10.182119205298013
+    }
+  ],
+  "business_outcomes": {
+    "upgrade_observed": false,
+    "willingness_to_pay_observed": false,
+    "profit_observed": false,
+    "incremental_profit": null,
+    "status": "NOT_IDENTIFIABLE_FROM_COMPETITION_DATA"
+  },
+  "economic_model": {
+    "formula": "N * (delta_conversion * net_contribution - contact_cost - other_expected_loss) - fixed_cost",
+    "observed_parameter_values": null,
+    "breakeven_if_N_and_net_contribution_positive": "delta_conversion > (contact_cost + other_expected_loss + fixed_cost / N) / net_contribution"
+  },
+  "limitations": [
+    "Static Free plan timing is unknown.",
+    "Prior tasks have inspected this dataset; not a pristine holdout.",
+    "Collaborators are not observed paid seats, upgrade intentions or profit.",
+    "Hash comparison sampling is not randomized treatment assignment.",
+    "Synthetic support-customer sample; sampling frame and generator unknown."
+  ]
+}

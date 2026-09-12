@@ -1,0 +1,838 @@
+{
+  "executed_at": "2026-09-12T08:47:20.502848+00:00",
+  "dataset_scope": "competition_csv_only",
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "e2dfb05265764c1ee869424c661238746cbea733bbb4698d4d9ae122619b5728",
+    "protocol.md": "cd8405a503424f7d272f601fa16b873ec2fc660928bd940ad9683525c4854339",
+    "experiment.py": "9dc1f4efe41f1a73dcbd72a01f811147699ec0b27e1e533dd65530992ea1680f"
+  },
+  "new_synthetic_cases": 0,
+  "real_churn_observed": false,
+  "real_churn_ranking": "NOT_IDENTIFIABLE_FROM_THIS_DATASET",
+  "quality": {
+    "source_ticket_rows": 8469,
+    "source_customers": 8320,
+    "source_usage_rows": 42210,
+    "unmatched_or_ambiguous_ticket_n": 0,
+    "identity_conflict_customers": 139,
+    "raw_matched_customer_product_pairs": 8442,
+    "primary_customer_product_pairs": 8181,
+    "primary_distinct_customers": 8181,
+    "primary_multi_product_customers": 0,
+    "usage_eligible_pairs": 8122,
+    "usage_rejections": {
+      "invalid_or_incomplete_usage_customer_products": 59
+    },
+    "by_product": [
+      {
+        "product": "Loom",
+        "raw_matched_pairs": 1627,
+        "primary_pairs": 1586,
+        "identity_excluded_pairs": 41,
+        "usage_eligible_pairs": 1584,
+        "usage_excluded_from_primary": 2
+      },
+      {
+        "product": "Trello",
+        "raw_matched_pairs": 1621,
+        "primary_pairs": 1575,
+        "identity_excluded_pairs": 46,
+        "usage_eligible_pairs": 1569,
+        "usage_excluded_from_primary": 6
+      },
+      {
+        "product": "Bitbucket",
+        "raw_matched_pairs": 1590,
+        "primary_pairs": 1535,
+        "identity_excluded_pairs": 55,
+        "usage_eligible_pairs": 1516,
+        "usage_excluded_from_primary": 19
+      },
+      {
+        "product": "Confluence",
+        "raw_matched_pairs": 1825,
+        "primary_pairs": 1767,
+        "identity_excluded_pairs": 58,
+        "usage_eligible_pairs": 1755,
+        "usage_excluded_from_primary": 12
+      },
+      {
+        "product": "Jira",
+        "raw_matched_pairs": 1779,
+        "primary_pairs": 1718,
+        "identity_excluded_pairs": 61,
+        "usage_eligible_pairs": 1698,
+        "usage_excluded_from_primary": 20
+      }
+    ]
+  },
+  "indicators": {
+    "cancellation_request": {
+      "indicator": "cancellation_request",
+      "n": 8181,
+      "events": 1634,
+      "pooled_rate": 0.19973108421953306,
+      "products": [
+        {
+          "product": "Loom",
+          "n": 1586,
+          "events": 340,
+          "rate": 0.21437578814627994,
+          "wilson_95": [
+            0.19488131281131066,
+            0.23525054406450085
+          ]
+        },
+        {
+          "product": "Trello",
+          "n": 1575,
+          "events": 324,
+          "rate": 0.2057142857142857,
+          "wilson_95": [
+            0.18647863705343576,
+            0.22638197993820508
+          ]
+        },
+        {
+          "product": "Bitbucket",
+          "n": 1535,
+          "events": 297,
+          "rate": 0.19348534201954398,
+          "wilson_95": [
+            0.1744986699156212,
+            0.21400233868006321
+          ]
+        },
+        {
+          "product": "Confluence",
+          "n": 1767,
+          "events": 335,
+          "rate": 0.189586870401811,
+          "wilson_95": [
+            0.17199141074680122,
+            0.20852907880026658
+          ]
+        },
+        {
+          "product": "Jira",
+          "n": 1718,
+          "events": 338,
+          "rate": 0.19674039580908032,
+          "wilson_95": [
+            0.1786277863568017,
+            0.21620616036807505
+          ]
+        }
+      ],
+      "pearson_chi_square": 4.089168469978266,
+      "degrees_of_freedom": 4,
+      "overall_p": 0.3940726943079439,
+      "constant_outcome": false,
+      "test_status": "COMPUTED"
+    },
+    "may_low_usage": {
+      "indicator": "may_low_usage",
+      "n": 8122,
+      "events": 906,
+      "pooled_rate": 0.1115488795863088,
+      "products": [
+        {
+          "product": "Loom",
+          "n": 1584,
+          "events": 318,
+          "rate": 0.20075757575757575,
+          "wilson_95": [
+            0.18176580719927216,
+            0.22119725644053911
+          ]
+        },
+        {
+          "product": "Trello",
+          "n": 1569,
+          "events": 155,
+          "rate": 0.09878903760356915,
+          "wilson_95": [
+            0.08499045408798672,
+            0.11454743134899198
+          ]
+        },
+        {
+          "product": "Bitbucket",
+          "n": 1516,
+          "events": 131,
+          "rate": 0.08641160949868074,
+          "wilson_95": [
+            0.07329263283386993,
+            0.10162130787871675
+          ]
+        },
+        {
+          "product": "Confluence",
+          "n": 1755,
+          "events": 188,
+          "rate": 0.10712250712250712,
+          "wilson_95": [
+            0.09350170182545832,
+            0.12245946790690539
+          ]
+        },
+        {
+          "product": "Jira",
+          "n": 1698,
+          "events": 114,
+          "rate": 0.06713780918727916,
+          "wilson_95": [
+            0.056184830047074016,
+            0.08004493308335923
+          ]
+        }
+      ],
+      "pearson_chi_square": 173.57813677517495,
+      "degrees_of_freedom": 4,
+      "overall_p": 1.7841318658325715e-36,
+      "constant_outcome": false,
+      "test_status": "COMPUTED"
+    },
+    "persistent_decline": {
+      "indicator": "persistent_decline",
+      "n": 8122,
+      "events": 136,
+      "pooled_rate": 0.016744644176311253,
+      "products": [
+        {
+          "product": "Loom",
+          "n": 1584,
+          "events": 30,
+          "rate": 0.01893939393939394,
+          "wilson_95": [
+            0.013298319638624996,
+            0.02690812444056527
+          ]
+        },
+        {
+          "product": "Trello",
+          "n": 1569,
+          "events": 26,
+          "rate": 0.0165710643722116,
+          "wilson_95": [
+            0.011333360793015107,
+            0.024170191397530322
+          ]
+        },
+        {
+          "product": "Bitbucket",
+          "n": 1516,
+          "events": 21,
+          "rate": 0.013852242744063324,
+          "wilson_95": [
+            0.009077923097761998,
+            0.021084077388962685
+          ]
+        },
+        {
+          "product": "Confluence",
+          "n": 1755,
+          "events": 27,
+          "rate": 0.015384615384615385,
+          "wilson_95": [
+            0.01059458158724898,
+            0.022291531331351946
+          ]
+        },
+        {
+          "product": "Jira",
+          "n": 1698,
+          "events": 32,
+          "rate": 0.01884570082449941,
+          "wilson_95": [
+            0.013380666101249572,
+            0.026482893732170776
+          ]
+        }
+      ],
+      "pearson_chi_square": 1.8890628098636415,
+      "degrees_of_freedom": 4,
+      "overall_p": 0.7561538790467146,
+      "constant_outcome": false,
+      "test_status": "COMPUTED"
+    },
+    "usage_stopped_pattern": {
+      "indicator": "usage_stopped_pattern",
+      "n": 8122,
+      "events": 0,
+      "pooled_rate": 0.0,
+      "products": [
+        {
+          "product": "Loom",
+          "n": 1584,
+          "events": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.002419296208292241
+          ]
+        },
+        {
+          "product": "Trello",
+          "n": 1569,
+          "events": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.002442368745527871
+          ]
+        },
+        {
+          "product": "Bitbucket",
+          "n": 1516,
+          "events": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.0025275391708783016
+          ]
+        },
+        {
+          "product": "Confluence",
+          "n": 1755,
+          "events": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.002184084757286668
+          ]
+        },
+        {
+          "product": "Jira",
+          "n": 1698,
+          "events": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.002257236595561667
+          ]
+        }
+      ],
+      "pearson_chi_square": 0.0,
+      "degrees_of_freedom": 4,
+      "overall_p": null,
+      "constant_outcome": true,
+      "test_status": "NOT_ESTIMABLE_CONSTANT_OUTCOME"
+    }
+  },
+  "plan_standardization": {
+    "cancellation_request": {
+      "available": true,
+      "plans": [
+        "Enterprise",
+        "Free",
+        "Premium",
+        "Standard"
+      ],
+      "pooled_plan_weights": [
+        0.14570345923481237,
+        0.17601760176017603,
+        0.28052805280528054,
+        0.3977508861997311
+      ],
+      "product_order": [
+        "Loom",
+        "Trello",
+        "Bitbucket",
+        "Confluence",
+        "Jira"
+      ],
+      "cell_counts": [
+        [
+          229,
+          222,
+          235,
+          249,
+          257
+        ],
+        [
+          276,
+          290,
+          241,
+          329,
+          304
+        ],
+        [
+          433,
+          427,
+          445,
+          483,
+          507
+        ],
+        [
+          648,
+          636,
+          614,
+          706,
+          650
+        ]
+      ],
+      "minimum_cell_count": 222,
+      "standardized_rates": {
+        "Loom": 0.21414145863083142,
+        "Trello": 0.20529755399622926,
+        "Bitbucket": 0.19419842832930734,
+        "Confluence": 0.18962238219690408,
+        "Jira": 0.19640244399173173
+      },
+      "max_minus_min_pp": 2.451907643392734,
+      "stratified_range_permutation_p": 0.39730134932533734,
+      "permutation_repetitions": 2000,
+      "scope": "Descriptive adjustment; not causal or representative of a real customer population."
+    },
+    "may_low_usage": {
+      "available": true,
+      "plans": [
+        "Enterprise",
+        "Free",
+        "Premium",
+        "Standard"
+      ],
+      "pooled_plan_weights": [
+        0.14356069933513912,
+        0.17729623245506032,
+        0.2794878108840187,
+        0.39965525732578183
+      ],
+      "product_order": [
+        "Loom",
+        "Trello",
+        "Bitbucket",
+        "Confluence",
+        "Jira"
+      ],
+      "cell_counts": [
+        [
+          228,
+          220,
+          228,
+          241,
+          249
+        ],
+        [
+          276,
+          290,
+          241,
+          329,
+          304
+        ],
+        [
+          432,
+          426,
+          436,
+          481,
+          495
+        ],
+        [
+          648,
+          633,
+          611,
+          704,
+          650
+        ]
+      ],
+      "minimum_cell_count": 220,
+      "standardized_rates": {
+        "Loom": 0.20122767359384772,
+        "Trello": 0.09663952724922385,
+        "Bitbucket": 0.09065116561074524,
+        "Confluence": 0.10409716789473597,
+        "Jira": 0.06749767300976453
+      },
+      "max_minus_min_pp": 13.37300005840832,
+      "stratified_range_permutation_p": 0.0004997501249375312,
+      "permutation_repetitions": 2000,
+      "scope": "Descriptive adjustment; not causal or representative of a real customer population."
+    },
+    "persistent_decline": {
+      "available": true,
+      "plans": [
+        "Enterprise",
+        "Free",
+        "Premium",
+        "Standard"
+      ],
+      "pooled_plan_weights": [
+        0.14356069933513912,
+        0.17729623245506032,
+        0.2794878108840187,
+        0.39965525732578183
+      ],
+      "product_order": [
+        "Loom",
+        "Trello",
+        "Bitbucket",
+        "Confluence",
+        "Jira"
+      ],
+      "cell_counts": [
+        [
+          228,
+          220,
+          228,
+          241,
+          249
+        ],
+        [
+          276,
+          290,
+          241,
+          329,
+          304
+        ],
+        [
+          432,
+          426,
+          436,
+          481,
+          495
+        ],
+        [
+          648,
+          633,
+          611,
+          704,
+          650
+        ]
+      ],
+      "minimum_cell_count": 220,
+      "standardized_rates": {
+        "Loom": 0.018958942697304533,
+        "Trello": 0.016709705300897736,
+        "Bitbucket": 0.01379635584370833,
+        "Confluence": 0.015434259763901701,
+        "Jira": 0.01870309012593049
+      },
+      "max_minus_min_pp": 0.5162586853596203,
+      "stratified_range_permutation_p": 0.7781109445277361,
+      "permutation_repetitions": 2000,
+      "scope": "Descriptive adjustment; not causal or representative of a real customer population."
+    }
+  },
+  "cancellation_pairwise_holm": [
+    {
+      "product_a": "Loom",
+      "product_b": "Trello",
+      "difference_pp": 0.8661502431994234,
+      "z": 0.5977286040038537,
+      "raw_p": 0.5500210362349466,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Loom",
+      "product_b": "Bitbucket",
+      "difference_pp": 2.089044612673596,
+      "z": 1.4476209796058226,
+      "raw_p": 0.14772308048473584,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Loom",
+      "product_b": "Confluence",
+      "difference_pp": 2.478891774446895,
+      "z": 1.7872571229849483,
+      "raw_p": 0.07389594058950147,
+      "holm_p": 0.7389594058950146
+    },
+    {
+      "product_a": "Loom",
+      "product_b": "Jira",
+      "difference_pp": 1.763539233719963,
+      "z": 1.2540247519218801,
+      "raw_p": 0.20983300890966236,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Trello",
+      "product_b": "Bitbucket",
+      "difference_pp": 1.2228943694741727,
+      "z": 0.8529142305058205,
+      "raw_p": 0.3937068695331431,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Trello",
+      "product_b": "Confluence",
+      "difference_pp": 1.612741531247472,
+      "z": 1.1696973418968561,
+      "raw_p": 0.24212278822597583,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Trello",
+      "product_b": "Jira",
+      "difference_pp": 0.8973889905205396,
+      "z": 0.6418581241732376,
+      "raw_p": 0.5209653059778677,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Bitbucket",
+      "product_b": "Confluence",
+      "difference_pp": 0.38984716177329903,
+      "z": 0.2840149532535898,
+      "raw_p": 0.7763989212761504,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Bitbucket",
+      "product_b": "Jira",
+      "difference_pp": -0.3255053789536333,
+      "z": -0.2338268005166513,
+      "raw_p": 0.8151194424499949,
+      "holm_p": 1.0
+    },
+    {
+      "product_a": "Confluence",
+      "product_b": "Jira",
+      "difference_pp": -0.7153525407269323,
+      "z": -0.5348551469574807,
+      "raw_p": 0.592750025870127,
+      "holm_p": 1.0
+    }
+  ],
+  "cancellation_common_usage_cohort": {
+    "indicator": "cancellation_request",
+    "n": 8122,
+    "events": 1624,
+    "pooled_rate": 0.19995075104654025,
+    "products": [
+      {
+        "product": "Loom",
+        "n": 1584,
+        "events": 340,
+        "rate": 0.21464646464646464,
+        "wilson_95": [
+          0.19513024915446264,
+          0.23554338959067384
+        ]
+      },
+      {
+        "product": "Trello",
+        "n": 1569,
+        "events": 323,
+        "rate": 0.2058636073932441,
+        "wilson_95": [
+          0.18658690341713954,
+          0.22657709043379878
+        ]
+      },
+      {
+        "product": "Bitbucket",
+        "n": 1516,
+        "events": 293,
+        "rate": 0.1932717678100264,
+        "wilson_95": [
+          0.1741802449124832,
+          0.21391382595091843
+        ]
+      },
+      {
+        "product": "Confluence",
+        "n": 1755,
+        "events": 330,
+        "rate": 0.18803418803418803,
+        "wilson_95": [
+          0.17044194703876167,
+          0.20698914857903258
+        ]
+      },
+      {
+        "product": "Jira",
+        "n": 1698,
+        "events": 338,
+        "rate": 0.19905771495877503,
+        "wilson_95": [
+          0.18075435974781254,
+          0.21871966604763152
+        ]
+      }
+    ],
+    "pearson_chi_square": 4.47045783740678,
+    "degrees_of_freedom": 4,
+    "overall_p": 0.3460648028002757,
+    "constant_outcome": false,
+    "test_status": "COMPUTED"
+  },
+  "cancellation_common_usage_plan_adjusted": {
+    "available": true,
+    "plans": [
+      "Enterprise",
+      "Free",
+      "Premium",
+      "Standard"
+    ],
+    "pooled_plan_weights": [
+      0.14356069933513912,
+      0.17729623245506032,
+      0.2794878108840187,
+      0.39965525732578183
+    ],
+    "product_order": [
+      "Loom",
+      "Trello",
+      "Bitbucket",
+      "Confluence",
+      "Jira"
+    ],
+    "cell_counts": [
+      [
+        228,
+        220,
+        228,
+        241,
+        249
+      ],
+      [
+        276,
+        290,
+        241,
+        329,
+        304
+      ],
+      [
+        432,
+        426,
+        436,
+        481,
+        495
+      ],
+      [
+        648,
+        633,
+        611,
+        704,
+        650
+      ]
+    ],
+    "minimum_cell_count": 220,
+    "standardized_rates": {
+      "Loom": 0.2143914823582289,
+      "Trello": 0.20555654833351153,
+      "Bitbucket": 0.19399257966257505,
+      "Confluence": 0.18804632561693574,
+      "Jira": 0.19869166307460756
+    },
+    "max_minus_min_pp": 2.634515674129317,
+    "stratified_range_permutation_p": 0.3403298350824588,
+    "permutation_repetitions": 2000,
+    "scope": "Descriptive adjustment; not causal or representative of a real customer population."
+  },
+  "product_table": [
+    {
+      "product": "Loom",
+      "cancellation_request_n": 1586,
+      "cancellation_request_events": 340,
+      "cancellation_request_pct": 21.437578814627994,
+      "may_low_usage_n": 1584,
+      "may_low_usage_events": 318,
+      "may_low_usage_pct": 20.075757575757574,
+      "persistent_decline_n": 1584,
+      "persistent_decline_events": 30,
+      "persistent_decline_pct": 1.893939393939394,
+      "usage_stopped_pattern_n": 1584,
+      "usage_stopped_pattern_events": 0,
+      "usage_stopped_pattern_pct": 0.0,
+      "jan_mar_mean_activity_pct": 22.581833116107305,
+      "may_mean_activity_pct": 21.53592375366569,
+      "plan_adjusted_cancellation_pct": 21.414145863083142
+    },
+    {
+      "product": "Trello",
+      "cancellation_request_n": 1575,
+      "cancellation_request_events": 324,
+      "cancellation_request_pct": 20.57142857142857,
+      "may_low_usage_n": 1569,
+      "may_low_usage_events": 155,
+      "may_low_usage_pct": 9.878903760356915,
+      "persistent_decline_n": 1569,
+      "persistent_decline_events": 26,
+      "persistent_decline_pct": 1.65710643722116,
+      "usage_stopped_pattern_n": 1569,
+      "usage_stopped_pattern_events": 0,
+      "usage_stopped_pattern_pct": 0.0,
+      "jan_mar_mean_activity_pct": 29.206305149992318,
+      "may_mean_activity_pct": 28.121466313040973,
+      "plan_adjusted_cancellation_pct": 20.529755399622925
+    },
+    {
+      "product": "Bitbucket",
+      "cancellation_request_n": 1535,
+      "cancellation_request_events": 297,
+      "cancellation_request_pct": 19.348534201954397,
+      "may_low_usage_n": 1516,
+      "may_low_usage_events": 131,
+      "may_low_usage_pct": 8.641160949868073,
+      "persistent_decline_n": 1516,
+      "persistent_decline_events": 21,
+      "persistent_decline_pct": 1.3852242744063323,
+      "usage_stopped_pattern_n": 1516,
+      "usage_stopped_pattern_events": 0,
+      "usage_stopped_pattern_pct": 0.0,
+      "jan_mar_mean_activity_pct": 30.678649449395895,
+      "may_mean_activity_pct": 29.485488126649077,
+      "plan_adjusted_cancellation_pct": 19.419842832930733
+    },
+    {
+      "product": "Confluence",
+      "cancellation_request_n": 1767,
+      "cancellation_request_events": 335,
+      "cancellation_request_pct": 18.9586870401811,
+      "may_low_usage_n": 1755,
+      "may_low_usage_events": 188,
+      "may_low_usage_pct": 10.712250712250713,
+      "persistent_decline_n": 1755,
+      "persistent_decline_events": 27,
+      "persistent_decline_pct": 1.5384615384615385,
+      "usage_stopped_pattern_n": 1755,
+      "usage_stopped_pattern_events": 0,
+      "usage_stopped_pattern_pct": 0.0,
+      "jan_mar_mean_activity_pct": 28.499853392326514,
+      "may_mean_activity_pct": 27.583861777410156,
+      "plan_adjusted_cancellation_pct": 18.96223821969041
+    },
+    {
+      "product": "Jira",
+      "cancellation_request_n": 1718,
+      "cancellation_request_events": 338,
+      "cancellation_request_pct": 19.67403958090803,
+      "may_low_usage_n": 1698,
+      "may_low_usage_events": 114,
+      "may_low_usage_pct": 6.713780918727916,
+      "persistent_decline_n": 1698,
+      "persistent_decline_events": 32,
+      "persistent_decline_pct": 1.884570082449941,
+      "usage_stopped_pattern_n": 1698,
+      "usage_stopped_pattern_events": 0,
+      "usage_stopped_pattern_pct": 0.0,
+      "jan_mar_mean_activity_pct": 32.78511450174506,
+      "may_mean_activity_pct": 31.273984573881986,
+      "plan_adjusted_cancellation_pct": 19.640244399173174
+    }
+  ],
+  "source_audit_cases_verified": 20,
+  "primary_observed_highest": "Loom",
+  "primary_observed_lowest": "Confluence",
+  "primary_highest_minus_lowest_pp": 2.478891774446895,
+  "primary_extreme_contrast_holm_p": 0.7389594058950146,
+  "primary_any_holm_difference": false,
+  "primary_proxy_conclusion": "NO_CLEAR_PRODUCT_DIFFERENCE_IN_CANCELLATION_REQUESTS",
+  "limitations": [
+    "Cancellation requests are not completed churn and lack a common event window.",
+    "All source customers have support tickets; population sampling and synthesis mechanism are unspecified.",
+    "Low activity thresholds can reflect normal product usage frequency.",
+    "Statistical intervals and p-values do not account for synthetic-data generation bias.",
+    "Plan adjustment is descriptive; no causal product effect is identified.",
+    "The 20 source-audit cases are not an independent efficacy sample."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version":"product-churn-proxies-v1",
+  "products":["Loom","Trello","Bitbucket","Confluence","Jira"],
+  "months":["2023-01","2023-02","2023-03","2023-04","2023-05"],
+  "primary_label":{"field":"Ticket Type","value":"Cancellation request"},
+  "may_low_activity_threshold":0.1,
+  "persistent_relative_decline":0.3,
+  "persistent_absolute_decline":0.1,
+  "primary_familywise_alpha":0.05,
+  "stratification":"Plan Type",
+  "stratified_permutations":2000,
+  "permutation_seed":2026091204,
+  "audit_cases_per_product":4,
+  "audit_salt":"product-churn-audit-v1-20260912",
+  "real_churn_observed":false
+}

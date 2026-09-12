@@ -1,0 +1,16 @@
+{
+  "version": "free-collaboration-opportunity-v1",
+  "products": ["Loom", "Trello", "Bitbucket", "Confluence", "Jira"],
+  "plan": "Free",
+  "feature_months": ["2023-01", "2023-02", "2023-03", "2023-04"],
+  "outcome_month": "2023-05",
+  "feature": "Collaborators",
+  "outcome": "Collaborators",
+  "priority_per_product": 2,
+  "comparison_per_product": 2,
+  "hash_salt": "profit-free-collaboration-v1-20260912",
+  "primary_statistic": "mean_may_collaborators_priority_minus_comparison",
+  "permutation_alternative": "greater",
+  "new_synthetic_observations": 0,
+  "profit_observed": false
+}
