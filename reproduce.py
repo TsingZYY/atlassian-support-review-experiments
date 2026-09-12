@@ -2,6 +2,7 @@
 from pathlib import Path
 from datetime import datetime, timezone
 import json
+import argparse
 import subprocess
 import sys
 
@@ -17,7 +18,7 @@ STEPS = [
 ]
 
 
-def main():
+def main(include_scenarios=False):
     for step in STEPS:
         print(f'Running {step}', flush=True)
         subprocess.run([sys.executable, str(ROOT / step)], cwd=ROOT, check=True)
@@ -67,9 +68,25 @@ def main():
               'profit_screening_proxy_supported':False, 'profit_uplift_established':False,
               'paid_reason_evidence_established':False, 'profit_evidence_cases_verified':20,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
+    if include_scenarios:
+        subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)
+        simulation = read('profit_scenarios_v1/results.json')
+        assert simulation['evidence_type'] == 'USER_AUTHORIZED_CONDITIONAL_SIMULATION_NOT_EMPIRICAL_PROFIT'
+        assert simulation['observed_customer_source_records'] == 20 and simulation['new_real_customer_outcomes'] == 0
+        assert simulation['repetitions'] == 100000 and simulation['all_analytic_monte_carlo_checks_passed']
+        assert simulation['scenario_grid_rows'] == 300
+        worlds = {s['id']:s for s in simulation['scenarios']}
+        assert abs(worlds['positive']['expected_priority_minus_comparison']-140.26650963221823) < 1e-9
+        assert abs(worlds['unrelated']['expected_priority_minus_comparison']+20) < 1e-9
+        assert abs(worlds['negative']['expected_priority_minus_comparison']+180.26650963221826) < 1e-9
+        assert abs(worlds['natural_conversion_trap']['groups']['priority']['expected_incremental_profit']+90) < 1e-9
+        report['conditional_simulation'] = {'status':'PASS','script':'profit_scenarios_v1/experiment.py',
+                                            'repetitions_per_scenario':100000,'actual_profit_verified':False}
     (ROOT / 'reproduction_check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print('REPRODUCTION PASS: competition-data calculations verified; profit uplift remains unverified.')
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--include-scenarios', action='store_true')
+    main(parser.parse_args().include_scenarios)

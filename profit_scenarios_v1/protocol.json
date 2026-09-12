@@ -1,0 +1,29 @@
+{
+  "version": "profit-three-worlds-v1",
+  "selection_file": "profit_opportunity_v1/selection_freeze.json",
+  "normalization": "within_product_midrank_in_original_eligible_free_cohort",
+  "scenario_probability_source": "user_authorized_uncalibrated_assumptions",
+  "natural_conversion": 0.05,
+  "contact_conversion_intercept": 0.20,
+  "scenarios": [
+    {"id": "positive", "label": "用得多更易转化", "slope": 0.15},
+    {"id": "unrelated", "label": "使用与转化无关", "slope": 0.0},
+    {"id": "negative", "label": "用得多更难转化", "slope": -0.15},
+    {"id": "natural_conversion_trap", "label": "高转化但主要是自然购买", "slope": 0.15, "constant_incremental_probability": 0.03}
+  ],
+  "net_contribution_per_incremental_conversion": 100,
+  "contact_cost_per_customer": 10,
+  "priority_extra_screening_cost_per_batch": 20,
+  "ordinary_extra_screening_cost_per_batch": 0,
+  "shared_fixed_campaign_cost": 0,
+  "money_unit": "hypothetical_profit_unit_not_currency_or_official_price",
+  "repetitions": 100000,
+  "seed": 2026091301,
+  "coupling": "independent_customer_uniforms_shared_across_scenarios_and_potential_outcomes",
+  "profit_criterion": "strictly_greater_than_zero",
+  "sensitivity": {
+    "net_contributions": [50, 100, 200],
+    "contact_costs": [0, 5, 10, 20, 30],
+    "extra_screening_costs": [0, 20, 50, 100, 200]
+  }
+}

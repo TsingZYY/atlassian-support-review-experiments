@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "data/customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "data/customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "data/product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "data/README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc",
+    "profit_opportunity_v1/selection_freeze.json": "ba2267ca56665c974bf12ed052d8cd070d453edfc84bae7fc81ebc6f2be2dfdd",
+    "profit_opportunity_v1/protocol.json": "fee2190284a66ea0dee3f4abe2ed6a8d8492c05421291b5a76e9d8ad7d11fa9b"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "80ae96a7ac4c77e6cfb7c6c36e2a0c5e11bc44c2799e1ad9f3da677d67abfca3",
+    "protocol.md": "4b62efa7931643a34b062c33886827831276b1639d21dc991a5dbd0def95f5ce",
+    "experiment.py": "8c19831286b5fff6e7383d1b0a207b52acd1138eb52f99a56df8a05ba821fafa"
+  },
+  "frozen_at": "2026-09-12T13:10:24.560382+00:00"
+}

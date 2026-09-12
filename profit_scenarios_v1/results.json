@@ -1,0 +1,513 @@
+{
+  "executed_at": "2026-09-12T13:16:49.115798+00:00",
+  "evidence_type": "USER_AUTHORIZED_CONDITIONAL_SIMULATION_NOT_EMPIRICAL_PROFIT",
+  "observed_customer_source_records": 20,
+  "new_real_customer_outcomes": 0,
+  "repetitions": 100000,
+  "input_sha256": {
+    "data/customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "data/customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "data/product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "data/README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc",
+    "profit_opportunity_v1/selection_freeze.json": "ba2267ca56665c974bf12ed052d8cd070d453edfc84bae7fc81ebc6f2be2dfdd",
+    "profit_opportunity_v1/protocol.json": "fee2190284a66ea0dee3f4abe2ed6a8d8492c05421291b5a76e9d8ad7d11fa9b"
+  },
+  "original_cohort_by_product": {
+    "Loom": 276,
+    "Trello": 290,
+    "Bitbucket": 241,
+    "Confluence": 329,
+    "Jira": 304
+  },
+  "original_roster_and_rule_verified": true,
+  "parameters": {
+    "version": "profit-three-worlds-v1",
+    "selection_file": "profit_opportunity_v1/selection_freeze.json",
+    "normalization": "within_product_midrank_in_original_eligible_free_cohort",
+    "scenario_probability_source": "user_authorized_uncalibrated_assumptions",
+    "natural_conversion": 0.05,
+    "contact_conversion_intercept": 0.2,
+    "scenarios": [
+      {
+        "id": "positive",
+        "label": "用得多更易转化",
+        "slope": 0.15
+      },
+      {
+        "id": "unrelated",
+        "label": "使用与转化无关",
+        "slope": 0.0
+      },
+      {
+        "id": "negative",
+        "label": "用得多更难转化",
+        "slope": -0.15
+      },
+      {
+        "id": "natural_conversion_trap",
+        "label": "高转化但主要是自然购买",
+        "slope": 0.15,
+        "constant_incremental_probability": 0.03
+      }
+    ],
+    "net_contribution_per_incremental_conversion": 100,
+    "contact_cost_per_customer": 10,
+    "priority_extra_screening_cost_per_batch": 20,
+    "ordinary_extra_screening_cost_per_batch": 0,
+    "shared_fixed_campaign_cost": 0,
+    "money_unit": "hypothetical_profit_unit_not_currency_or_official_price",
+    "repetitions": 100000,
+    "seed": 2026091301,
+    "coupling": "independent_customer_uniforms_shared_across_scenarios_and_potential_outcomes",
+    "profit_criterion": "strictly_greater_than_zero",
+    "sensitivity": {
+      "net_contributions": [
+        50,
+        100,
+        200
+      ],
+      "contact_costs": [
+        0,
+        5,
+        10,
+        20,
+        30
+      ],
+      "extra_screening_costs": [
+        0,
+        20,
+        50,
+        100,
+        200
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "id": "positive",
+      "label": "用得多更易转化",
+      "groups": {
+        "priority": {
+          "n": 10,
+          "mean_z": 0.9926761169429191,
+          "mean_contact_conversion": 0.3489014175414379,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.29890141754143784,
+          "expected_incremental_conversions": 2.9890141754143786,
+          "expected_incremental_profit": 178.90141754143787,
+          "exact": {
+            "profit_probability": 0.8489743374298103,
+            "breakeven_probability": 0.0,
+            "loss_probability": 0.15102566257018948,
+            "central_95_model_interval": [
+              -120.0,
+              480.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": 178.654,
+            "mean_mc_standard_error": 0.4567581078861011,
+            "profit_probability": 0.84947,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.028693887227288804,
+            0.12233177534290068,
+            0.23469363409554495,
+            0.26682049516260203,
+            0.19907008610937343,
+            0.10184404644716766,
+            0.036182820880612185,
+            0.00881479104206668,
+            0.0014092581771807306,
+            0.00013351342896306785,
+            5.6920862996297974e-06
+          ],
+          "contact_cost_breakeven_per_customer": 27.890141754143784,
+          "contribution_breakeven": 40.14701602522977
+        },
+        "comparison": {
+          "n": 10,
+          "mean_z": -0.0757672806052024,
+          "mean_contact_conversion": 0.18863490790921966,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.13863490790921965,
+          "expected_incremental_conversions": 1.3863490790921964,
+          "expected_incremental_profit": 38.634907909219635,
+          "exact": {
+            "profit_probability": 0.41649914050645503,
+            "breakeven_probability": 0.36840937414060554,
+            "loss_probability": 0.21509148535293957,
+            "central_95_model_interval": [
+              -100.0,
+              300.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": 38.254,
+            "mean_mc_standard_error": 0.3350125925608942,
+            "profit_probability": 0.41675,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.21509148535293957,
+            0.36840937414060554,
+            0.27091162631564875,
+            0.11191775901495299,
+            0.028526657251671396,
+            0.00463423064176241,
+            0.0004777623214371687,
+            3.003750561909705e-05,
+            1.0505841737768237e-06,
+            1.6793303960370112e-08,
+            7.788545947974449e-11
+          ],
+          "contact_cost_breakeven_per_customer": 13.863490790921965,
+          "contribution_breakeven": 72.13190494956841
+        }
+      },
+      "expected_priority_minus_comparison": 140.26650963221823,
+      "difference_exact": {
+        "profit_probability": 0.7314463082751153,
+        "breakeven_probability": 0.0,
+        "loss_probability": 0.2685536917248848,
+        "central_95_model_interval": [
+          -220.0,
+          480.0
+        ]
+      },
+      "difference_monte_carlo": {
+        "mean": 140.4,
+        "mean_mc_standard_error": 0.566525912484235,
+        "profit_probability": 0.73197,
+        "analytic_mean_check_passed": true,
+        "exact_probability_check_passed": true
+      },
+      "screening_cost_breakeven_vs_ordinary": 160.26650963221823
+    },
+    {
+      "id": "unrelated",
+      "label": "使用与转化无关",
+      "groups": {
+        "priority": {
+          "n": 10,
+          "mean_z": 0.9926761169429191,
+          "mean_contact_conversion": 0.2,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.15,
+          "expected_incremental_conversions": 1.5,
+          "expected_incremental_profit": 30.0,
+          "exact": {
+            "profit_probability": 0.4557001762344726,
+            "breakeven_probability": 0.0,
+            "loss_probability": 0.5442998237655272,
+            "central_95_model_interval": [
+              -120.0,
+              280.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": 29.895,
+            "mean_mc_standard_error": 0.3555519004611552,
+            "profit_probability": 0.45473,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.19687440434072256,
+            0.34742541942480465,
+            0.27589665660205076,
+            0.12983372075390626,
+            0.04009570787988283,
+            0.008490855786328128,
+            0.0012486552626953132,
+            0.0001259148164062501,
+            8.332598144531258e-06,
+            3.267685546875004e-07,
+            5.766503906250008e-09
+          ],
+          "contact_cost_breakeven_per_customer": 13.0,
+          "contribution_breakeven": 80.0
+        },
+        "comparison": {
+          "n": 10,
+          "mean_z": -0.0757672806052024,
+          "mean_contact_conversion": 0.2,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.15,
+          "expected_incremental_conversions": 1.5,
+          "expected_incremental_profit": 50.0,
+          "exact": {
+            "profit_probability": 0.4557001762344726,
+            "breakeven_probability": 0.34742541942480465,
+            "loss_probability": 0.19687440434072256,
+            "central_95_model_interval": [
+              -100.0,
+              300.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": 49.602,
+            "mean_mc_standard_error": 0.3550263038096811,
+            "profit_probability": 0.45703,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.19687440434072256,
+            0.34742541942480465,
+            0.27589665660205076,
+            0.12983372075390626,
+            0.04009570787988283,
+            0.008490855786328128,
+            0.0012486552626953132,
+            0.0001259148164062501,
+            8.332598144531258e-06,
+            3.267685546875004e-07,
+            5.766503906250008e-09
+          ],
+          "contact_cost_breakeven_per_customer": 15.0,
+          "contribution_breakeven": 66.66666666666667
+        }
+      },
+      "expected_priority_minus_comparison": -20.0,
+      "difference_exact": {
+        "profit_probability": 0.3729394755987863,
+        "breakeven_probability": 0.0,
+        "loss_probability": 0.6270605244012135,
+        "central_95_model_interval": [
+          -320.0,
+          280.0
+        ]
+      },
+      "difference_monte_carlo": {
+        "mean": -19.707,
+        "mean_mc_standard_error": 0.5016778431589172,
+        "profit_probability": 0.37412,
+        "analytic_mean_check_passed": true,
+        "exact_probability_check_passed": true
+      },
+      "screening_cost_breakeven_vs_ordinary": 0.0
+    },
+    {
+      "id": "negative",
+      "label": "用得多更难转化",
+      "groups": {
+        "priority": {
+          "n": 10,
+          "mean_z": 0.9926761169429191,
+          "mean_contact_conversion": 0.051098582458562136,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.0010985824585621363,
+          "expected_incremental_conversions": 0.010985824585621362,
+          "expected_incremental_profit": -118.90141754143787,
+          "exact": {
+            "profit_probability": 5.2320803635723716e-05,
+            "breakeven_probability": 0.0,
+            "loss_probability": 0.9999476791963644,
+            "central_95_model_interval": [
+              -120.0,
+              -120.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": -118.869,
+            "mean_mc_standard_error": 0.0336484726577169,
+            "profit_probability": 7e-05,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.9890666399276323,
+            0.010881039268732066,
+            5.217734310484029e-05,
+            1.4321172870388516e-07,
+            2.4851760759268365e-10,
+            2.843547531480764e-13,
+            2.1709220335962512e-16,
+            1.092681893822036e-19,
+            3.4763111820992526e-23,
+            6.3283399464763054e-27,
+            5.019614816753027e-31
+          ],
+          "contact_cost_breakeven_per_customer": -1.8901417541437864,
+          "contribution_breakeven": 10923.167311178468
+        },
+        "comparison": {
+          "n": 10,
+          "mean_z": -0.0757672806052024,
+          "mean_contact_conversion": 0.21136509209078036,
+          "mean_natural_conversion": 0.05,
+          "mean_incremental_conversion": 0.1613650920907804,
+          "expected_incremental_conversions": 1.613650920907804,
+          "expected_incremental_profit": 61.365092090780394,
+          "exact": {
+            "profit_probability": 0.5013327249986151,
+            "breakeven_probability": 0.33458228498129255,
+            "loss_probability": 0.16408499002009233,
+            "central_95_model_interval": [
+              -100.0,
+              300.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": 61.067,
+            "mean_mc_standard_error": 0.35769329677105427,
+            "profit_probability": 0.50064,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.16408499002009233,
+            0.33458228498129255,
+            0.2953269445688882,
+            0.1482284213147247,
+            0.04671717039909525,
+            0.009628940519470289,
+            0.0013093124243163648,
+            0.00011545669278403987,
+            6.286855049549816e-06,
+            1.8982782135116825e-07,
+            2.3964653216763294e-09
+          ],
+          "contact_cost_breakeven_per_customer": 16.13650920907804,
+          "contribution_breakeven": 61.971271917808735
+        }
+      },
+      "expected_priority_minus_comparison": -180.26650963221826,
+      "difference_exact": {
+        "profit_probability": 0.0018115482970461453,
+        "breakeven_probability": 0.0,
+        "loss_probability": 0.9981884517029539,
+        "central_95_model_interval": [
+          -420.0,
+          -20.0
+        ]
+      },
+      "difference_monte_carlo": {
+        "mean": -179.936,
+        "mean_mc_standard_error": 0.35919917772802984,
+        "profit_probability": 0.00179,
+        "analytic_mean_check_passed": true,
+        "exact_probability_check_passed": true
+      },
+      "screening_cost_breakeven_vs_ordinary": -160.26650963221826
+    },
+    {
+      "id": "natural_conversion_trap",
+      "label": "高转化但主要是自然购买",
+      "groups": {
+        "priority": {
+          "n": 10,
+          "mean_z": 0.9926761169429191,
+          "mean_contact_conversion": 0.3489014175414379,
+          "mean_natural_conversion": 0.31890141754143786,
+          "mean_incremental_conversion": 0.03000000000000002,
+          "expected_incremental_conversions": 0.3000000000000002,
+          "expected_incremental_profit": -89.99999999999997,
+          "exact": {
+            "profit_probability": 0.03450655550870222,
+            "breakeven_probability": 0.0,
+            "loss_probability": 0.9654934444912977,
+            "central_95_model_interval": [
+              -120.0,
+              80.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": -90.007,
+            "mean_mc_standard_error": 0.17142197456841304,
+            "profit_probability": 0.03503,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.7374241268949281,
+            0.22806931759636967,
+            0.03174160605722673,
+            0.0026178644170908663,
+            0.0001416885380384233,
+            5.258543679776539e-06,
+            1.3552947628290056e-07,
+            2.3952190212000117e-09,
+            2.7779602050000156e-11,
+            1.9092510000000119e-13,
+            5.904900000000041e-16
+          ],
+          "contact_cost_breakeven_per_customer": 1.0000000000000018,
+          "contribution_breakeven": 399.9999999999997
+        },
+        "comparison": {
+          "n": 10,
+          "mean_z": -0.0757672806052024,
+          "mean_contact_conversion": 0.18863490790921966,
+          "mean_natural_conversion": 0.15863490790921966,
+          "mean_incremental_conversion": 0.030000000000000006,
+          "expected_incremental_conversions": 0.30000000000000004,
+          "expected_incremental_profit": -70.0,
+          "exact": {
+            "profit_probability": 0.03450655550870217,
+            "breakeven_probability": 0.22806931759636956,
+            "loss_probability": 0.7374241268949281,
+            "central_95_model_interval": [
+              -100.0,
+              100.0
+            ]
+          },
+          "monte_carlo": {
+            "mean": -70.053,
+            "mean_mc_standard_error": 0.1709182963893579,
+            "profit_probability": 0.03489,
+            "analytic_mean_check_passed": true,
+            "exact_probability_check_passed": true
+          },
+          "incremental_count_pmf": [
+            0.7374241268949281,
+            0.22806931759636956,
+            0.031741606057226694,
+            0.002617864417090861,
+            0.0001416885380384229,
+            5.258543679776522e-06,
+            1.3552947628290006e-07,
+            2.395219021200001e-09,
+            2.7779602050000014e-11,
+            1.9092510000000013e-13,
+            5.9049000000000045e-16
+          ],
+          "contact_cost_breakeven_per_customer": 3.0000000000000004,
+          "contribution_breakeven": 333.33333333333326
+        }
+      },
+      "expected_priority_minus_comparison": -19.99999999999997,
+      "difference_exact": {
+        "profit_probability": 0.2015878202859342,
+        "breakeven_probability": 0.0,
+        "loss_probability": 0.7984121797140655,
+        "central_95_model_interval": [
+          -220.0,
+          180.0
+        ]
+      },
+      "difference_monte_carlo": {
+        "mean": -19.954,
+        "mean_mc_standard_error": 0.24248828187289473,
+        "profit_probability": 0.20126,
+        "analytic_mean_check_passed": true,
+        "exact_probability_check_passed": true
+      },
+      "screening_cost_breakeven_vs_ordinary": 1.6653345369377348e-14
+    }
+  ],
+  "positive_slope_breakeven_vs_ordinary": 0.018718820337976044,
+  "all_analytic_monte_carlo_checks_passed": true,
+  "scenario_grid_rows": 300,
+  "empirical_profit_effect": "UNVERIFIED",
+  "limitations": [
+    "Conversion probabilities and money values are uncalibrated assumptions.",
+    "Profit distributions assume monotone potential outcomes and independent customers.",
+    "Repeated draws do not increase the number of observed customers.",
+    "Ordinary roster is the prior fixed product-matched hash sample excluding top-ranked customers."
+  ]
+}
