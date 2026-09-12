@@ -1,0 +1,812 @@
+{
+  "source_folder": "https://drive.google.com/drive/folders/1NirfOKfM54cYeYXS3gn3azWznX1jaFiP",
+  "scope": "Full three CSV files, synthetic competition dataset; exploratory checks, not causal estimates.",
+  "files": {
+    "customers.csv": {
+      "sha256": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+      "bytes": 926275
+    },
+    "customer_support_tickets.csv": {
+      "sha256": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+      "bytes": 1380867
+    },
+    "product_usage.csv": {
+      "sha256": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+      "bytes": 1637920
+    }
+  },
+  "shape": {
+    "tickets": {
+      "rows": 8469,
+      "columns": 16
+    },
+    "customers": {
+      "rows": 8320,
+      "columns": 10
+    },
+    "usage": {
+      "rows": 42210,
+      "columns": 8
+    }
+  },
+  "nulls": {
+    "tickets": {
+      "Ticket ID": 0,
+      "Customer Name": 0,
+      "Customer Email": 0,
+      "Customer Age": 0,
+      "Customer Gender": 0,
+      "Product Purchased": 0,
+      "Date of Purchase": 0,
+      "Ticket Type": 0,
+      "Ticket Subject": 0,
+      "Ticket Status": 0,
+      "Resolution": 5700,
+      "Ticket Priority": 0,
+      "Ticket Channel": 0,
+      "First Response Time": 2819,
+      "Time to Resolution": 5700,
+      "Customer Satisfaction Rating": 5700
+    },
+    "customers": {
+      "Customer ID": 0,
+      "Customer Name": 0,
+      "Customer Email": 0,
+      "Customer Age": 0,
+      "Customer Gender": 0,
+      "Industry": 0,
+      "Region": 0,
+      "Company Size": 0,
+      "Plan Type": 0,
+      "Account Created Date": 0
+    },
+    "usage": {
+      "Customer ID": 0,
+      "Product": 0,
+      "Month": 0,
+      "Active Days": 0,
+      "Sessions": 0,
+      "Product Actions": 0,
+      "Collaborators": 0,
+      "Integrations Used": 0
+    }
+  },
+  "rating_by_status": [
+    {
+      "Ticket Status": "Closed",
+      "size": 2769,
+      "count": 2769,
+      "mean": 2.991332611050921
+    },
+    {
+      "Ticket Status": "Open",
+      "size": 2819,
+      "count": 0,
+      "mean": NaN
+    },
+    {
+      "Ticket Status": "Pending Customer Response",
+      "size": 2881,
+      "count": 0,
+      "mean": NaN
+    }
+  ],
+  "rating_distribution": {
+    "NaN": 5700,
+    "3.0": 580,
+    "1.0": 553,
+    "2.0": 549,
+    "5.0": 544,
+    "4.0": 543
+  },
+  "ticket_customer_join": {
+    "matched": 8469,
+    "unmatched": 0,
+    "rows_after": 8469
+  },
+  "low_rating_definition": "Exploratory operational definition: ratings 1 or 2 among rated tickets only.",
+  "rating_segments": {
+    "Product Purchased": {
+      "rows": [
+        {
+          "Product Purchased": "Bitbucket",
+          "n": 527,
+          "low_n": 216,
+          "low_rate": 0.4098671726755218,
+          "mean_rating": 2.9449715370018974
+        },
+        {
+          "Product Purchased": "Confluence",
+          "n": 563,
+          "low_n": 219,
+          "low_rate": 0.38898756660746003,
+          "mean_rating": 3.0177619893428065
+        },
+        {
+          "Product Purchased": "Jira",
+          "n": 583,
+          "low_n": 233,
+          "low_rate": 0.3996569468267582,
+          "mean_rating": 2.9622641509433962
+        },
+        {
+          "Product Purchased": "Loom",
+          "n": 542,
+          "low_n": 213,
+          "low_rate": 0.3929889298892989,
+          "mean_rating": 3.0571955719557193
+        },
+        {
+          "Product Purchased": "Trello",
+          "n": 554,
+          "low_n": 221,
+          "low_rate": 0.3989169675090253,
+          "mean_rating": 2.9747292418772564
+        }
+      ],
+      "exploratory_cramers_v": 0.042068280963447266,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Ticket Type": {
+      "rows": [
+        {
+          "Ticket Type": "Billing inquiry",
+          "n": 544,
+          "low_n": 223,
+          "low_rate": 0.4099264705882353,
+          "mean_rating": 3.0275735294117645
+        },
+        {
+          "Ticket Type": "Cancellation request",
+          "n": 516,
+          "low_n": 198,
+          "low_rate": 0.38372093023255816,
+          "mean_rating": 3.0290697674418605
+        },
+        {
+          "Ticket Type": "Product inquiry",
+          "n": 533,
+          "low_n": 199,
+          "low_rate": 0.37335834896810505,
+          "mean_rating": 3.016885553470919
+        },
+        {
+          "Ticket Type": "Refund request",
+          "n": 596,
+          "low_n": 248,
+          "low_rate": 0.4161073825503356,
+          "mean_rating": 2.934563758389262
+        },
+        {
+          "Ticket Type": "Technical issue",
+          "n": 580,
+          "low_n": 234,
+          "low_rate": 0.40344827586206894,
+          "mean_rating": 2.9586206896551723
+        }
+      ],
+      "exploratory_cramers_v": 0.04167635416355262,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Ticket Subject": {
+      "rows": [
+        {
+          "Ticket Subject": "Account access",
+          "n": 171,
+          "low_n": 74,
+          "low_rate": 0.4327485380116959,
+          "mean_rating": 2.9415204678362574
+        },
+        {
+          "Ticket Subject": "Cancellation request",
+          "n": 148,
+          "low_n": 55,
+          "low_rate": 0.3716216216216216,
+          "mean_rating": 3.0675675675675675
+        },
+        {
+          "Ticket Subject": "Data loss",
+          "n": 147,
+          "low_n": 59,
+          "low_rate": 0.4013605442176871,
+          "mean_rating": 2.9659863945578233
+        },
+        {
+          "Ticket Subject": "Device compatibility issue",
+          "n": 183,
+          "low_n": 71,
+          "low_rate": 0.3879781420765027,
+          "mean_rating": 3.0
+        },
+        {
+          "Ticket Subject": "Display issue",
+          "n": 155,
+          "low_n": 56,
+          "low_rate": 0.36129032258064514,
+          "mean_rating": 3.07741935483871
+        },
+        {
+          "Ticket Subject": "Email delivery problem",
+          "n": 178,
+          "low_n": 86,
+          "low_rate": 0.48314606741573035,
+          "mean_rating": 2.803370786516854
+        },
+        {
+          "Ticket Subject": "Installation support",
+          "n": 158,
+          "low_n": 53,
+          "low_rate": 0.33544303797468356,
+          "mean_rating": 3.1835443037974684
+        },
+        {
+          "Ticket Subject": "Integration",
+          "n": 158,
+          "low_n": 57,
+          "low_rate": 0.36075949367088606,
+          "mean_rating": 2.962025316455696
+        },
+        {
+          "Ticket Subject": "Loading issue",
+          "n": 173,
+          "low_n": 74,
+          "low_rate": 0.4277456647398844,
+          "mean_rating": 2.953757225433526
+        },
+        {
+          "Ticket Subject": "Network problem",
+          "n": 201,
+          "low_n": 88,
+          "low_rate": 0.43781094527363185,
+          "mean_rating": 2.8805970149253732
+        },
+        {
+          "Ticket Subject": "Payment issue",
+          "n": 156,
+          "low_n": 60,
+          "low_rate": 0.38461538461538464,
+          "mean_rating": 3.0576923076923075
+        },
+        {
+          "Ticket Subject": "Product compatibility",
+          "n": 195,
+          "low_n": 77,
+          "low_rate": 0.39487179487179486,
+          "mean_rating": 2.958974358974359
+        },
+        {
+          "Ticket Subject": "Product recommendation",
+          "n": 186,
+          "low_n": 73,
+          "low_rate": 0.3924731182795699,
+          "mean_rating": 2.967741935483871
+        },
+        {
+          "Ticket Subject": "Product setup",
+          "n": 183,
+          "low_n": 74,
+          "low_rate": 0.40437158469945356,
+          "mean_rating": 2.9836065573770494
+        },
+        {
+          "Ticket Subject": "Refund request",
+          "n": 178,
+          "low_n": 66,
+          "low_rate": 0.3707865168539326,
+          "mean_rating": 3.067415730337079
+        },
+        {
+          "Ticket Subject": "Software bug",
+          "n": 199,
+          "low_n": 79,
+          "low_rate": 0.3969849246231156,
+          "mean_rating": 3.0452261306532664
+        }
+      ],
+      "exploratory_cramers_v": 0.0655899828311574,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Ticket Channel": {
+      "rows": [
+        {
+          "Ticket Channel": "Chat",
+          "n": 674,
+          "low_n": 245,
+          "low_rate": 0.36350148367952523,
+          "mean_rating": 3.083086053412463
+        },
+        {
+          "Ticket Channel": "Email",
+          "n": 720,
+          "low_n": 303,
+          "low_rate": 0.42083333333333334,
+          "mean_rating": 2.963888888888889
+        },
+        {
+          "Ticket Channel": "Phone",
+          "n": 691,
+          "low_n": 285,
+          "low_rate": 0.41244573082489144,
+          "mean_rating": 2.952243125904486
+        },
+        {
+          "Ticket Channel": "Social media",
+          "n": 684,
+          "low_n": 269,
+          "low_rate": 0.3932748538011696,
+          "mean_rating": 2.969298245614035
+        }
+      ],
+      "exploratory_cramers_v": 0.03757987643820035,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Ticket Priority": {
+      "rows": [
+        {
+          "Ticket Priority": "Critical",
+          "n": 726,
+          "low_n": 298,
+          "low_rate": 0.41046831955922863,
+          "mean_rating": 2.958677685950413
+        },
+        {
+          "Ticket Priority": "High",
+          "n": 705,
+          "low_n": 289,
+          "low_rate": 0.4099290780141844,
+          "mean_rating": 2.9829787234042553
+        },
+        {
+          "Ticket Priority": "Low",
+          "n": 644,
+          "low_n": 246,
+          "low_rate": 0.38198757763975155,
+          "mean_rating": 3.0527950310559007
+        },
+        {
+          "Ticket Priority": "Medium",
+          "n": 694,
+          "low_n": 269,
+          "low_rate": 0.38760806916426516,
+          "mean_rating": 2.9769452449567724
+        }
+      ],
+      "exploratory_cramers_v": 0.038929419693799434,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Industry": {
+      "rows": [
+        {
+          "Industry": "Education",
+          "n": 287,
+          "low_n": 111,
+          "low_rate": 0.3867595818815331,
+          "mean_rating": 2.989547038327526
+        },
+        {
+          "Industry": "Financial Services",
+          "n": 303,
+          "low_n": 123,
+          "low_rate": 0.40594059405940597,
+          "mean_rating": 2.924092409240924
+        },
+        {
+          "Industry": "Government & Public Sector",
+          "n": 150,
+          "low_n": 53,
+          "low_rate": 0.35333333333333333,
+          "mean_rating": 3.14
+        },
+        {
+          "Industry": "Healthcare",
+          "n": 279,
+          "low_n": 96,
+          "low_rate": 0.34408602150537637,
+          "mean_rating": 3.161290322580645
+        },
+        {
+          "Industry": "Manufacturing",
+          "n": 200,
+          "low_n": 86,
+          "low_rate": 0.43,
+          "mean_rating": 2.925
+        },
+        {
+          "Industry": "Media & Communications",
+          "n": 199,
+          "low_n": 74,
+          "low_rate": 0.37185929648241206,
+          "mean_rating": 3.090452261306533
+        },
+        {
+          "Industry": "Other",
+          "n": 182,
+          "low_n": 72,
+          "low_rate": 0.3956043956043956,
+          "mean_rating": 2.9450549450549453
+        },
+        {
+          "Industry": "Professional Services",
+          "n": 402,
+          "low_n": 168,
+          "low_rate": 0.417910447761194,
+          "mean_rating": 2.945273631840796
+        },
+        {
+          "Industry": "Retail",
+          "n": 253,
+          "low_n": 95,
+          "low_rate": 0.37549407114624506,
+          "mean_rating": 3.047430830039526
+        },
+        {
+          "Industry": "Technology",
+          "n": 514,
+          "low_n": 224,
+          "low_rate": 0.4357976653696498,
+          "mean_rating": 2.9085603112840466
+        }
+      ],
+      "exploratory_cramers_v": 0.05344544137529525,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Region": {
+      "rows": [
+        {
+          "Region": "Asia-Pacific",
+          "n": 520,
+          "low_n": 218,
+          "low_rate": 0.41923076923076924,
+          "mean_rating": 2.9346153846153844
+        },
+        {
+          "Region": "Australia & New Zealand",
+          "n": 760,
+          "low_n": 307,
+          "low_rate": 0.4039473684210526,
+          "mean_rating": 2.956578947368421
+        },
+        {
+          "Region": "Europe",
+          "n": 593,
+          "low_n": 239,
+          "low_rate": 0.403035413153457,
+          "mean_rating": 2.9915682967959527
+        },
+        {
+          "Region": "North America",
+          "n": 702,
+          "low_n": 263,
+          "low_rate": 0.37464387464387466,
+          "mean_rating": 3.072649572649573
+        },
+        {
+          "Region": "Other",
+          "n": 194,
+          "low_n": 75,
+          "low_rate": 0.3865979381443299,
+          "mean_rating": 2.984536082474227
+        }
+      ],
+      "exploratory_cramers_v": 0.04206807699334891,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Company Size": {
+      "rows": [
+        {
+          "Company Size": "1-10",
+          "n": 282,
+          "low_n": 109,
+          "low_rate": 0.38652482269503546,
+          "mean_rating": 3.021276595744681
+        },
+        {
+          "Company Size": "1000+",
+          "n": 298,
+          "low_n": 122,
+          "low_rate": 0.40939597315436244,
+          "mean_rating": 2.922818791946309
+        },
+        {
+          "Company Size": "11-50",
+          "n": 580,
+          "low_n": 215,
+          "low_rate": 0.3706896551724138,
+          "mean_rating": 3.0551724137931036
+        },
+        {
+          "Company Size": "201-500",
+          "n": 526,
+          "low_n": 206,
+          "low_rate": 0.3916349809885932,
+          "mean_rating": 3.041825095057034
+        },
+        {
+          "Company Size": "501-1000",
+          "n": 301,
+          "low_n": 114,
+          "low_rate": 0.3787375415282392,
+          "mean_rating": 3.043189368770764
+        },
+        {
+          "Company Size": "51-200",
+          "n": 782,
+          "low_n": 336,
+          "low_rate": 0.4296675191815857,
+          "mean_rating": 2.9053708439897696
+        }
+      ],
+      "exploratory_cramers_v": 0.04584978213619776,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    },
+    "Plan Type": {
+      "rows": [
+        {
+          "Plan Type": "Enterprise",
+          "n": 393,
+          "low_n": 151,
+          "low_rate": 0.3842239185750636,
+          "mean_rating": 3.040712468193384
+        },
+        {
+          "Plan Type": "Free",
+          "n": 498,
+          "low_n": 194,
+          "low_rate": 0.3895582329317269,
+          "mean_rating": 3.0160642570281126
+        },
+        {
+          "Plan Type": "Premium",
+          "n": 771,
+          "low_n": 297,
+          "low_rate": 0.3852140077821012,
+          "mean_rating": 2.9948119325551232
+        },
+        {
+          "Plan Type": "Standard",
+          "n": 1107,
+          "low_n": 460,
+          "low_rate": 0.41553748870822044,
+          "mean_rating": 2.960252935862692
+        }
+      ],
+      "exploratory_cramers_v": 0.027601854605357624,
+      "note": "Unadjusted descriptive association; no significance or causal claim."
+    }
+  },
+  "usage_months": [
+    {
+      "Month": "2023-01",
+      "rows": 8442,
+      "customers": 8320,
+      "mean_active_days": 8.730632551528075,
+      "mean_sessions": 17.50675195451315,
+      "mean_actions": 100.9940772328832
+    },
+    {
+      "Month": "2023-02",
+      "rows": 8442,
+      "customers": 8320,
+      "mean_active_days": 8.764984600805496,
+      "mean_sessions": 17.50497512437811,
+      "mean_actions": 100.53683961146648
+    },
+    {
+      "Month": "2023-03",
+      "rows": 8442,
+      "customers": 8320,
+      "mean_active_days": 8.735133854536839,
+      "mean_sessions": 17.530443022980336,
+      "mean_actions": 100.42016109926557
+    },
+    {
+      "Month": "2023-04",
+      "rows": 8442,
+      "customers": 8320,
+      "mean_active_days": 8.708244491826582,
+      "mean_sessions": 17.409026297085997,
+      "mean_actions": 100.01409618573798
+    },
+    {
+      "Month": "2023-05",
+      "rows": 8442,
+      "customers": 8320,
+      "mean_active_days": 8.683724235963043,
+      "mean_sessions": 17.344586590855247,
+      "mean_actions": 99.27434257285003
+    }
+  ],
+  "usage_customer_coverage": {
+    "unique_customers": 8320,
+    "unique_customer_products": 8442,
+    "months_per_customer_product_distribution": {
+      "5": 8442
+    }
+  },
+  "usage_segments": {
+    "Product": [
+      {
+        "Product": "Bitbucket",
+        "rows": 7950,
+        "customers": 1590,
+        "mean_active_days": 9.348427672955975,
+        "mean_actions": 107.26490566037735
+      },
+      {
+        "Product": "Confluence",
+        "rows": 9125,
+        "customers": 1825,
+        "mean_active_days": 8.644931506849314,
+        "mean_actions": 99.85172602739726
+      },
+      {
+        "Product": "Jira",
+        "rows": 8895,
+        "customers": 1779,
+        "mean_active_days": 10.003822372119169,
+        "mean_actions": 115.32670039347948
+      },
+      {
+        "Product": "Loom",
+        "rows": 8135,
+        "customers": 1627,
+        "mean_active_days": 6.745421020282729,
+        "mean_actions": 77.54480639213276
+      },
+      {
+        "Product": "Trello",
+        "rows": 8105,
+        "customers": 1621,
+        "mean_active_days": 8.78470080197409,
+        "mean_actions": 100.0497223935842
+      }
+    ],
+    "Plan Type": [
+      {
+        "Plan Type": "Enterprise",
+        "rows": 6060,
+        "customers": 1202,
+        "mean_active_days": 11.515511551155116,
+        "mean_actions": 132.7240924092409
+      },
+      {
+        "Plan Type": "Free",
+        "rows": 7495,
+        "customers": 1472,
+        "mean_active_days": 5.327418278852568,
+        "mean_actions": 60.57184789859907
+      },
+      {
+        "Plan Type": "Premium",
+        "rows": 11855,
+        "customers": 2337,
+        "mean_active_days": 10.11193589202868,
+        "mean_actions": 116.69143821172501
+      },
+      {
+        "Plan Type": "Standard",
+        "rows": 16800,
+        "customers": 3309,
+        "mean_active_days": 8.254345238095238,
+        "mean_actions": 94.63053571428571
+      }
+    ],
+    "Company Size": [
+      {
+        "Company Size": "1-10",
+        "rows": 4440,
+        "customers": 875,
+        "mean_active_days": 8.98963963963964,
+        "mean_actions": 102.68558558558559
+      },
+      {
+        "Company Size": "1000+",
+        "rows": 4855,
+        "customers": 950,
+        "mean_active_days": 8.538414006179197,
+        "mean_actions": 97.61668383110195
+      },
+      {
+        "Company Size": "11-50",
+        "rows": 9005,
+        "customers": 1775,
+        "mean_active_days": 8.71093836757357,
+        "mean_actions": 99.97867851193782
+      },
+      {
+        "Company Size": "201-500",
+        "rows": 7600,
+        "customers": 1502,
+        "mean_active_days": 8.56407894736842,
+        "mean_actions": 98.56052631578947
+      },
+      {
+        "Company Size": "501-1000",
+        "rows": 4535,
+        "customers": 896,
+        "mean_active_days": 8.645865490628445,
+        "mean_actions": 98.69834619625138
+      },
+      {
+        "Company Size": "51-200",
+        "rows": 11775,
+        "customers": 2322,
+        "mean_active_days": 8.845605095541401,
+        "mean_actions": 102.30539278131634
+      }
+    ]
+  },
+  "usage_change": {
+    "earlier_months": [
+      "2023-01",
+      "2023-02"
+    ],
+    "later_months": [
+      "2023-03",
+      "2023-04",
+      "2023-05"
+    ],
+    "customer_products": 8442,
+    "median_fraction_change": 0.0,
+    "decline_30pct_n": 609,
+    "note": "30% is an illustrative threshold; no churn outcome is available."
+  },
+  "support_product_match": {
+    "ticket_rows_with_usage_for_same_customer_product": 8469
+  },
+  "text_checks": {
+    "columns": [
+      "Ticket ID",
+      "Customer Name",
+      "Customer Email",
+      "Customer Age",
+      "Customer Gender",
+      "Product Purchased",
+      "Date of Purchase",
+      "Ticket Type",
+      "Ticket Subject",
+      "Ticket Status",
+      "Resolution",
+      "Ticket Priority",
+      "Ticket Channel",
+      "First Response Time",
+      "Time to Resolution",
+      "Customer Satisfaction Rating"
+    ],
+    "resolution_nonnull": 2769,
+    "resolution_unique": 2769,
+    "resolution_examples": [
+      "Case maybe show recently my computer follow.",
+      "Try capital clearly never color toward story.",
+      "West decision evidence bit."
+    ],
+    "note": "Resolution is a recorded resolution field, not a customer-authored message. Examples require semantic review before NLP."
+  },
+  "ticket_dates": {
+    "Date of Purchase": {
+      "min": "2020-01-01 00:00:00",
+      "max": "2021-12-30 00:00:00",
+      "valid": 8469,
+      "unique_dates": 730
+    },
+    "First Response Time": {
+      "min": "2023-05-31 21:55:00",
+      "max": "2023-06-02 00:54:00",
+      "valid": 5650,
+      "unique_dates": 3
+    },
+    "Time to Resolution": {
+      "min": "2023-05-31 21:53:00",
+      "max": "2023-06-02 00:55:00",
+      "valid": 2769,
+      "unique_dates": 3
+    }
+  },
+  "time_order": {
+    "both_available": 2769,
+    "negative": 1365,
+    "zero": 2,
+    "positive": 1402,
+    "note": "Difference is not full resolution duration because ticket creation timestamp is absent."
+  }
+}

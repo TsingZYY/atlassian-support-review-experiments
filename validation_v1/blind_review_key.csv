@@ -1,0 +1,21 @@
+Case ID,hidden_group,pair_id,Customer ID,Ticket ID
+REVIEW-01,candidate,10,CUST04099,6545
+REVIEW-02,priority_only_control,8,CUST05561,6020
+REVIEW-03,priority_only_control,3,CUST00563,5194
+REVIEW-04,priority_only_control,10,CUST01615,5873
+REVIEW-05,priority_only_control,2,CUST01783,6865
+REVIEW-06,priority_only_control,5,CUST05048,4093
+REVIEW-07,candidate,6,CUST05715,6224
+REVIEW-08,candidate,4,CUST06460,5452
+REVIEW-09,priority_only_control,6,CUST02458,6181
+REVIEW-10,candidate,2,CUST03082,1274
+REVIEW-11,candidate,1,CUST02812,1949
+REVIEW-12,candidate,8,CUST07822,514
+REVIEW-13,candidate,9,CUST07566,4952
+REVIEW-14,candidate,5,CUST06509,7607
+REVIEW-15,candidate,3,CUST01797,6145
+REVIEW-16,candidate,7,CUST07866,2896
+REVIEW-17,priority_only_control,7,CUST06505,6084
+REVIEW-18,priority_only_control,4,CUST03372,2419
+REVIEW-19,priority_only_control,1,CUST01306,2508
+REVIEW-20,priority_only_control,9,CUST07594,8114

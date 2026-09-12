@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-09-12T07:04:05.860962+00:00",
+  "source": "Supplied competition synthetic CSV files",
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "cases_checked": 20,
+  "source_and_rule_checks_passed": 20,
+  "matching_pairs_checked": 10,
+  "rule_candidates": 10,
+  "matched_controls": 10,
+  "observed_real_resolution_results": 0,
+  "human_review_executed": false,
+  "scope": "Integrity of these 20 cases only. Proposed next steps are not validated support actions; no resolution uplift estimated."
+}

@@ -1,0 +1,452 @@
+{
+  "study": "Offline exploratory validation v1",
+  "seed": 20260912,
+  "executed_at": "2026-09-12T07:04:00.703622+00:00",
+  "source": "https://drive.google.com/drive/folders/1NirfOKfM54cYeYXS3gn3azWznX1jaFiP",
+  "limitations": [
+    "Synthetic dataset.",
+    "Retrospective exploratory forward-month evaluation; May was previously available, not a sealed holdout.",
+    "May low activity is not churn.",
+    "No June-or-later usage or intervention outcome exists."
+  ],
+  "source_hashes": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "protocol_sha256": "3209f7b55b1b025023b7bbe8d945f44f74f986bfb82eba7f73635cb9fbb53e35",
+  "population": {
+    "source_customers": 8320,
+    "source_customer_products": 8442,
+    "identity_conflict_customers": 139,
+    "invalid_activity_customers": 59,
+    "exclusion_overlap": 0,
+    "excluded_union_customers": 198,
+    "incomplete_customer_products": 0,
+    "analysis_customers": 8122,
+    "analysis_customer_products": 8122
+  },
+  "primary": {
+    "n": 8122,
+    "alerts": 582,
+    "alert_outcomes": 136,
+    "nonalerts": 7540,
+    "nonalert_outcomes": 566,
+    "population_outcomes": 702,
+    "alert_rate": 0.07165722728392021,
+    "precision": 0.23367697594501718,
+    "nonalert_outcome_rate": 0.07506631299734748,
+    "population_outcome_rate": 0.08643191332184191,
+    "risk_difference": 0.1586106629476697,
+    "lift_vs_population": 2.7035960094379337,
+    "risk_ratio_vs_nonalert": 3.1129406336138334,
+    "expected_hits_same_capacity_random": 50.30337355331199,
+    "precision_ci95": [
+      0.19858412894441016,
+      0.26955111046806046
+    ],
+    "risk_difference_ci95": [
+      0.12286466913969235,
+      0.19492695468829405
+    ],
+    "lift_vs_population_ci95": [
+      2.342359449086289,
+      3.0790097361977793
+    ]
+  },
+  "month_permutation": {
+    "replicates": 1000,
+    "null_lift_mean": 2.686027567615145,
+    "null_lift_ci95": [
+      2.3119324645229193,
+      3.072861638182401
+    ],
+    "observed_lift": 2.7035960094379337,
+    "one_sided_p": 0.46553446553446554,
+    "note": "Permutes already calendar-normalized rates within individuals. Approximate null: preserves shared-baseline effects and individual variation, assumes month exchangeability."
+  },
+  "evidence_gate": {
+    "min_50_alerts": true,
+    "lift_at_least_1_5": true,
+    "risk_difference_ci_lower_positive": true,
+    "better_than_month_null": false
+  },
+  "predictive_gate_pass": false,
+  "threshold_sensitivity": [
+    {
+      "relative_threshold": 0.2,
+      "n": 8122,
+      "alerts": 793,
+      "alert_outcomes": 224,
+      "nonalerts": 7329,
+      "nonalert_outcomes": 704,
+      "population_outcomes": 928,
+      "alert_rate": 0.09763605023393253,
+      "precision": 0.28247162673392184,
+      "nonalert_outcome_rate": 0.0960567608132078,
+      "population_outcome_rate": 0.11425757202659444,
+      "risk_difference": 0.18641486592071405,
+      "lift_vs_population": 2.4722355089794323,
+      "risk_ratio_vs_nonalert": 2.9406740800183426,
+      "expected_hits_same_capacity_random": 90.60625461708939
+    },
+    {
+      "relative_threshold": 0.3,
+      "n": 8122,
+      "alerts": 582,
+      "alert_outcomes": 136,
+      "nonalerts": 7540,
+      "nonalert_outcomes": 566,
+      "population_outcomes": 702,
+      "alert_rate": 0.07165722728392021,
+      "precision": 0.23367697594501718,
+      "nonalert_outcome_rate": 0.07506631299734748,
+      "population_outcome_rate": 0.08643191332184191,
+      "risk_difference": 0.1586106629476697,
+      "lift_vs_population": 2.7035960094379337,
+      "risk_ratio_vs_nonalert": 3.1129406336138334,
+      "expected_hits_same_capacity_random": 50.30337355331199
+    },
+    {
+      "relative_threshold": 0.4,
+      "n": 8122,
+      "alerts": 343,
+      "alert_outcomes": 57,
+      "nonalerts": 7779,
+      "nonalert_outcomes": 367,
+      "population_outcomes": 424,
+      "alert_rate": 0.04223097759172618,
+      "precision": 0.1661807580174927,
+      "nonalert_outcome_rate": 0.04717830055277028,
+      "population_outcome_rate": 0.05220389066732332,
+      "risk_difference": 0.11900245746472243,
+      "lift_vs_population": 3.1833021618350847,
+      "risk_ratio_vs_nonalert": 3.522398137923912,
+      "expected_hits_same_capacity_random": 17.9059344988919
+    }
+  ],
+  "quality_sensitivity": [
+    {
+      "population": "strict exclusions",
+      "n": 8122,
+      "alerts": 582,
+      "alert_outcomes": 136,
+      "nonalerts": 7540,
+      "nonalert_outcomes": 566,
+      "population_outcomes": 702,
+      "alert_rate": 0.07165722728392021,
+      "precision": 0.23367697594501718,
+      "nonalert_outcome_rate": 0.07506631299734748,
+      "population_outcome_rate": 0.08643191332184191,
+      "risk_difference": 0.1586106629476697,
+      "lift_vs_population": 2.7035960094379337,
+      "risk_ratio_vs_nonalert": 3.1129406336138334,
+      "expected_hits_same_capacity_random": 50.30337355331199
+    },
+    {
+      "population": "all complete raw records, invalid values retained and flagged",
+      "n": 8442,
+      "alerts": 599,
+      "alert_outcomes": 140,
+      "nonalerts": 7843,
+      "nonalert_outcomes": 591,
+      "population_outcomes": 731,
+      "alert_rate": 0.07095475005922768,
+      "precision": 0.2337228714524207,
+      "nonalert_outcome_rate": 0.07535381869182711,
+      "population_outcome_rate": 0.08659085524757167,
+      "risk_difference": 0.1583690527605936,
+      "lift_vs_population": 2.6991634484286395,
+      "risk_ratio_vs_nonalert": 3.101672556347437,
+      "expected_hits_same_capacity_random": 51.86792229329543
+    },
+    {
+      "population": "all complete records, activity explicitly clipped to [0,1]",
+      "n": 8442,
+      "alerts": 598,
+      "alert_outcomes": 139,
+      "nonalerts": 7844,
+      "nonalert_outcomes": 591,
+      "population_outcomes": 730,
+      "alert_rate": 0.07083629471689173,
+      "precision": 0.23244147157190637,
+      "nonalert_outcome_rate": 0.07534421213666496,
+      "population_outcome_rate": 0.08647239990523573,
+      "risk_difference": 0.1570972594352414,
+      "lift_vs_population": 2.688042332890457,
+      "risk_ratio_vs_nonalert": 3.0850607495939655,
+      "expected_hits_same_capacity_random": 51.71049514333097
+    }
+  ],
+  "cohort_history": [
+    {
+      "month": "2023-01",
+      "cohort": "April alert",
+      "mean_activity_pct": 32.26914976166722,
+      "customers": 582
+    },
+    {
+      "month": "2023-02",
+      "cohort": "April alert",
+      "mean_activity_pct": 35.92906234658811,
+      "customers": 582
+    },
+    {
+      "month": "2023-03",
+      "cohort": "April alert",
+      "mean_activity_pct": 32.030816982596164,
+      "customers": 582
+    },
+    {
+      "month": "2023-04",
+      "cohort": "April alert",
+      "mean_activity_pct": 19.02634593356243,
+      "customers": 582
+    },
+    {
+      "month": "2023-05",
+      "cohort": "April alert",
+      "mean_activity_pct": 27.696485977164393,
+      "customers": 582
+    },
+    {
+      "month": "2023-01",
+      "cohort": "No April alert",
+      "mean_activity_pct": 27.39625224608539,
+      "customers": 7540
+    },
+    {
+      "month": "2023-02",
+      "cohort": "No April alert",
+      "mean_activity_pct": 30.419666540356193,
+      "customers": 7540
+    },
+    {
+      "month": "2023-03",
+      "cohort": "No April alert",
+      "mean_activity_pct": 27.467271327115593,
+      "customers": 7540
+    },
+    {
+      "month": "2023-04",
+      "cohort": "No April alert",
+      "mean_activity_pct": 29.32670203359859,
+      "customers": 7540
+    },
+    {
+      "month": "2023-05",
+      "cohort": "No April alert",
+      "mean_activity_pct": 27.629845127064257,
+      "customers": 7540
+    }
+  ],
+  "alert_rebound": {
+    "april_mean_activity_pct": 19.02634593356243,
+    "may_mean_activity_pct": 27.696485977164393,
+    "april_mean_active_days": 5.707903780068729,
+    "may_mean_active_days": 8.585910652920962
+  },
+  "snapshot": {
+    "population": 8122,
+    "unclosed": 5478,
+    "unclosed_high_or_critical": 2673,
+    "sustained_low_activity": 136,
+    "review_candidates": 43,
+    "newly_low_in_may_support_eligible": 257,
+    "note": "Descriptive June snapshot candidate list; no validated need or intervention benefit.",
+    "product_plan_permutation_expected_candidates": 45.033,
+    "product_plan_permutation_ci95": [
+      34.0,
+      55.0
+    ],
+    "product_plan_permutation_p": 0.6713286713286714
+  },
+  "case_examples": [
+    {
+      "Customer ID": "CUST07866",
+      "Ticket ID": 2896,
+      "Product": "Trello",
+      "Plan Type": "Standard",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Product recommendation",
+      "baseline_active_pct": 75.653,
+      "2023-01_active_pct": 74.194,
+      "2023-02_active_pct": 78.571,
+      "2023-03_active_pct": 74.194,
+      "2023-04_active_pct": 50.0,
+      "2023-05_active_pct": 45.161,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human billing support review."
+    },
+    {
+      "Customer ID": "CUST07822",
+      "Ticket ID": 514,
+      "Product": "Jira",
+      "Plan Type": "Standard",
+      "Ticket Status": "Pending Customer Response",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Refund request",
+      "baseline_active_pct": 54.301,
+      "2023-01_active_pct": 51.613,
+      "2023-02_active_pct": 50.0,
+      "2023-03_active_pct": 61.29,
+      "2023-04_active_pct": 26.667,
+      "2023-05_active_pct": 32.258,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human product guidance and needs check."
+    },
+    {
+      "Customer ID": "CUST05519",
+      "Ticket ID": 6583,
+      "Product": "Loom",
+      "Plan Type": "Enterprise",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Network problem",
+      "baseline_active_pct": 28.264,
+      "2023-01_active_pct": 22.581,
+      "2023-02_active_pct": 42.857,
+      "2023-03_active_pct": 19.355,
+      "2023-04_active_pct": 16.667,
+      "2023-05_active_pct": 6.452,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human product guidance and needs check."
+    },
+    {
+      "Customer ID": "CUST07566",
+      "Ticket ID": 4952,
+      "Product": "Trello",
+      "Plan Type": "Premium",
+      "Ticket Status": "Pending Customer Response",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Integration",
+      "baseline_active_pct": 44.624,
+      "2023-01_active_pct": 41.935,
+      "2023-02_active_pct": 50.0,
+      "2023-03_active_pct": 41.935,
+      "2023-04_active_pct": 30.0,
+      "2023-05_active_pct": 25.806,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human technical triage and confirm the reported issue."
+    },
+    {
+      "Customer ID": "CUST04843",
+      "Ticket ID": 4144,
+      "Product": "Loom",
+      "Plan Type": "Premium",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Data loss",
+      "baseline_active_pct": 36.636,
+      "2023-01_active_pct": 32.258,
+      "2023-02_active_pct": 35.714,
+      "2023-03_active_pct": 41.935,
+      "2023-04_active_pct": 23.333,
+      "2023-05_active_pct": 19.355,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human review of cancellation request and customer intent."
+    },
+    {
+      "Customer ID": "CUST06460",
+      "Ticket ID": 5452,
+      "Product": "Loom",
+      "Plan Type": "Standard",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Integration",
+      "baseline_active_pct": 36.636,
+      "2023-01_active_pct": 29.032,
+      "2023-02_active_pct": 35.714,
+      "2023-03_active_pct": 45.161,
+      "2023-04_active_pct": 20.0,
+      "2023-05_active_pct": 19.355,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human billing support review."
+    },
+    {
+      "Customer ID": "CUST05715",
+      "Ticket ID": 6224,
+      "Product": "Jira",
+      "Plan Type": "Free",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Email delivery problem",
+      "baseline_active_pct": 39.247,
+      "2023-01_active_pct": 25.806,
+      "2023-02_active_pct": 50.0,
+      "2023-03_active_pct": 41.935,
+      "2023-04_active_pct": 26.667,
+      "2023-05_active_pct": 22.581,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human billing support review."
+    },
+    {
+      "Customer ID": "CUST00123",
+      "Ticket ID": 5935,
+      "Product": "Jira",
+      "Plan Type": "Premium",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Refund request",
+      "Ticket Subject": "Software bug",
+      "baseline_active_pct": 28.879,
+      "2023-01_active_pct": 29.032,
+      "2023-02_active_pct": 28.571,
+      "2023-03_active_pct": 29.032,
+      "2023-04_active_pct": 13.333,
+      "2023-05_active_pct": 12.903,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human refund-process review."
+    },
+    {
+      "Customer ID": "CUST00491",
+      "Ticket ID": 3140,
+      "Product": "Trello",
+      "Plan Type": "Premium",
+      "Ticket Status": "Open",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Loading issue",
+      "baseline_active_pct": 27.803,
+      "2023-01_active_pct": 25.806,
+      "2023-02_active_pct": 28.571,
+      "2023-03_active_pct": 29.032,
+      "2023-04_active_pct": 16.667,
+      "2023-05_active_pct": 12.903,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human product guidance and needs check."
+    },
+    {
+      "Customer ID": "CUST02890",
+      "Ticket ID": 7467,
+      "Product": "Confluence",
+      "Plan Type": "Standard",
+      "Ticket Status": "Pending Customer Response",
+      "Ticket Priority": "Critical",
+      "Ticket Type": "Refund request",
+      "Ticket Subject": "Email delivery problem",
+      "baseline_active_pct": 21.121,
+      "2023-01_active_pct": 25.806,
+      "2023-02_active_pct": 21.429,
+      "2023-03_active_pct": 16.129,
+      "2023-04_active_pct": 10.0,
+      "2023-05_active_pct": 6.452,
+      "selection_reason": "Unclosed High/Critical ticket; April and May both at least 30% and 10 percentage points below Jan-Mar activity baseline.",
+      "proposed_action_unvalidated": "Human refund-process review."
+    }
+  ],
+  "resource_use": {
+    "paid_api_calls": 0,
+    "customer_contacts": 0,
+    "wall_seconds": 2.436,
+    "software": "Python stdlib, numpy, pandas"
+  }
+}

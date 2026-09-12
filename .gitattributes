@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve original CSV bytes so published source hashes remain meaningful.
+*.csv -text

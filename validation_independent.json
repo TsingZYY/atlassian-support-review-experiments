@@ -1,0 +1,163 @@
+{
+  "method": "Independent product x baseline-decile conditional randomization; one product per customer",
+  "seed": 9122026,
+  "permutations": 1999,
+  "bootstrap_replicates": 1000,
+  "caveats": [
+    "Retrospective active-use proxies only; no ticket features or future business outcomes used.",
+    "Baseline deciles only coarsely condition on baseline; observational association is not causal.",
+    "Month permutation alone assumes calendar months are exchangeable and can be sensitive to common trends.",
+    "Bottom-quintile ties may yield more than 20 percent classified as low use."
+  ],
+  "counts": {
+    "customer_ids": 8320,
+    "usage_pairs": 8442,
+    "identity_conflict_ids": 139,
+    "identity_conflict_ticket_rows": 149,
+    "conflict_rows_by_field": {
+      "Customer Name": 149,
+      "Customer Age": 143,
+      "Customer Gender": 99
+    },
+    "invalid_active_day_rows": 85,
+    "invalid_active_day_ids": 59,
+    "excluded_union_ids": 198,
+    "clean_pairs": 8122,
+    "one_product_sample_ids": 8122
+  },
+  "monthly_raw_active_day_means": {
+    "2023-01": 8.730632551528075,
+    "2023-02": 8.764984600805496,
+    "2023-03": 8.735133854536839,
+    "2023-04": 8.708244491826582,
+    "2023-05": 8.683724235963043
+  },
+  "monthly_clean_activity_fractions": {
+    "2023-01": 0.2774543057089069,
+    "2023-02": 0.3081445456784043,
+    "2023-03": 0.27794282355370914,
+    "2023-04": 0.2858860707543298,
+    "2023-05": 0.27634620425606277
+  },
+  "raw_month_correlation": {
+    "2023-01": {
+      "2023-01": 1.0,
+      "2023-02": 0.80275,
+      "2023-03": 0.80578,
+      "2023-04": 0.79976,
+      "2023-05": 0.79993
+    },
+    "2023-02": {
+      "2023-01": 0.80275,
+      "2023-02": 1.0,
+      "2023-03": 0.80042,
+      "2023-04": 0.80494,
+      "2023-05": 0.80121
+    },
+    "2023-03": {
+      "2023-01": 0.80578,
+      "2023-02": 0.80042,
+      "2023-03": 1.0,
+      "2023-04": 0.79858,
+      "2023-05": 0.80087
+    },
+    "2023-04": {
+      "2023-01": 0.79976,
+      "2023-02": 0.80494,
+      "2023-03": 0.79858,
+      "2023-04": 1.0,
+      "2023-05": 0.8017
+    },
+    "2023-05": {
+      "2023-01": 0.79993,
+      "2023-02": 0.80121,
+      "2023-03": 0.80087,
+      "2023-04": 0.8017,
+      "2023-05": 1.0
+    }
+  },
+  "primary": {
+    "alert_n": 582,
+    "comparison_n": 7540,
+    "event_rate_alert": 0.23367697594501718,
+    "event_rate_comparison": 0.07506631299734748,
+    "risk_difference": 0.1586106629476697,
+    "risk_ratio": 3.1129406336138334,
+    "adjusted_risk_difference": 0.1376017606200156,
+    "adjusted_bootstrap_95_ci": [
+      0.10243446771035591,
+      0.1729804850699008
+    ],
+    "one_sided_permutation_p": 0.0005,
+    "null_95_interval": [
+      -0.02586965269198207,
+      0.028836573185754374
+    ],
+    "matched_strata": 45,
+    "observations_in_matched_strata": 7309,
+    "alerts_in_matched_strata": 582
+  },
+  "baseline_free_sensitivity": {
+    "alert_n": 582,
+    "comparison_n": 7540,
+    "event_rate_alert": 0.20962199312714777,
+    "event_rate_comparison": 0.2557029177718833,
+    "risk_difference": -0.04608092464473554,
+    "risk_ratio": 0.8197872552794057,
+    "adjusted_risk_difference": 0.09381240463462263,
+    "adjusted_bootstrap_95_ci": [
+      0.06915284649089457,
+      0.12202345476145318
+    ],
+    "one_sided_permutation_p": 0.0005,
+    "null_95_interval": [
+      -0.023533312242051515,
+      0.02366228778392915
+    ],
+    "matched_strata": 45,
+    "observations_in_matched_strata": 7309,
+    "alerts_in_matched_strata": 582
+  },
+  "per_product": {
+    "Bitbucket": {
+      "alert_n": 121,
+      "comparison_n": 1395,
+      "event_rate_alert": 0.17355371900826447,
+      "event_rate_comparison": 0.07956989247311828,
+      "risk_difference": 0.09398382653514618,
+      "risk_ratio": 2.1811480902389992
+    },
+    "Confluence": {
+      "alert_n": 126,
+      "comparison_n": 1629,
+      "event_rate_alert": 0.21428571428571427,
+      "event_rate_comparison": 0.06507059545733579,
+      "risk_difference": 0.14921511882837848,
+      "risk_ratio": 3.2931266846361185
+    },
+    "Jira": {
+      "alert_n": 121,
+      "comparison_n": 1577,
+      "event_rate_alert": 0.2644628099173554,
+      "event_rate_comparison": 0.07989854153455929,
+      "risk_difference": 0.1845642683827961,
+      "risk_ratio": 3.3099829463465826
+    },
+    "Loom": {
+      "alert_n": 109,
+      "comparison_n": 1475,
+      "event_rate_alert": 0.27522935779816515,
+      "event_rate_comparison": 0.06983050847457627,
+      "risk_difference": 0.20539884932358887,
+      "risk_ratio": 3.94139128885722
+    },
+    "Trello": {
+      "alert_n": 105,
+      "comparison_n": 1464,
+      "event_rate_alert": 0.24761904761904763,
+      "event_rate_comparison": 0.08196721311475409,
+      "risk_difference": 0.16565183450429355,
+      "risk_ratio": 3.0209523809523815
+    }
+  }
+}

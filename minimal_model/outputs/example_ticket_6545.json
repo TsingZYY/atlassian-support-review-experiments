@@ -1,0 +1,60 @@
+{
+  "model_version": "review-rules-1.0",
+  "ticket_id": "6545",
+  "customer_id": "CUST04099",
+  "product": "Trello",
+  "ticket_status": "Open",
+  "ticket_priority": "Critical",
+  "ticket_subject": "Network problem",
+  "decision": "REVIEW_CANDIDATE",
+  "meaning": "补充复核候选；不是流失预测、自动升级或已验证的处理收益。",
+  "data_quality_flags": [],
+  "evidence": {
+    "months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05"
+    ],
+    "active_days": [
+      7,
+      6,
+      5,
+      3,
+      2
+    ],
+    "monthly_activity_pct": [
+      22.580645,
+      21.428571,
+      16.129032,
+      10.0,
+      6.451613
+    ],
+    "baseline_activity_pct": 20.046083,
+    "relative_cutoff_pct": 14.032258,
+    "absolute_decline_pp": [
+      10.046083,
+      13.59447
+    ],
+    "two_month_flags": [
+      true,
+      true
+    ],
+    "support_eligible": true,
+    "rule": {
+      "relative_decline": 0.3,
+      "absolute_decline": 0.1,
+      "baseline_months": 3,
+      "consecutive_low_months": 2,
+      "epsilon": 1e-12
+    }
+  },
+  "next_step_unvalidated": "先核实问题原话和已经尝试的动作；必要时询问使用减少是否与该问题有关，再按问题证据处理。",
+  "missing_information": [
+    "完整工单正文和对话",
+    "问题发生时间",
+    "处置后的结果"
+  ],
+  "resolution_outcome": "UNOBSERVED"
+}

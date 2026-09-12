@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+*.html
+minimal_model/outputs/predictions.json
+resolution_validation/ab_simulation/
+*_sources.json
+*_chart.json
+sources.json
+chart.json
+prepare_delivery.py
+reproduction.log

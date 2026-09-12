@@ -1,0 +1,189 @@
+{
+  "rows": {
+    "tickets": 8469,
+    "customers": 8320,
+    "usage": 42210
+  },
+  "keys": {
+    "ticket_id_distinct": 8469,
+    "ticket_email_distinct": 8320,
+    "customer_id_distinct": 8320,
+    "customer_email_distinct": 8320,
+    "customer_id_missing": 0,
+    "customer_email_missing": 0,
+    "customer_email_duplicated_rows": 0,
+    "usage_customer_distinct": 8320,
+    "ticket_email_frequency": {
+      "1": 8181,
+      "2": 131,
+      "3": 6,
+      "4": 2
+    }
+  },
+  "email_link": {
+    "raw_matched_ticket_rows": 8469,
+    "raw_unmatched_customer_rows": 0,
+    "normalized_matched_ticket_rows": 8469,
+    "normalized_customer_email_duplicated_rows": 0,
+    "joined_rows": 8469
+  },
+  "demographic_consistency": {
+    "Customer Name": {
+      "mismatch_ticket_rows": 149,
+      "mismatch_distinct_emails": 139,
+      "multiple_ticket_values_per_email": 139
+    },
+    "Customer Age": {
+      "mismatch_ticket_rows": 143,
+      "mismatch_distinct_emails": 134,
+      "multiple_ticket_values_per_email": 134
+    },
+    "Customer Gender": {
+      "mismatch_ticket_rows": 99,
+      "mismatch_distinct_emails": 95,
+      "multiple_ticket_values_per_email": 95
+    },
+    "any_field": {
+      "mismatch_ticket_rows": 149,
+      "mismatch_distinct_emails": 139
+    }
+  },
+  "usage_grain": {
+    "key_duplicate_rows": 0,
+    "key_missing_rows": 0,
+    "unmatched_customer_rows": 0,
+    "customer_without_usage": 0,
+    "customer_product_pairs": 8442,
+    "products_per_customer_distribution": {
+      "1": 8202,
+      "2": 114,
+      "3": 4
+    },
+    "months_per_customer_product_distribution": {
+      "5": 8442
+    },
+    "month_counts": {
+      "2023-01": 8442,
+      "2023-02": 8442,
+      "2023-03": 8442,
+      "2023-04": 8442,
+      "2023-05": 8442
+    },
+    "products_usage": {
+      "Confluence": 9125,
+      "Jira": 8895,
+      "Loom": 8135,
+      "Trello": 8105,
+      "Bitbucket": 7950
+    },
+    "products_tickets": {
+      "Confluence": 1831,
+      "Jira": 1787,
+      "Loom": 1629,
+      "Trello": 1627,
+      "Bitbucket": 1595
+    }
+  },
+  "dates": {
+    "purchase": {
+      "nonmissing": 8469,
+      "parse_failed_nonmissing": 0,
+      "min": "2020-01-01 00:00:00",
+      "max": "2021-12-30 00:00:00",
+      "distinct": 730
+    },
+    "response": {
+      "nonmissing": 5650,
+      "parse_failed_nonmissing": 0,
+      "min": "2023-05-31 21:55:00",
+      "max": "2023-06-02 00:54:00",
+      "distinct": 1502
+    },
+    "resolution": {
+      "nonmissing": 2769,
+      "parse_failed_nonmissing": 0,
+      "min": "2023-05-31 21:53:00",
+      "max": "2023-06-02 00:55:00",
+      "distinct": 1283
+    },
+    "account_created": {
+      "nonmissing": 8320,
+      "parse_failed_nonmissing": 0,
+      "min": "2018-07-08 00:00:00",
+      "max": "2021-12-09 00:00:00",
+      "distinct": 1183
+    },
+    "usage_month": {
+      "nonmissing": 42210,
+      "parse_failed_nonmissing": 0,
+      "min": "2023-01-01 00:00:00",
+      "max": "2023-05-01 00:00:00",
+      "distinct": 5
+    }
+  },
+  "date_anomalies": {
+    "both_response_resolution": 2769,
+    "resolution_before_response": 1365,
+    "resolution_equal_response": 2,
+    "response_before_purchase": 0,
+    "resolution_before_purchase": 0,
+    "purchase_before_account_created": 0,
+    "usage_month_before_account_creation_month": 0,
+    "active_days_exceed_days_in_month": 85,
+    "active_days_invalid_distinct_customers": 59,
+    "active_days_invalid_breakdown": [
+      {
+        "Month": "2023-02",
+        "Active Days": 29,
+        "rows": 6
+      },
+      {
+        "Month": "2023-02",
+        "Active Days": 30,
+        "rows": 9
+      },
+      {
+        "Month": "2023-02",
+        "Active Days": 31,
+        "rows": 36
+      },
+      {
+        "Month": "2023-04",
+        "Active Days": 31,
+        "rows": 34
+      }
+    ],
+    "negative_usage_metric_rows": 0
+  },
+  "ticket_usage_link": {
+    "ticket_customer_product_pairs": 8442,
+    "customer_product_pairs_both": 8442,
+    "ticket_pairs_without_usage": 0,
+    "usage_pairs_without_ticket": 0,
+    "tickets_with_any_customer_usage": 8469,
+    "tickets_with_same_product_usage": 8469
+  },
+  "csat": {
+    "nonmissing": 2769,
+    "rating_counts": {
+      "nan": 5700,
+      "3.0": 580,
+      "1.0": 553,
+      "2.0": 549,
+      "5.0": 544,
+      "4.0": 543
+    },
+    "status_vs_rating_present": {
+      "false": {
+        "Closed": 0,
+        "Open": 2819,
+        "Pending Customer Response": 2881
+      },
+      "true": {
+        "Closed": 2769,
+        "Open": 0,
+        "Pending Customer Response": 0
+      }
+    }
+  }
+}

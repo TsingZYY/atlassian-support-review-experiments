@@ -1,0 +1,17 @@
+{
+  "model_version": "review-rules-1.0",
+  "unit": "ticket",
+  "usage_end_month": "2023-05",
+  "ticket_count": 8469,
+  "decision_counts": {
+    "DATA_CHECK": 347,
+    "REVIEW_CANDIDATE": 43,
+    "STANDARD_SUPPORT": 8079
+  },
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb"
+  },
+  "claim": "Descriptive review decisions, not predictions of churn or resolution outcomes."
+}

@@ -1,0 +1,68 @@
+{
+  "executed_at": "2026-09-12T07:04:04.280363+00:00",
+  "scope": "Supplied synthetic competition data only; missing outcomes are unknown, not failed resolutions.",
+  "source": "https://drive.google.com/drive/folders/1NirfOKfM54cYeYXS3gn3azWznX1jaFiP",
+  "source_sha256": {
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "review_candidates.csv": "5a02a7e04bfd1f1696091e54fb80c8141d5005cb5ad6698e193082dc12234f0e",
+    "blind_review_key.csv": "0ff8363153160c7946190cfddb3291d156eb4d14a45cf3b5446fc23f0309b64d"
+  },
+  "ticket_columns": [
+    "Ticket ID",
+    "Customer Name",
+    "Customer Email",
+    "Customer Age",
+    "Customer Gender",
+    "Product Purchased",
+    "Date of Purchase",
+    "Ticket Type",
+    "Ticket Subject",
+    "Ticket Status",
+    "Resolution",
+    "Ticket Priority",
+    "Ticket Channel",
+    "First Response Time",
+    "Time to Resolution",
+    "Customer Satisfaction Rating"
+  ],
+  "usage_months": [
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05"
+  ],
+  "cohorts": {
+    "candidate_list": {
+      "tickets": 43,
+      "nonmissing_fields": {
+        "Resolution": 0,
+        "Time to Resolution": 0,
+        "Customer Satisfaction Rating": 0
+      },
+      "status_counts": {
+        "Open": 26,
+        "Pending Customer Response": 17
+      }
+    },
+    "prepared_review_sample": {
+      "tickets": 20,
+      "nonmissing_fields": {
+        "Resolution": 0,
+        "Time to Resolution": 0,
+        "Customer Satisfaction Rating": 0
+      },
+      "status_counts": {
+        "Open": 14,
+        "Pending Customer Response": 6
+      }
+    }
+  },
+  "intervention_assignment_field_available": false,
+  "intervention_action_log_available": false,
+  "post_intervention_outcome_available": false,
+  "measured_resolution_improvement": null,
+  "measured_time_saving": null,
+  "human_trial_status": "CANDIDATE-UNRUN"
+}

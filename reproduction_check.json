@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "executed_at": "2026-09-12T07:04:11.553905+00:00",
+  "steps_completed": [
+    "inspect_case.py",
+    "independent_check.py",
+    "validation_independent.py",
+    "package_validation.py",
+    "check_resolution_evidence.py",
+    "verify_competition_cases.py",
+    "minimal_model/model.py",
+    "minimal_model/verify.py",
+    "simulation/run_simulation.py"
+  ],
+  "key_snapshot_claims_verified": true,
+  "business_efficacy": "UNVERIFIED",
+  "real_customer_trial": "CANDIDATE-UNRUN"
+}

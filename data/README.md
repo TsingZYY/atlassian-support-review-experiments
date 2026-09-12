@@ -1,0 +1,59 @@
+# Atlassian Customer Experience \- Synthetic Dataset 
+
+## 
+
+## **customer\_support\_tickets.csv**
+
+| column | description |
+| :---- | :---- |
+| ticket\_id | Unique support ticket identifier |
+| customer\_name | Name associated with the customer |
+| customer\_email | Customer email address |
+| customer\_age | Age of the customer |
+| customer\_gender | Gender of the customer |
+| product\_purchased | Atlassian product associated with the ticket |
+| date\_of\_purchase | Date associated with the product purchase |
+| ticket\_type | General category of the support request |
+| ticket\_subject | Specific subject of the support request |
+| ticket\_status | Current status of the ticket |
+| resolution | Resolution recorded for the ticket |
+| ticket\_priority | Priority level assigned to the ticket |
+| ticket\_channel | Channel through which the ticket was submitted |
+| first\_response\_time | Timestamp of the first response |
+| time\_to\_resolution | Timestamp associated with ticket resolution |
+| customer\_satisfaction\_rating | Customer satisfaction rating |
+
+ 
+
+## **customers.csv**
+
+| column | description |
+| :---- | :---- |
+| customer\_id | Unique customer identifier |
+| customer\_name | Name associated with the customer |
+| customer\_email | Customer email address |
+| customer\_age | Age of the customer |
+| customer\_gender | Gender of the customer |
+| industry | Customer's industry |
+| region | Geographic region |
+| company\_size | Size category of the customer's company |
+| plan\_type | Customer's subscription plan |
+| account\_created\_date | Date the customer account was created |
+
+ 
+
+## **product\_usage.csv**
+
+| column | description |
+| :---- | :---- |
+| customer\_id | Unique customer identifier |
+| product | Atlassian product being used |
+| month | Month of recorded product usage |
+| active\_days | Number of days the customer was active during the month |
+| sessions | Number of product sessions during the month |
+| product\_actions | Number of recorded actions within the product |
+| collaborators | Number of collaborators associated with product activity |
+| integrations\_used | Number of integrations used |
+
+ 
+

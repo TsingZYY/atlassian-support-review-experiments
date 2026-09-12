@@ -1,0 +1,58 @@
+{
+  "frozen_source_cases_verified": 20,
+  "full_candidate_set_matches": 43,
+  "boundary_cases": [
+    {
+      "case": "both_thresholds_inclusive",
+      "expected": "REVIEW_CANDIDATE",
+      "actual": "REVIEW_CANDIDATE"
+    },
+    {
+      "case": "zero_baseline",
+      "expected": "STANDARD_SUPPORT",
+      "actual": "STANDARD_SUPPORT"
+    },
+    {
+      "case": "closed_ticket",
+      "expected": "STANDARD_SUPPORT",
+      "actual": "STANDARD_SUPPORT"
+    },
+    {
+      "case": "low_priority",
+      "expected": "STANDARD_SUPPORT",
+      "actual": "STANDARD_SUPPORT"
+    },
+    {
+      "case": "only_one_low_month",
+      "expected": "STANDARD_SUPPORT",
+      "actual": "STANDARD_SUPPORT"
+    },
+    {
+      "case": "missing_month",
+      "expected": "DATA_CHECK",
+      "actual": "DATA_CHECK"
+    },
+    {
+      "case": "duplicate_month",
+      "expected": "DATA_CHECK",
+      "actual": "DATA_CHECK"
+    },
+    {
+      "case": "invalid_february_days",
+      "expected": "DATA_CHECK",
+      "actual": "DATA_CHECK"
+    },
+    {
+      "case": "identity_conflict",
+      "expected": "DATA_CHECK",
+      "actual": "DATA_CHECK"
+    },
+    {
+      "case": "usage_key_mismatch",
+      "expected": "DATA_CHECK",
+      "actual": "DATA_CHECK"
+    }
+  ],
+  "claim": "Implementation and source integrity only; not predictive accuracy or business efficacy.",
+  "real_resolution_improvement": "UNOBSERVED"
+}
