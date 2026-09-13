@@ -1,0 +1,18 @@
+{
+  "version": "sentiment-evidence-v1",
+  "low_csat_scores": [1, 2],
+  "middle_csat_scores": [3],
+  "high_csat_scores": [4, 5],
+  "text_field": "Resolution",
+  "split_salt": "sentiment-resolution-csat-v1",
+  "training_fraction": 0.8,
+  "classifier": "multinomial_naive_bayes",
+  "smoothing_alpha": 1.0,
+  "token_regex": "[a-z]+",
+  "minimum_training_document_frequency": 2,
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 2026091305,
+  "audit_salt": "sentiment-evidence-source-audit-v1",
+  "audit_groups": ["LOW_REPORTED", "MIDDLE_REPORTED", "HIGH_REPORTED", "UNOBSERVED"],
+  "audit_per_group": 5
+}

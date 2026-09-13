@@ -1,0 +1,27 @@
+{
+  "ticket_id": "6863",
+  "source": {
+    "file": "data/customer_support_tickets.csv",
+    "record_row": 6864
+  },
+  "ticket_context": {
+    "Product Purchased": "Confluence",
+    "Ticket Type": "Product inquiry",
+    "Ticket Subject": "Product recommendation",
+    "Ticket Priority": "High",
+    "Ticket Channel": "Chat",
+    "Ticket Status": "Pending Customer Response"
+  },
+  "csat": {
+    "score": null,
+    "evidence_state": "UNOBSERVED",
+    "source_field": "Customer Satisfaction Rating"
+  },
+  "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+  "resolution_record": null,
+  "resolution_is_verified_customer_verbatim": false,
+  "review_route": "FEEDBACK_NOT_OBSERVED",
+  "suggested_next_step": "保留缺失；需直接反馈后再判断",
+  "measured_recovery_outcome": null,
+  "measured_profit_effect": null
+}

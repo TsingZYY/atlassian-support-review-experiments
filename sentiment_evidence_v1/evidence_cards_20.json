@@ -1,0 +1,542 @@
+[
+  {
+    "ticket_id": "5919",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 5920
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Payment issue",
+      "Ticket Priority": "Critical",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 2,
+      "evidence_state": "LOW_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Wish board same manage mission.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "REVIEW_REPORTED_LOW_CSAT",
+    "suggested_next_step": "核对客户原始反馈及处理经过",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "4875",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 4876
+    },
+    "ticket_context": {
+      "Product Purchased": "Confluence",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Data loss",
+      "Ticket Priority": "High",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 1,
+      "evidence_state": "LOW_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Idea study name within half majority care practice.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "REVIEW_REPORTED_LOW_CSAT",
+    "suggested_next_step": "核对客户原始反馈及处理经过",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "2638",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 2639
+    },
+    "ticket_context": {
+      "Product Purchased": "Confluence",
+      "Ticket Type": "Refund request",
+      "Ticket Subject": "Display issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 2,
+      "evidence_state": "LOW_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Blue individual ground large power that.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "REVIEW_REPORTED_LOW_CSAT",
+    "suggested_next_step": "核对客户原始反馈及处理经过",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "4832",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 4833
+    },
+    "ticket_context": {
+      "Product Purchased": "Confluence",
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Loading issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Phone",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 2,
+      "evidence_state": "LOW_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Ask man day notice.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "REVIEW_REPORTED_LOW_CSAT",
+    "suggested_next_step": "核对客户原始反馈及处理经过",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "2267",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 2268
+    },
+    "ticket_context": {
+      "Product Purchased": "Trello",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Integration",
+      "Ticket Priority": "Critical",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 1,
+      "evidence_state": "LOW_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Western leg involve.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "REVIEW_REPORTED_LOW_CSAT",
+    "suggested_next_step": "核对客户原始反馈及处理经过",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "4898",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 4899
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Display issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 3,
+      "evidence_state": "MIDDLE_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Show buy whatever everybody.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "4463",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 4464
+    },
+    "ticket_context": {
+      "Product Purchased": "Loom",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product compatibility",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 3,
+      "evidence_state": "MIDDLE_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Bar you hundred discuss charge.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "6891",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 6892
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Loading issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 3,
+      "evidence_state": "MIDDLE_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Office five environment.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "5939",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 5940
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Installation support",
+      "Ticket Priority": "Medium",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 3,
+      "evidence_state": "MIDDLE_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Art money time some cultural.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "3827",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 3828
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Product compatibility",
+      "Ticket Priority": "Critical",
+      "Ticket Channel": "Chat",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 3,
+      "evidence_state": "MIDDLE_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Cover the social free process.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "6536",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 6537
+    },
+    "ticket_context": {
+      "Product Purchased": "Trello",
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Email delivery problem",
+      "Ticket Priority": "High",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 5,
+      "evidence_state": "HIGH_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Major capital else you spend community let.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "3424",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 3425
+    },
+    "ticket_context": {
+      "Product Purchased": "Jira",
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Installation support",
+      "Ticket Priority": "High",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 5,
+      "evidence_state": "HIGH_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Throw decide painting attack indicate run happen.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "1604",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 1605
+    },
+    "ticket_context": {
+      "Product Purchased": "Bitbucket",
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Loading issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Chat",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 5,
+      "evidence_state": "HIGH_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Manage two suddenly miss affect certainly spend.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "7687",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 7688
+    },
+    "ticket_context": {
+      "Product Purchased": "Loom",
+      "Ticket Type": "Cancellation request",
+      "Ticket Subject": "Software bug",
+      "Ticket Priority": "Medium",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 5,
+      "evidence_state": "HIGH_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "Two back pass first.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "2411",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 2412
+    },
+    "ticket_context": {
+      "Product Purchased": "Loom",
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Software bug",
+      "Ticket Priority": "Critical",
+      "Ticket Channel": "Phone",
+      "Ticket Status": "Closed"
+    },
+    "csat": {
+      "score": 5,
+      "evidence_state": "HIGH_REPORTED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": "World section science relate debate number.",
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "KEEP_OBSERVED_SCORE",
+    "suggested_next_step": "保留评分及来源，不推断情绪或挽回效果",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "6863",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 6864
+    },
+    "ticket_context": {
+      "Product Purchased": "Confluence",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product recommendation",
+      "Ticket Priority": "High",
+      "Ticket Channel": "Chat",
+      "Ticket Status": "Pending Customer Response"
+    },
+    "csat": {
+      "score": null,
+      "evidence_state": "UNOBSERVED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": null,
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "FEEDBACK_NOT_OBSERVED",
+    "suggested_next_step": "保留缺失；需直接反馈后再判断",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "7412",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 7413
+    },
+    "ticket_context": {
+      "Product Purchased": "Trello",
+      "Ticket Type": "Refund request",
+      "Ticket Subject": "Cancellation request",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Open"
+    },
+    "csat": {
+      "score": null,
+      "evidence_state": "UNOBSERVED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": null,
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "FEEDBACK_NOT_OBSERVED",
+    "suggested_next_step": "保留缺失；需直接反馈后再判断",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "6635",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 6636
+    },
+    "ticket_context": {
+      "Product Purchased": "Loom",
+      "Ticket Type": "Technical issue",
+      "Ticket Subject": "Display issue",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Phone",
+      "Ticket Status": "Open"
+    },
+    "csat": {
+      "score": null,
+      "evidence_state": "UNOBSERVED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": null,
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "FEEDBACK_NOT_OBSERVED",
+    "suggested_next_step": "保留缺失；需直接反馈后再判断",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "3943",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 3944
+    },
+    "ticket_context": {
+      "Product Purchased": "Bitbucket",
+      "Ticket Type": "Billing inquiry",
+      "Ticket Subject": "Email delivery problem",
+      "Ticket Priority": "Critical",
+      "Ticket Channel": "Email",
+      "Ticket Status": "Pending Customer Response"
+    },
+    "csat": {
+      "score": null,
+      "evidence_state": "UNOBSERVED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": null,
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "FEEDBACK_NOT_OBSERVED",
+    "suggested_next_step": "保留缺失；需直接反馈后再判断",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  },
+  {
+    "ticket_id": "5917",
+    "source": {
+      "file": "data/customer_support_tickets.csv",
+      "record_row": 5918
+    },
+    "ticket_context": {
+      "Product Purchased": "Loom",
+      "Ticket Type": "Product inquiry",
+      "Ticket Subject": "Product setup",
+      "Ticket Priority": "Low",
+      "Ticket Channel": "Social media",
+      "Ticket Status": "Open"
+    },
+    "csat": {
+      "score": null,
+      "evidence_state": "UNOBSERVED",
+      "source_field": "Customer Satisfaction Rating"
+    },
+    "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+    "resolution_record": null,
+    "resolution_is_verified_customer_verbatim": false,
+    "review_route": "FEEDBACK_NOT_OBSERVED",
+    "suggested_next_step": "保留缺失；需直接反馈后再判断",
+    "measured_recovery_outcome": null,
+    "measured_profit_effect": null
+  }
+]

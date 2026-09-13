@@ -1,0 +1,143 @@
+{
+  "executed_at": "2026-09-13T04:17:49.842301+00:00",
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "3d7ac9d20839eece16358b56ba467bb156b347f06568d00a4b2c92910ca65ce3",
+    "protocol.md": "63964dd6e22714a79e5c9c8c20cd5b3819a60aec085eeaf6dc96f9258f242c1a",
+    "experiment.py": "473892891db168f775662049b0b8adfe7ab5e568b76ce7865cb0f5a8a6025640"
+  },
+  "profile": {
+    "ticket_count": 8469,
+    "ticket_fields": [
+      "Ticket ID",
+      "Customer Name",
+      "Customer Email",
+      "Customer Age",
+      "Customer Gender",
+      "Product Purchased",
+      "Date of Purchase",
+      "Ticket Type",
+      "Ticket Subject",
+      "Ticket Status",
+      "Resolution",
+      "Ticket Priority",
+      "Ticket Channel",
+      "First Response Time",
+      "Time to Resolution",
+      "Customer Satisfaction Rating"
+    ],
+    "subject_counts": {
+      "Product setup": 529,
+      "Integration": 496,
+      "Network problem": 539,
+      "Account access": 509,
+      "Data loss": 491,
+      "Payment issue": 526,
+      "Refund request": 576,
+      "Loading issue": 542,
+      "Installation support": 530,
+      "Software bug": 574,
+      "Device compatibility issue": 547,
+      "Product recommendation": 517,
+      "Email delivery problem": 561,
+      "Display issue": 478,
+      "Cancellation request": 487,
+      "Product compatibility": 567
+    },
+    "resolution_nonempty": 2769,
+    "resolution_unique": 2769,
+    "resolution_digit_normalized_unique": 2769,
+    "resolution_word_count_min": 3,
+    "resolution_word_count_max": 8,
+    "resolution_word_count_mean": 5.486818345973275,
+    "customer_verbatim_field_available": false,
+    "sentiment_annotation_field_available": false,
+    "rating_counts": {
+      "None": 5700,
+      "3": 580,
+      "1": 553,
+      "4": 543,
+      "5": 544,
+      "2": 549
+    },
+    "status_coverage": [
+      {
+        "status": "Closed",
+        "tickets": 2769,
+        "ratings": 2769,
+        "resolutions": 2769
+      },
+      {
+        "status": "Open",
+        "tickets": 2819,
+        "ratings": 0,
+        "resolutions": 0
+      },
+      {
+        "status": "Pending Customer Response",
+        "tickets": 2881,
+        "ratings": 0,
+        "resolutions": 0
+      }
+    ]
+  },
+  "evidence_state_counts": {
+    "UNOBSERVED": 5700,
+    "MIDDLE_REPORTED": 580,
+    "LOW_REPORTED": 1102,
+    "HIGH_REPORTED": 1087
+  },
+  "rating_coverage": 0.3269571377966702,
+  "text_experiment": {
+    "training_n": 2130,
+    "test_n": 533,
+    "identity_conflict_customers": 139,
+    "eligible_closed_n": 2663,
+    "training_low_csat_n": 849,
+    "test_low_csat_n": 204,
+    "vocabulary_size": 971,
+    "test_unknown_token_count": 0,
+    "test_token_count": 2957,
+    "test_documents_with_no_known_tokens": 0,
+    "baseline": {
+      "n": 533,
+      "low_csat_n": 204,
+      "brier": 0.23650120419688014,
+      "auc": 0.5,
+      "log_loss": 0.6659158002953274,
+      "accuracy_at_05": 0.6172607879924953,
+      "predicted_low_at_05": 0
+    },
+    "resolution_bag_of_words": {
+      "n": 533,
+      "low_csat_n": 204,
+      "brier": 0.29740422457562543,
+      "auc": 0.48456403838130996,
+      "log_loss": 0.8527480022495694,
+      "accuracy_at_05": 0.5403377110694184,
+      "predicted_low_at_05": 175
+    },
+    "brier_gain_baseline_minus_text": -0.060903020378745294,
+    "paired_bootstrap_95": [
+      -0.08075319156516433,
+      -0.04095703067991636
+    ],
+    "text_csat_increment_supported": false,
+    "customer_disjoint": true,
+    "semantic_sentiment_accuracy": null,
+    "valid_for_unclosed_tickets": false,
+    "label_is_observed_csat_not_sentiment": true
+  },
+  "source_audit_cases": 20,
+  "all_tickets_customer_sentiment_unknown": 8469,
+  "customer_sentiment_accuracy": null,
+  "real_resolution_rate": null,
+  "measured_profit_effect": null,
+  "prototype_scope": "observed_csat_evidence_and_review_workflow_not_sentiment_classifier"
+}

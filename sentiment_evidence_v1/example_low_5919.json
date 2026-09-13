@@ -1,0 +1,27 @@
+{
+  "ticket_id": "5919",
+  "source": {
+    "file": "data/customer_support_tickets.csv",
+    "record_row": 5920
+  },
+  "ticket_context": {
+    "Product Purchased": "Jira",
+    "Ticket Type": "Billing inquiry",
+    "Ticket Subject": "Payment issue",
+    "Ticket Priority": "Critical",
+    "Ticket Channel": "Email",
+    "Ticket Status": "Closed"
+  },
+  "csat": {
+    "score": 2,
+    "evidence_state": "LOW_REPORTED",
+    "source_field": "Customer Satisfaction Rating"
+  },
+  "customer_sentiment": "UNKNOWN_NO_CUSTOMER_VERBATIM_OR_SENTIMENT_LABEL",
+  "resolution_record": "Wish board same manage mission.",
+  "resolution_is_verified_customer_verbatim": false,
+  "review_route": "REVIEW_REPORTED_LOW_CSAT",
+  "suggested_next_step": "核对客户原始反馈及处理经过",
+  "measured_recovery_outcome": null,
+  "measured_profit_effect": null
+}

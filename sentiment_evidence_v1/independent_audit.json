@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "executed_at": "2026-09-13T04:17:52.257615+00:00",
+  "audit_method": "Independent standard-library Counter and scalar log-odds NB; rank-based AUC; complete per-row source reconstruction",
+  "review_blinding": "Protocol and primary implementation were visible; primary code was not imported. Independent quantities computed before reading results.",
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "3d7ac9d20839eece16358b56ba467bb156b347f06568d00a4b2c92910ca65ce3",
+    "protocol.md": "63964dd6e22714a79e5c9c8c20cd5b3819a60aec085eeaf6dc96f9258f242c1a",
+    "experiment.py": "473892891db168f775662049b0b8adfe7ab5e568b76ce7865cb0f5a8a6025640"
+  },
+  "auditor_script_sha256": "3a4af764dbee42668b0be1175817faaf7dc33ffabca27c7691e27f6bc47dcc6a",
+  "source_tickets": 8469,
+  "identity_conflict_customers": 139,
+  "eligible_closed_n": 2663,
+  "training_n": 2130,
+  "test_n": 533,
+  "training_low_csat_n": 849,
+  "test_low_csat_n": 204,
+  "vocabulary_size": 971,
+  "test_unknown_token_count": 0,
+  "test_token_count": 2957,
+  "test_documents_with_no_known_tokens": 0,
+  "model_log_parameter_max_abs_difference": 0.0,
+  "test_probability_max_abs_difference": 3.885780586188048e-15,
+  "auc_on_saved_probabilities_matches_primary": true,
+  "auc_float_order_affected_pairs": [
+    {
+      "positive_ticket_id": "6716",
+      "negative_ticket_id": "2716",
+      "saved_probabilities": [
+        0.21070177161159753,
+        0.21070177161159692
+      ],
+      "independent_probabilities": [
+        0.21070177161159698,
+        0.21070177161159698
+      ],
+      "saved_minus_independent_pair_credit": 0.5
+    }
+  ],
+  "auc_saved_minus_independent": 7.449788425983872e-06,
+  "independent_metrics": {
+    "baseline": {
+      "n": 533,
+      "low_csat_n": 204,
+      "brier": 0.23650120419688014,
+      "auc": 0.5,
+      "log_loss": 0.6659158002953274,
+      "accuracy_at_05": 0.6172607879924953,
+      "predicted_low_at_05": 0
+    },
+    "resolution_bag_of_words": {
+      "n": 533,
+      "low_csat_n": 204,
+      "brier": 0.2974042245756255,
+      "auc": 0.484556588592884,
+      "log_loss": 0.8527480022495695,
+      "accuracy_at_05": 0.5403377110694184,
+      "predicted_low_at_05": 175
+    },
+    "brier_gain_baseline_minus_text": -0.060903020378745364,
+    "paired_bootstrap_95": [
+      -0.08075319156516444,
+      -0.0409570306799165
+    ]
+  },
+  "bootstrap_scope": "5000 paired customer resamples replayed with protocol NumPy RNG and quantile definition, using independently reconstructed per-customer errors",
+  "index_records_verified": 8469,
+  "evidence_cards_verified": 20,
+  "evidence_state_counts": {
+    "UNOBSERVED": 5700,
+    "MIDDLE_REPORTED": 580,
+    "LOW_REPORTED": 1102,
+    "HIGH_REPORTED": 1087
+  },
+  "all_missing_ratings_preserved_unobserved": true,
+  "all_customer_sentiment_states_unknown": true,
+  "source_and_frozen_hashes_match": true,
+  "cli_smoke_tests": [
+    {
+      "ticket_id": "5919",
+      "evidence_state": "LOW_REPORTED",
+      "review_route": "REVIEW_REPORTED_LOW_CSAT",
+      "matches_audited_card": true
+    },
+    {
+      "ticket_id": "6863",
+      "evidence_state": "UNOBSERVED",
+      "review_route": "FEEDBACK_NOT_OBSERVED",
+      "matches_audited_card": true
+    }
+  ],
+  "semantic_review_source_and_count_check": {
+    "cases": 20,
+    "text_available": 15,
+    "text_missing": 5,
+    "identifiable_problem_detail_true_among_available": 0,
+    "concrete_resolution_action_or_outcome_true_among_available": 0,
+    "explicit_affect_expression_true_among_available": 0,
+    "not_assessable_missing_for_each_semantic_item": 5
+  },
+  "semantic_review_check_scope": "Verifies IDs, original text availability and arithmetic only; no semantic gold-standard or sentiment-accuracy claim",
+  "limitations": [
+    "Numerical and provenance validation does not establish semantic sentiment accuracy.",
+    "Bootstrap conditions on this fixed split and fitted model; it does not include model selection or retraining uncertainty.",
+    "No business intervention, recovery, actual resolution rate, or profit effect is tested.",
+    "The separate semantic sample review is outside this numeric audit."
+  ]
+}

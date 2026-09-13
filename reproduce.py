@@ -23,6 +23,8 @@ STEPS = [
     'ticket_bridge_v1/independent_verify.py',
     'ticket_bridge_v1/uniqueness_check.py',
     'ticket_bridge_v1/uniqueness_independent.py',
+    'sentiment_evidence_v1/experiment.py',
+    'sentiment_evidence_v1/independent_verify.py',
 ]
 
 
@@ -43,6 +45,7 @@ def main(include_scenarios=False):
     integrations = read('integration_plan_v1/results.json')
     bridge = read('ticket_bridge_v1/results.json')
     uniqueness = read('ticket_bridge_v1/uniqueness_results.json')
+    sentiment = read('sentiment_evidence_v1/results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -103,6 +106,13 @@ def main(include_scenarios=False):
     assert uniqueness['counterexamples_to_only_integration_significant'] == 4
     assert uniqueness['original_12_ticket_tests_unchanged'] is True
     assert all(t['bonferroni_16_p'] < .05 for t in uniqueness['tests'])
+    assert sentiment['dataset_scope'] == 'competition_csv_only' and sentiment['new_synthetic_observations'] == 0
+    assert sentiment['evidence_state_counts'] == {'UNOBSERVED':5700,'MIDDLE_REPORTED':580,'LOW_REPORTED':1102,'HIGH_REPORTED':1087}
+    assert sentiment['text_experiment']['training_n'] == 2130 and sentiment['text_experiment']['test_n'] == 533
+    assert abs(sentiment['text_experiment']['brier_gain_baseline_minus_text'] + 0.060903020378745294) < 1e-10
+    assert sentiment['text_experiment']['text_csat_increment_supported'] is False
+    assert sentiment['all_tickets_customer_sentiment_unknown'] == 8469 and sentiment['source_audit_cases'] == 20
+    assert sentiment['customer_sentiment_accuracy'] is None and sentiment['measured_profit_effect'] is None
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
@@ -116,6 +126,8 @@ def main(include_scenarios=False):
               'ticket_bridge_association_supported_after_holm':False,
               'ticket_bridge_finite_test_family_size':12,
               'only_plan_integration_significant_claim_supported':False,
+              'resolution_text_low_csat_increment_supported':False,
+              'customer_language_sentiment_validated':False,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

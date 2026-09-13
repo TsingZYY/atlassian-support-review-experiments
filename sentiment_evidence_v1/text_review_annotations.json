@@ -1,0 +1,195 @@
+{
+  "review_kind": "ai_semantic_source_audit_score_columns_omitted",
+  "input": "text_review_input_20.csv",
+  "rating_columns_in_review_input": false,
+  "fully_blinded_review": false,
+  "blinding_limitation": "Scores were omitted from the review input, but the protocol and fixed rating-group ordering were available; this is not a fully blinded study.",
+  "scope": "20 fixed source cases; 15 available Resolution texts and 5 missing texts",
+  "rubric": {
+    "text_available": "Resolution contains non-whitespace text",
+    "identifiable_problem_detail": "Resolution itself describes an interpretable specific customer or product problem, beyond the supplied categorical subject",
+    "concrete_resolution_action_or_outcome": "Resolution itself states an interpretable action taken or outcome connected to the support problem",
+    "explicit_affect_expression": "Resolution itself contains an interpretable explicit affect expression, not an isolated generic word",
+    "false": "The requested information is not identifiable in the available text; not evidence that the underlying event or feeling was absent",
+    "unclear": "Not assessable because Resolution is missing",
+    "attribution": "Resolution author is unknown; this review does not attribute any expression to the customer"
+  },
+  "counts": {
+    "cases": 20,
+    "text_available": 15,
+    "text_missing": 5,
+    "identifiable_problem_detail_true_among_available": 0,
+    "concrete_resolution_action_or_outcome_true_among_available": 0,
+    "explicit_affect_expression_true_among_available": 0,
+    "not_assessable_missing_for_each_semantic_item": 5
+  },
+  "limitations": [
+    "This is an AI source-content audit, not a human-validated sentiment ground-truth label set.",
+    "The sample deliberately contains five cases per evidence state and is not a prevalence sample.",
+    "Missing texts are not counted as semantic negatives.",
+    "Findings apply to the 15 available sample texts and do not establish that all 2769 nonempty resolutions lack usable information.",
+    "False semantic flags must not be used to infer neutral sentiment or a successfully resolved ticket."
+  ],
+  "annotations": [
+    {
+      "ticket_id": "5919",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Wish board same manage mission.’未明确支付问题的细节、采取的动作或情绪；wish是孤立词，不能据此判定客户愿望或感受。"
+    },
+    {
+      "ticket_id": "4875",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Idea study name within half majority care practice.’缺乏连贯问题或处理叙述；care不能单独作为关心或满意的情绪证据。"
+    },
+    {
+      "ticket_id": "2638",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Blue individual ground large power that.’没有明确显示故障、退款处理或感受表达；blue不能单独解读为悲伤。"
+    },
+    {
+      "ticket_id": "4832",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Ask man day notice.’未说明问了什么、对加载问题做了什么或得到什么结果，也未明确表达情绪。"
+    },
+    {
+      "ticket_id": "2267",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Western leg involve.’无法辨认具体集成问题、修复行动或感受；Integration仅来自主题分类。"
+    },
+    {
+      "ticket_id": "4898",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Show buy whatever everybody.’未形成可解释的显示问题或处理结果；没有明确情绪表达。"
+    },
+    {
+      "ticket_id": "4463",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Bar you hundred discuss charge.’未明确兼容性故障或收费动作；charge、discuss不足以说明实际解决过程或客户感受。"
+    },
+    {
+      "ticket_id": "6891",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Office five environment.’只有缺乏上下文的词组，未表达具体加载问题、解决动作或情绪。"
+    },
+    {
+      "ticket_id": "5939",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Art money time some cultural.’未提供可解释的安装问题、处理动作或感受；money和time不能当作费用或延迟原因证据。"
+    },
+    {
+      "ticket_id": "3827",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Cover the social free process.’即使包含动词cover，也未明确何种流程、针对什么问题或实际完成何种结果；无明确情绪。"
+    },
+    {
+      "ticket_id": "6536",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Major capital else you spend community let.’没有可解释的邮件投递问题或处理动作，也不能由spend推断商业损失或客户情绪。"
+    },
+    {
+      "ticket_id": "3424",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Throw decide painting attack indicate run happen.’动作词没有形成具体安装处理过程；attack不是明确的客户愤怒表达。"
+    },
+    {
+      "ticket_id": "1604",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Manage two suddenly miss affect certainly spend.’未解释加载故障或处理结果；miss、affect不能孤立用于标注客户负面感受。"
+    },
+    {
+      "ticket_id": "7687",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘Two back pass first.’没有具体软件缺陷、取消处理或结果；没有可解释的感受表达。"
+    },
+    {
+      "ticket_id": "2411",
+      "text_available": true,
+      "identifiable_problem_detail": false,
+      "concrete_resolution_action_or_outcome": false,
+      "explicit_affect_expression": false,
+      "evidence_zh": "原文‘World section science relate debate number.’不能辨认软件缺陷或解决行动，debate也不足以推出客户情绪。"
+    },
+    {
+      "ticket_id": "6863",
+      "text_available": false,
+      "identifiable_problem_detail": "unclear",
+      "concrete_resolution_action_or_outcome": "unclear",
+      "explicit_affect_expression": "unclear",
+      "evidence_zh": "Resolution为空；三项语义信息均不可评估，不作为负例。Product recommendation是分类标签。"
+    },
+    {
+      "ticket_id": "7412",
+      "text_available": false,
+      "identifiable_problem_detail": "unclear",
+      "concrete_resolution_action_or_outcome": "unclear",
+      "explicit_affect_expression": "unclear",
+      "evidence_zh": "Resolution为空；三项语义信息均不可评估，不由Cancellation request标签推断愤怒或流失原因。"
+    },
+    {
+      "ticket_id": "6635",
+      "text_available": false,
+      "identifiable_problem_detail": "unclear",
+      "concrete_resolution_action_or_outcome": "unclear",
+      "explicit_affect_expression": "unclear",
+      "evidence_zh": "Resolution为空；三项语义信息均不可评估，不由Display issue标签补写问题细节或情绪。"
+    },
+    {
+      "ticket_id": "3943",
+      "text_available": false,
+      "identifiable_problem_detail": "unclear",
+      "concrete_resolution_action_or_outcome": "unclear",
+      "explicit_affect_expression": "unclear",
+      "evidence_zh": "Resolution为空；三项语义信息均不可评估，Email delivery problem分类不等于客户原话。"
+    },
+    {
+      "ticket_id": "5917",
+      "text_available": false,
+      "identifiable_problem_detail": "unclear",
+      "concrete_resolution_action_or_outcome": "unclear",
+      "explicit_affect_expression": "unclear",
+      "evidence_zh": "Resolution为空；三项语义信息均不可评估，不能由Product setup分类推断处理完成或满意。"
+    }
+  ]
+}
