@@ -1,0 +1,93 @@
+{
+  "checks": "PASS",
+  "audit_kind": "independent_numerical_and_source_verification_not_blinded",
+  "main_module_imported": false,
+  "source_sha256": {
+    "integration_setup_v1/planned_pilot_20.csv": "58e9c3063220ac26c0ce51fdcdb218d80ae32edd59969daa29659ca33372caed",
+    "integration_setup_v1/evidence_cards_20.json": "e56bef7b227b01ea634c0abe5bed1a9ef8c245a8e31fbdc0bbf07f26bdef11c7"
+  },
+  "planned_unique_customers": 20,
+  "cards_verified": 20,
+  "assignment": {
+    "OFFER_INTEGRATION_SETUP_HELP": 10,
+    "EXISTING_SUPPORT": 10
+  },
+  "first_replay_rows_verified": 80,
+  "cost_grid_rows_verified": 144,
+  "monte_carlo_batches_replayed_per_scenario": 100000,
+  "monte_carlo_maximum_allowed_standard_errors": 8,
+  "scenarios": [
+    {
+      "scenario": "paid_value_unlocked",
+      "expected_net_contribution_difference": 13.99999999999997,
+      "probability_simulated_arm_difference_positive": 0.5488223145585708,
+      "central_95_simulated_batch_range": [
+        -715,
+        685
+      ],
+      "variance": 128626.4000000001,
+      "pmf_support_points": 231,
+      "monte_carlo_mean": 13.4526,
+      "mean_deviation_in_simulation_standard_errors": 0.48265825197696843,
+      "probability_deviation_in_simulation_standard_errors": 0.2238931998461488,
+      "fixed_first_replay_difference": 670
+    },
+    {
+      "scenario": "setup_only_no_upgrade_link",
+      "expected_net_contribution_difference": -129.99999999999997,
+      "probability_simulated_arm_difference_positive": 0.38002267342670837,
+      "central_95_simulated_batch_range": [
+        -760,
+        500
+      ],
+      "variance": 113420.0,
+      "pmf_support_points": 231,
+      "monte_carlo_mean": -130.5134,
+      "mean_deviation_in_simulation_standard_errors": 0.4820710405089213,
+      "probability_deviation_in_simulation_standard_errors": 0.4121800198645018,
+      "fixed_first_replay_difference": -130
+    },
+    {
+      "scenario": "free_solution_reduces_upgrade",
+      "expected_net_contribution_difference": -226.00000000000045,
+      "probability_simulated_arm_difference_positive": 0.2613576124352704,
+      "central_95_simulated_batch_range": [
+        -900,
+        440
+      ],
+      "variance": 100978.40000000015,
+      "pmf_support_points": 231,
+      "monte_carlo_mean": -226.1994,
+      "mean_deviation_in_simulation_standard_errors": 0.1984316352942774,
+      "probability_deviation_in_simulation_standard_errors": 0.40476319835782015,
+      "fixed_first_replay_difference": -330
+    },
+    {
+      "scenario": "no_setup_improvement",
+      "expected_net_contribution_difference": -130.00000000000017,
+      "probability_simulated_arm_difference_positive": 0.3800226734267089,
+      "central_95_simulated_batch_range": [
+        -760,
+        500
+      ],
+      "variance": 113420.00000000013,
+      "pmf_support_points": 231,
+      "monte_carlo_mean": -130.5734,
+      "mean_deviation_in_simulation_standard_errors": 0.5384096895748335,
+      "probability_deviation_in_simulation_standard_errors": 1.0536710899567825,
+      "fixed_first_replay_difference": 270
+    }
+  ],
+  "original_observed_outcomes_still_empty": true,
+  "real_interventions_executed": 0,
+  "new_empirical_customers_added": 0,
+  "method": "Marginalize setup within accept status; enumerate correlated accept-upgrade and independent control-upgrade states; convolve 10 single T-C pairs; subtract fixed fee once; independently replay NumPy draws.",
+  "limits": [
+    "Main protocol and source code were visible; this is independent arithmetic, not a blinded replication.",
+    "Probabilities and costs are uncalibrated assumptions; arithmetic PASS does not validate their realism.",
+    "P(difference>0) describes randomized simulated arm comparisons, not a probability that the true expected business effect is positive.",
+    "The central 95% interval is a model batch-outcome range, not a confidence interval for a measured business effect.",
+    "Repeated simulations add no empirical customers; all original real outcomes remain unknown.",
+    "The fixed first no-setup-improvement replay is positive despite a negative expected effect, illustrating why one favorable replay is not evidence."
+  ]
+}

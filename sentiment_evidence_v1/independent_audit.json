@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-13T05:31:10.419004+00:00",
+  "executed_at": "2026-09-13T05:46:02.893680+00:00",
   "audit_method": "Independent standard-library Counter and scalar log-odds NB; rank-based AUC; complete per-row source reconstruction",
   "review_blinding": "Protocol and primary implementation were visible; primary code was not imported. Independent quantities computed before reading results.",
   "source_sha256": {

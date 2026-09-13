@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "integration_setup_v1/planned_pilot_20.csv": "58e9c3063220ac26c0ce51fdcdb218d80ae32edd59969daa29659ca33372caed",
+    "integration_setup_v1/evidence_cards_20.json": "e56bef7b227b01ea634c0abe5bed1a9ef8c245a8e31fbdc0bbf07f26bdef11c7"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "7eb2668631214ee477215f5785c72c641650a7250db401a8ce624dddb5a05c8a",
+    "protocol.md": "c6ea34c684a235915b8ba1705d7f51c6aaa24a45c0ecde403e813344689efa0e",
+    "experiment.py": "7f0038bccb39abee2220bb4b4cd9ea86db82499977e86d789c77e65105298cab"
+  },
+  "frozen_at": "2026-09-13T05:39:46.376944+00:00"
+}

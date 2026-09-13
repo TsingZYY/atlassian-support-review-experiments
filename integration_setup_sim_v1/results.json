@@ -1,0 +1,237 @@
+{
+  "executed_at": "2026-09-13T05:46:30.533423+00:00",
+  "source_sha256": {
+    "integration_setup_v1/planned_pilot_20.csv": "58e9c3063220ac26c0ce51fdcdb218d80ae32edd59969daa29659ca33372caed",
+    "integration_setup_v1/evidence_cards_20.json": "e56bef7b227b01ea634c0abe5bed1a9ef8c245a8e31fbdc0bbf07f26bdef11c7"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "7eb2668631214ee477215f5785c72c641650a7250db401a8ce624dddb5a05c8a",
+    "protocol.md": "c6ea34c684a235915b8ba1705d7f51c6aaa24a45c0ecde403e813344689efa0e",
+    "experiment.py": "7f0038bccb39abee2220bb4b4cd9ea86db82499977e86d789c77e65105298cab"
+  },
+  "execution_kind": "EXPLICITLY_AUTHORIZED_CONDITIONAL_SIMULATION",
+  "official_roster_records": 20,
+  "assigned_help_n": 10,
+  "assigned_control_n": 10,
+  "simulated_first_replay_rows": 80,
+  "repetitions_per_scenario": 100000,
+  "unique_empirical_customers_added": 0,
+  "real_interventions_executed": 0,
+  "actual_setup_success_rate": null,
+  "actual_upgrade_rate_difference": null,
+  "actual_incremental_profit": null,
+  "original_pilot_outcomes_modified": false,
+  "cost_grid_rows": 144,
+  "scenarios": [
+    {
+      "scenario": "paid_value_unlocked",
+      "label": "配置帮助促进升级",
+      "assumptions": {
+        "id": "paid_value_unlocked",
+        "label": "配置帮助促进升级",
+        "assisted_setup_probability": 0.8,
+        "upgrade_given_setup": 0.35,
+        "upgrade_given_no_setup": 0.05
+      },
+      "analytic": {
+        "control_setup_probability": 0.4,
+        "help_setup_probability": 0.64,
+        "control_upgrade_probability": 0.16999999999999998,
+        "help_upgrade_probability": 0.24199999999999997,
+        "setup_rate_difference": 0.24,
+        "upgrade_rate_difference": 0.07199999999999998,
+        "expected_extra_cost": 130.0,
+        "expected_incremental_profit": 13.999999999999943,
+        "break_even_upgrade_rate_difference": 0.065
+      },
+      "exact": {
+        "expected_incremental_profit": 14.000000000000016,
+        "variance": 128626.4,
+        "probability_strictly_positive_profit": 0.5488223145585703,
+        "central_95_batch_profit_range": [
+          -715,
+          685
+        ]
+      },
+      "monte_carlo": {
+        "repetitions": 100000,
+        "mean_incremental_profit": 13.4526,
+        "mean_profit_simulation_se": 1.134135794338579,
+        "probability_strictly_positive_profit": 0.54847,
+        "probability_simulation_se": 0.001573583113792036,
+        "mean_help_setup_rate": 0.639767,
+        "mean_control_setup_rate": 0.400295,
+        "mean_help_upgrade_rate": 0.242022,
+        "mean_control_upgrade_rate": 0.170314
+      },
+      "fixed_first_replay": {
+        "repetition": 0,
+        "help_accepted_n": 6,
+        "help_setup_n": 5,
+        "control_setup_n": 2,
+        "help_upgrade_n": 5,
+        "control_upgrade_n": 1,
+        "incremental_profit": 670,
+        "outcome_kind": "SIMULATED_NOT_OBSERVED"
+      }
+    },
+    {
+      "scenario": "setup_only_no_upgrade_link",
+      "label": "配置改善但升级无变化",
+      "assumptions": {
+        "id": "setup_only_no_upgrade_link",
+        "label": "配置改善但升级无变化",
+        "assisted_setup_probability": 0.8,
+        "upgrade_given_setup": 0.17,
+        "upgrade_given_no_setup": 0.17
+      },
+      "analytic": {
+        "control_setup_probability": 0.4,
+        "help_setup_probability": 0.64,
+        "control_upgrade_probability": 0.17,
+        "help_upgrade_probability": 0.17,
+        "setup_rate_difference": 0.24,
+        "upgrade_rate_difference": 0.0,
+        "expected_extra_cost": 130.0,
+        "expected_incremental_profit": -130.0,
+        "break_even_upgrade_rate_difference": 0.065
+      },
+      "exact": {
+        "expected_incremental_profit": -130.0,
+        "variance": 113420.00000000001,
+        "probability_strictly_positive_profit": 0.3800226734267084,
+        "central_95_batch_profit_range": [
+          -760,
+          500
+        ]
+      },
+      "monte_carlo": {
+        "repetitions": 100000,
+        "mean_incremental_profit": -130.5134,
+        "mean_profit_simulation_se": 1.0649882628461218,
+        "probability_strictly_positive_profit": 0.37939,
+        "probability_simulation_se": 0.00153494443257183,
+        "mean_help_setup_rate": 0.639767,
+        "mean_control_setup_rate": 0.400295,
+        "mean_help_upgrade_rate": 0.169573,
+        "mean_control_upgrade_rate": 0.169848
+      },
+      "fixed_first_replay": {
+        "repetition": 0,
+        "help_accepted_n": 6,
+        "help_setup_n": 5,
+        "control_setup_n": 2,
+        "help_upgrade_n": 2,
+        "control_upgrade_n": 2,
+        "incremental_profit": -130,
+        "outcome_kind": "SIMULATED_NOT_OBSERVED"
+      }
+    },
+    {
+      "scenario": "free_solution_reduces_upgrade",
+      "label": "免费需求满足后升级减少",
+      "assumptions": {
+        "id": "free_solution_reduces_upgrade",
+        "label": "免费需求满足后升级减少",
+        "assisted_setup_probability": 0.8,
+        "upgrade_given_setup": 0.05,
+        "upgrade_given_no_setup": 0.25
+      },
+      "analytic": {
+        "control_setup_probability": 0.4,
+        "help_setup_probability": 0.64,
+        "control_upgrade_probability": 0.16999999999999998,
+        "help_upgrade_probability": 0.122,
+        "setup_rate_difference": 0.24,
+        "upgrade_rate_difference": -0.04799999999999999,
+        "expected_extra_cost": 130.0,
+        "expected_incremental_profit": -225.99999999999997,
+        "break_even_upgrade_rate_difference": 0.065
+      },
+      "exact": {
+        "expected_incremental_profit": -226.0,
+        "variance": 100978.40000000001,
+        "probability_strictly_positive_profit": 0.26135761243527006,
+        "central_95_batch_profit_range": [
+          -900,
+          440
+        ]
+      },
+      "monte_carlo": {
+        "repetitions": 100000,
+        "mean_incremental_profit": -226.1994,
+        "mean_profit_simulation_se": 1.004880092349331,
+        "probability_strictly_positive_profit": 0.26192,
+        "probability_simulation_se": 0.0013894236605780299,
+        "mean_help_setup_rate": 0.639767,
+        "mean_control_setup_rate": 0.400295,
+        "mean_help_upgrade_rate": 0.122079,
+        "mean_control_upgrade_rate": 0.170197
+      },
+      "fixed_first_replay": {
+        "repetition": 0,
+        "help_accepted_n": 6,
+        "help_setup_n": 5,
+        "control_setup_n": 2,
+        "help_upgrade_n": 1,
+        "control_upgrade_n": 2,
+        "incremental_profit": -330,
+        "outcome_kind": "SIMULATED_NOT_OBSERVED"
+      }
+    },
+    {
+      "scenario": "no_setup_improvement",
+      "label": "帮助没有改善配置",
+      "assumptions": {
+        "id": "no_setup_improvement",
+        "label": "帮助没有改善配置",
+        "assisted_setup_probability": 0.4,
+        "upgrade_given_setup": 0.35,
+        "upgrade_given_no_setup": 0.05
+      },
+      "analytic": {
+        "control_setup_probability": 0.4,
+        "help_setup_probability": 0.4,
+        "control_upgrade_probability": 0.16999999999999998,
+        "help_upgrade_probability": 0.16999999999999998,
+        "setup_rate_difference": 0.0,
+        "upgrade_rate_difference": 0.0,
+        "expected_extra_cost": 130.0,
+        "expected_incremental_profit": -130.0,
+        "break_even_upgrade_rate_difference": 0.065
+      },
+      "exact": {
+        "expected_incremental_profit": -130.0,
+        "variance": 113419.99999999999,
+        "probability_strictly_positive_profit": 0.38002267342670837,
+        "central_95_batch_profit_range": [
+          -760,
+          500
+        ]
+      },
+      "monte_carlo": {
+        "repetitions": 100000,
+        "mean_incremental_profit": -130.5734,
+        "mean_profit_simulation_se": 1.0649882628461216,
+        "probability_strictly_positive_profit": 0.38164,
+        "probability_simulation_se": 0.00153494443257183,
+        "mean_help_setup_rate": 0.39967,
+        "mean_control_setup_rate": 0.400295,
+        "mean_help_upgrade_rate": 0.170009,
+        "mean_control_upgrade_rate": 0.170314
+      },
+      "fixed_first_replay": {
+        "repetition": 0,
+        "help_accepted_n": 6,
+        "help_setup_n": 2,
+        "control_setup_n": 2,
+        "help_upgrade_n": 3,
+        "control_upgrade_n": 1,
+        "incremental_profit": 270,
+        "outcome_kind": "SIMULATED_NOT_OBSERVED"
+      }
+    }
+  ],
+  "checks": "PASS",
+  "simulation_is_not_real_world_effect_validation": true
+}

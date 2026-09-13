@@ -1,0 +1,5 @@
+scenario,label,control_setup_probability,help_setup_probability,control_upgrade_probability,help_upgrade_probability,setup_rate_difference,upgrade_rate_difference,expected_extra_cost,expected_incremental_profit,break_even_upgrade_rate_difference,exact_probability_profit_positive,batch_profit_p025,batch_profit_p975,monte_carlo_mean_profit,first_replay_profit,all_business_outcomes_are_simulated
+paid_value_unlocked,配置帮助促进升级,0.4,0.64,0.16999999999999998,0.24199999999999997,0.24,0.07199999999999998,130.0,13.999999999999943,0.065,0.5488223145585703,-715,685,13.4526,670,True
+setup_only_no_upgrade_link,配置改善但升级无变化,0.4,0.64,0.17,0.17,0.24,0.0,130.0,-130.0,0.065,0.3800226734267084,-760,500,-130.5134,-130,True
+free_solution_reduces_upgrade,免费需求满足后升级减少,0.4,0.64,0.16999999999999998,0.122,0.24,-0.04799999999999999,130.0,-225.99999999999997,0.065,0.26135761243527006,-900,440,-226.1994,-330,True
+no_setup_improvement,帮助没有改善配置,0.4,0.4,0.16999999999999998,0.16999999999999998,0.0,0.0,130.0,-130.0,0.065,0.38002267342670837,-760,500,-130.5734,270,True

@@ -170,6 +170,22 @@ def main(include_scenarios=False):
         assert abs(worlds['natural_conversion_trap']['groups']['priority']['expected_incremental_profit']+90) < 1e-9
         report['conditional_simulation'] = {'status':'PASS','script':'profit_scenarios_v1/experiment.py',
                                             'repetitions_per_scenario':100000,'actual_profit_verified':False}
+        for step in ('integration_setup_sim_v1/experiment.py','integration_setup_sim_v1/independent_verify.py'):
+            subprocess.run([sys.executable,str(ROOT/step)],cwd=ROOT,check=True)
+        setup_sim = read('integration_setup_sim_v1/results.json')
+        assert setup_sim['execution_kind'] == 'EXPLICITLY_AUTHORIZED_CONDITIONAL_SIMULATION'
+        assert setup_sim['official_roster_records'] == 20 and setup_sim['simulated_first_replay_rows'] == 80
+        assert setup_sim['repetitions_per_scenario'] == 100000 and setup_sim['cost_grid_rows'] == 144
+        assert setup_sim['real_interventions_executed'] == 0 and setup_sim['actual_incremental_profit'] is None
+        assert setup_sim['original_pilot_outcomes_modified'] is False
+        assert setup_sim['checks'] == 'PASS'
+        expected_setup_profit = {'paid_value_unlocked':14,'setup_only_no_upgrade_link':-130,
+                                'free_solution_reduces_upgrade':-226,'no_setup_improvement':-130}
+        for scenario in setup_sim['scenarios']:
+            assert abs(scenario['analytic']['expected_incremental_profit']-expected_setup_profit[scenario['scenario']])<1e-9
+            assert abs(scenario['analytic']['break_even_upgrade_rate_difference']-.065)<1e-12
+        report['integration_setup_conditional_simulation'] = {'status':'PASS','repetitions_per_scenario':100000,
+                                                             'roster_n':20,'scenarios':4,'actual_profit_verified':False}
     (ROOT / 'reproduction_check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print('REPRODUCTION PASS: competition-data calculations verified; profit uplift remains unverified.')
 

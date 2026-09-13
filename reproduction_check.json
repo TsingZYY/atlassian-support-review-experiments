@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-13T05:31:34.209557+00:00",
+  "executed_at": "2026-09-13T05:46:28.786895+00:00",
   "steps_completed": [
     "inspect_case.py",
     "independent_check.py",
@@ -56,6 +56,13 @@
     "status": "PASS",
     "script": "profit_scenarios_v1/experiment.py",
     "repetitions_per_scenario": 100000,
+    "actual_profit_verified": false
+  },
+  "integration_setup_conditional_simulation": {
+    "status": "PASS",
+    "repetitions_per_scenario": 100000,
+    "roster_n": 20,
+    "scenarios": 4,
     "actual_profit_verified": false
   }
 }

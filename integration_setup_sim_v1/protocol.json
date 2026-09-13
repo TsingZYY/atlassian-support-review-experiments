@@ -1,0 +1,28 @@
+{
+  "version": "integration-setup-sim-v1",
+  "roster": "integration_setup_v1/planned_pilot_20.csv",
+  "evidence_cards": "integration_setup_v1/evidence_cards_20.json",
+  "seed": 2026091311,
+  "repetitions": 100000,
+  "numerical_tolerance_standard_errors": 8,
+  "acceptance_probability": 0.6,
+  "baseline_setup_probability": 0.4,
+  "upgrade_net_contribution": 200,
+  "offer_cost_per_assigned_help_customer": 2,
+  "assistance_cost_per_acceptor": 15,
+  "incremental_fixed_cost_per_help_batch": 20,
+  "cost_unit": "uncalibrated_hypothetical_cost_units",
+  "eligibility_assumption": "All 20 candidates are assumed eligible with a help-addressable task for this conditional simulation only; not verified from competition data",
+  "setup_window_days": 7,
+  "upgrade_window_days": 30,
+  "scenarios": [
+    {"id":"paid_value_unlocked","label":"配置帮助促进升级","assisted_setup_probability":0.8,"upgrade_given_setup":0.35,"upgrade_given_no_setup":0.05},
+    {"id":"setup_only_no_upgrade_link","label":"配置改善但升级无变化","assisted_setup_probability":0.8,"upgrade_given_setup":0.17,"upgrade_given_no_setup":0.17},
+    {"id":"free_solution_reduces_upgrade","label":"免费需求满足后升级减少","assisted_setup_probability":0.8,"upgrade_given_setup":0.05,"upgrade_given_no_setup":0.25},
+    {"id":"no_setup_improvement","label":"帮助没有改善配置","assisted_setup_probability":0.4,"upgrade_given_setup":0.35,"upgrade_given_no_setup":0.05}
+  ],
+  "cost_grid": {"upgrade_net_contribution":[100,200,400],"assistance_cost_per_acceptor":[0,5,15,30],"incremental_fixed_cost_per_help_batch":[0,20,100]},
+  "single_replay": "repetition_0_only_no_selection",
+  "customer_responses_or_configuration_details_generated": false,
+  "real_interventions_executed": false
+}
