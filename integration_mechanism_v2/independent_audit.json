@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "executed_at_utc": "2026-09-13T07:27:39.259261+00:00",
+  "review_blinded": false,
+  "method": "Raw CSV independent aggregation; different row/category ordering; QR OLS without importing main script.",
+  "models": [
+    {
+      "model": "P",
+      "full_r2": 0.8793435370848044,
+      "reused_test_r2": 0.8726475449858313,
+      "reused_test_mse": 0.34966942020381586
+    },
+    {
+      "model": "B",
+      "full_r2": 0.003965333746792532,
+      "reused_test_r2": -0.008074534493380137,
+      "reused_test_mse": 2.767852712060519
+    },
+    {
+      "model": "B+P",
+      "full_r2": 0.8799460533727965,
+      "reused_test_r2": 0.8726520480468449,
+      "reused_test_mse": 0.34965705622752974
+    },
+    {
+      "model": "B+U",
+      "full_r2": 0.18413403233049586,
+      "reused_test_r2": 0.17698102125281456,
+      "reused_test_mse": 2.2597488920276216
+    },
+    {
+      "model": "B+U+P",
+      "full_r2": 0.8799679004617804,
+      "reused_test_r2": 0.8725660480736254,
+      "reused_test_mse": 0.3498931848578723
+    }
+  ],
+  "company_size_plan": [
+    {
+      "company_size": "1-10",
+      "plan": "Free",
+      "customer_n": 145,
+      "mean_integrations": 1.0599999999999998
+    },
+    {
+      "company_size": "1-10",
+      "plan": "Standard",
+      "customer_n": 370,
+      "mean_integrations": 2.356666666666667
+    },
+    {
+      "company_size": "1-10",
+      "plan": "Premium",
+      "customer_n": 229,
+      "mean_integrations": 4.135807860262009
+    },
+    {
+      "company_size": "1-10",
+      "plan": "Enterprise",
+      "customer_n": 131,
+      "mean_integrations": 5.7946564885496175
+    },
+    {
+      "company_size": "1000+",
+      "plan": "Free",
+      "customer_n": 171,
+      "mean_integrations": 1.14093567251462
+    },
+    {
+      "company_size": "1000+",
+      "plan": "Standard",
+      "customer_n": 392,
+      "mean_integrations": 2.343877551020408
+    },
+    {
+      "company_size": "1000+",
+      "plan": "Premium",
+      "customer_n": 251,
+      "mean_integrations": 4.105976095617531
+    },
+    {
+      "company_size": "1000+",
+      "plan": "Enterprise",
+      "customer_n": 136,
+      "mean_integrations": 6.021323529411766
+    },
+    {
+      "company_size": "11-50",
+      "plan": "Free",
+      "customer_n": 321,
+      "mean_integrations": 1.2080996884735202
+    },
+    {
+      "company_size": "11-50",
+      "plan": "Standard",
+      "customer_n": 697,
+      "mean_integrations": 2.4190817790530845
+    },
+    {
+      "company_size": "11-50",
+      "plan": "Premium",
+      "customer_n": 518,
+      "mean_integrations": 4.128764478764478
+    },
+    {
+      "company_size": "11-50",
+      "plan": "Enterprise",
+      "customer_n": 239,
+      "mean_integrations": 6.02092050209205
+    },
+    {
+      "company_size": "201-500",
+      "plan": "Free",
+      "customer_n": 281,
+      "mean_integrations": 1.0722419928825622
+    },
+    {
+      "company_size": "201-500",
+      "plan": "Standard",
+      "customer_n": 596,
+      "mean_integrations": 2.421476510067114
+    },
+    {
+      "company_size": "201-500",
+      "plan": "Premium",
+      "customer_n": 428,
+      "mean_integrations": 4.083177570093458
+    },
+    {
+      "company_size": "201-500",
+      "plan": "Enterprise",
+      "customer_n": 197,
+      "mean_integrations": 6.035532994923858
+    },
+    {
+      "company_size": "501-1000",
+      "plan": "Free",
+      "customer_n": 164,
+      "mean_integrations": 1.207317073170732
+    },
+    {
+      "company_size": "501-1000",
+      "plan": "Standard",
+      "customer_n": 341,
+      "mean_integrations": 2.4196480938416425
+    },
+    {
+      "company_size": "501-1000",
+      "plan": "Premium",
+      "customer_n": 246,
+      "mean_integrations": 4.1361788617886175
+    },
+    {
+      "company_size": "501-1000",
+      "plan": "Enterprise",
+      "customer_n": 145,
+      "mean_integrations": 5.929655172413793
+    },
+    {
+      "company_size": "51-200",
+      "plan": "Free",
+      "customer_n": 390,
+      "mean_integrations": 1.1264102564102563
+    },
+    {
+      "company_size": "51-200",
+      "plan": "Standard",
+      "customer_n": 913,
+      "mean_integrations": 2.391821832785688
+    },
+    {
+      "company_size": "51-200",
+      "plan": "Premium",
+      "customer_n": 665,
+      "mean_integrations": 4.060902255639098
+    },
+    {
+      "company_size": "51-200",
+      "plan": "Enterprise",
+      "customer_n": 354,
+      "mean_integrations": 6.035028248587571
+    }
+  ],
+  "max_model_metric_absolute_difference": 1.887379141862766e-15,
+  "max_cell_mean_absolute_difference": 1.7763568394002505e-15,
+  "source_hashes_verified": true,
+  "new_observations": 0,
+  "causal_effect_identified": false,
+  "limitations": [
+    "Non-blind numerical and code verification; not an independent dataset.",
+    "Reuses an already examined customer split; not a new holdout.",
+    "Additive conditional association cannot identify mechanisms or causal effects.",
+    "Product composition and usage may be mediators or selection variables.",
+    "24 size-plan cells provide marginal support, not guaranteed joint covariate overlap."
+  ]
+}

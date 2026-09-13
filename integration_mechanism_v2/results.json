@@ -1,0 +1,146 @@
+{
+  "executed_at": "2026-09-13T07:25:42.222673+00:00",
+  "scope": "exploratory_conditional_association_in_competition_synthetic_data",
+  "source_sha256": {
+    "data\\customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "data\\product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "data\\README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc",
+    "integration_plan_v1\\protocol.json": "297d4c61005f204db1fd7a4c35378ad09889bdfebcc6e1ff2d2480f766c19b2f"
+  },
+  "analysis_sha256": {
+    "protocol.md": "0559e97d3108bde7f579f035932bc3161b2239cc8fd7cf6ae970d04c4434cd71",
+    "experiment.py": "49823f4c9dcb64d4889f8b37aa631ec83a6e071e6f935999fd32c6706c41e7a7"
+  },
+  "quality": {
+    "customer_n": 8320,
+    "usage_rows": 42210,
+    "customer_product_pairs": 8442,
+    "unknown_test_categories": {
+      "Company Size": 0,
+      "Industry": 0,
+      "Region": 0,
+      "plan": 0
+    },
+    "all_pairs_complete": true,
+    "train_n": 6654,
+    "reused_test_n": 1666,
+    "split_previously_used": true
+  },
+  "models": [
+    {
+      "model": "P",
+      "parameters": 4,
+      "full_n": 8320,
+      "full_r2": 0.8793435370848043,
+      "full_sse": 2696.5297726063745,
+      "train_n": 6654,
+      "reused_test_n": 1666,
+      "reused_test_r2": 0.8726475449858321,
+      "reused_test_mse": 0.349669420203814
+    },
+    {
+      "model": "B",
+      "parameters": 23,
+      "full_n": 8320,
+      "full_r2": 0.003965333746792199,
+      "full_sse": 22260.20112977777,
+      "train_n": 6654,
+      "reused_test_n": 1666,
+      "reused_test_r2": -0.008074534493380137,
+      "reused_test_mse": 2.767852712060519
+    },
+    {
+      "model": "B+P",
+      "parameters": 26,
+      "full_n": 8320,
+      "full_r2": 0.8799460533727965,
+      "full_sse": 2683.0642435348564,
+      "train_n": 6654,
+      "reused_test_n": 1666,
+      "reused_test_r2": 0.8726520480468449,
+      "reused_test_mse": 0.34965705622753
+    },
+    {
+      "model": "B+U",
+      "parameters": 26,
+      "full_n": 8320,
+      "full_r2": 0.18413403233049552,
+      "full_sse": 18233.643015239228,
+      "train_n": 6654,
+      "reused_test_n": 1666,
+      "reused_test_r2": 0.17698102125281445,
+      "reused_test_mse": 2.2597488920276216
+    },
+    {
+      "model": "B+U+P",
+      "parameters": 29,
+      "full_n": 8320,
+      "full_r2": 0.8799679004617804,
+      "full_sse": 2682.5759868392215,
+      "train_n": 6654,
+      "reused_test_n": 1666,
+      "reused_test_r2": 0.8725660480736255,
+      "reused_test_mse": 0.34989318485787196
+    }
+  ],
+  "adding_plan": [
+    {
+      "base": "B",
+      "with_plan": "B+P",
+      "full_delta_r2": 0.8759807196260043,
+      "full_residual_fraction_removed": 0.8794681041787316,
+      "reused_test_delta_r2": 0.8807265825402251,
+      "reused_test_mse_fraction_removed": 0.873672087136736
+    },
+    {
+      "base": "B+U",
+      "with_plan": "B+U+P",
+      "full_delta_r2": 0.6958338681312849,
+      "full_residual_fraction_removed": 0.8528776731782458,
+      "reused_test_delta_r2": 0.695585026820811,
+      "reused_test_mse_fraction_removed": 0.8451628027820735
+    }
+  ],
+  "company_size_order_checks": [
+    {
+      "company_size": "1-10",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    },
+    {
+      "company_size": "1000+",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    },
+    {
+      "company_size": "11-50",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    },
+    {
+      "company_size": "201-500",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    },
+    {
+      "company_size": "501-1000",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    },
+    {
+      "company_size": "51-200",
+      "all_four_plans_present": true,
+      "free_standard_premium_enterprise_means_increasing": true
+    }
+  ],
+  "new_observations": 0,
+  "causal_effect_identified": false,
+  "configuration_help_executed": false,
+  "upgrade_or_profit_effect_measured": false,
+  "limitations": [
+    "Background and usage proxies need not form a valid causal adjustment set.",
+    "Usage and product choice may be mediators or selection variables.",
+    "Coarse measured variables and additive OLS cannot rule out all alternative explanations.",
+    "The same synthetic data and previously examined test split are reused."
+  ]
+}
