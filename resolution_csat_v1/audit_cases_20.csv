@@ -1,0 +1,21 @@
+ticket_id,source_row,customer_id,time_state,interval_hours,rating,identity_conflict,primary_eligible,Ticket Status,Product Purchased,Ticket Type,Ticket Priority,Ticket Channel,First Response Time,Time to Resolution
+5919,5920,CUST06084,POSITIVE_INTERVAL,13.616666666666667,2,False,True,Closed,Jira,Billing inquiry,Critical,Email,01-06-2023 02:33,01-06-2023 16:10
+4875,4876,CUST05222,REVERSED_PAIR,,1,False,False,Closed,Confluence,Billing inquiry,High,Email,01-06-2023 23:29,01-06-2023 02:41
+2638,2639,CUST02836,REVERSED_PAIR,,2,False,False,Closed,Confluence,Refund request,Low,Social media,01-06-2023 17:22,01-06-2023 15:54
+4832,4833,CUST06304,REVERSED_PAIR,,2,False,False,Closed,Confluence,Cancellation request,Low,Phone,01-06-2023 16:10,01-06-2023 12:59
+2267,2268,CUST05284,REVERSED_PAIR,,1,False,False,Closed,Trello,Product inquiry,Critical,Social media,01-06-2023 06:56,01-06-2023 02:18
+4898,4899,CUST00668,POSITIVE_INTERVAL,4.65,3,False,True,Closed,Jira,Product inquiry,Low,Social media,01-06-2023 01:45,01-06-2023 06:24
+4463,4464,CUST04949,REVERSED_PAIR,,3,False,False,Closed,Loom,Product inquiry,Low,Email,01-06-2023 22:16,01-06-2023 06:31
+6891,6892,CUST01706,POSITIVE_INTERVAL,9.7,3,False,True,Closed,Jira,Product inquiry,Low,Social media,01-06-2023 11:12,01-06-2023 20:54
+5939,5940,CUST01698,REVERSED_PAIR,,3,False,False,Closed,Jira,Product inquiry,Medium,Social media,01-06-2023 19:47,01-06-2023 17:39
+3827,3828,CUST04561,POSITIVE_INTERVAL,14.95,3,False,True,Closed,Jira,Billing inquiry,Critical,Chat,01-06-2023 02:45,01-06-2023 17:42
+6536,6537,CUST05844,POSITIVE_INTERVAL,2.45,5,False,True,Closed,Trello,Cancellation request,High,Email,01-06-2023 15:44,01-06-2023 18:11
+3424,3425,CUST06856,POSITIVE_INTERVAL,18.45,5,False,True,Closed,Jira,Cancellation request,High,Social media,01-06-2023 01:06,01-06-2023 19:33
+1604,1605,CUST01685,POSITIVE_INTERVAL,1.0333333333333334,5,False,True,Closed,Bitbucket,Technical issue,Low,Chat,01-06-2023 07:07,01-06-2023 08:09
+7687,7688,CUST00364,REVERSED_PAIR,,5,False,False,Closed,Loom,Cancellation request,Medium,Social media,01-06-2023 06:58,01-06-2023 02:07
+2411,2412,CUST03556,POSITIVE_INTERVAL,17.116666666666667,5,False,True,Closed,Loom,Technical issue,Critical,Phone,31-05-2023 23:00,01-06-2023 16:07
+6863,6864,CUST04512,MISSING_PAIR,,,False,False,Pending Customer Response,Confluence,Product inquiry,High,Chat,01-06-2023 07:31,
+7412,7413,CUST00215,MISSING_PAIR,,,False,False,Open,Trello,Refund request,Low,Email,,
+6635,6636,CUST02795,MISSING_PAIR,,,False,False,Open,Loom,Technical issue,Low,Phone,,
+3943,3944,CUST02207,MISSING_PAIR,,,False,False,Pending Customer Response,Bitbucket,Billing inquiry,Critical,Email,01-06-2023 08:49,
+5917,5918,CUST08016,MISSING_PAIR,,,False,False,Open,Loom,Product inquiry,Low,Social media,,

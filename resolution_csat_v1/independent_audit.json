@@ -1,0 +1,71 @@
+{
+  "status": "PASS_WITH_STATED_SCOPE",
+  "audit_kind": "independent_source_and_arithmetic_reimplementation_not_blinded",
+  "experiment_module_imported": false,
+  "source_and_protocol_hashes_verified": {
+    "source_sha256": {
+      "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+      "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+      "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+    },
+    "audit_roster_sha256": "0b7fc3af050d2d56ed2082f244b18fcc1e8dc6fed482afdeea25d4c0028deb54",
+    "protocol_code_sha256": {
+      "protocol.json": "ee58aa72081f56f4d072bddad75d8ef469b2608c61b8f5b1588069ae519f9d25",
+      "protocol.md": "8413a03b46eb720b49a99229450ebf3284a4633698c0b72efe7e078419b46c2c",
+      "experiment.py": "6d807244f6c376c80d1e1f4b9e1ce6b282286eec20c39584ea50a50d9e8c6961",
+      "cost_model.py": "7906b549df69efd5520a1d9943e13c59f3204b1d7f3a16644210a9ad244243fa"
+    }
+  },
+  "auditor_script_sha256": "d6507dde4d92ca3dba4bd669c418c5e4e5ff93235dfcfb22aa310c07b3f78d2f",
+  "source_ticket_rows_checked": 8469,
+  "primary_cohort_rows_checked": 1357,
+  "independently_recomputed_primary": {
+    "n": 1357,
+    "spearman_rho": 0.003027047454580345,
+    "bootstrap_95": [
+      -0.04839314004142792,
+      0.0573091909393939
+    ],
+    "two_sided_permutation_p": 0.9108178364327134,
+    "permutation_extreme_count": 4554,
+    "repetitions": 5000,
+    "shorter_interval_higher_csat_supported": false
+  },
+  "resampling_note": "Independent rank/correlation/percentile implementation; same NumPy seeded random draws as protocol; not an independent sample or experiment.",
+  "fast_slow_group_n": {
+    "fast": 680,
+    "slow": 677
+  },
+  "fast_slow_delta": -0.03405161178208349,
+  "fast_slow_bootstrap_95": [
+    -0.183214712398992,
+    0.11461904813624099
+  ],
+  "adjusted_strata_checked": 20,
+  "adjusted_delta": -0.020361161964904683,
+  "adjusted_bootstrap_95": [
+    -0.16380763895576447,
+    0.1257710428930282
+  ],
+  "audit_cases_checked": 20,
+  "audit_time_state_counts": {
+    "POSITIVE_INTERVAL": 8,
+    "REVERSED_PAIR": 7,
+    "MISSING_PAIR": 5
+  },
+  "cost_grid_rows_checked": 144,
+  "cost_examples_checked": 4,
+  "cost_api_valid_cases": 9,
+  "cost_api_invalid_cases": 12,
+  "cost_cli_success_cases": 4,
+  "cost_cli_rejection_cases": 1,
+  "observed_human_time_or_profit_created": false,
+  "limitations": [
+    "Code and primary output were visible to the auditor; this is not a blinded review.",
+    "Hash equality verifies current inputs/code match execution_lock, not that no analyst had previously seen the data.",
+    "Only ordered, rated Closed tickets with consistent customer identity enter the association; selection and confounding remain.",
+    "Calendar interval is not labour effort, complete resolution duration, or an intervention effect.",
+    "Twenty cases audit source records only; no human timed review or customer problem-solving trial was performed.",
+    "All cost parameters and two-minute savings are explicit uncalibrated assumptions; actual efficiency and profit are unknown."
+  ]
+}

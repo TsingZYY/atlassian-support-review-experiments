@@ -25,6 +25,8 @@ STEPS = [
     'ticket_bridge_v1/uniqueness_independent.py',
     'sentiment_evidence_v1/experiment.py',
     'sentiment_evidence_v1/independent_verify.py',
+    'resolution_csat_v1/experiment.py',
+    'resolution_csat_v1/independent_verify.py',
 ]
 
 
@@ -46,6 +48,8 @@ def main(include_scenarios=False):
     bridge = read('ticket_bridge_v1/results.json')
     uniqueness = read('ticket_bridge_v1/uniqueness_results.json')
     sentiment = read('sentiment_evidence_v1/results.json')
+    resolution = read('resolution_csat_v1/results.json')
+    costs = read('resolution_csat_v1/cost_results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -113,6 +117,16 @@ def main(include_scenarios=False):
     assert sentiment['text_experiment']['text_csat_increment_supported'] is False
     assert sentiment['all_tickets_customer_sentiment_unknown'] == 8469 and sentiment['source_audit_cases'] == 20
     assert sentiment['customer_sentiment_accuracy'] is None and sentiment['measured_profit_effect'] is None
+    assert resolution['dataset_scope'] == 'competition_csv_only' and resolution['new_synthetic_observations'] == 0
+    assert resolution['profile']['primary_n'] == 1357
+    assert resolution['profile']['all_time_state_counts'] == {'MISSING_PAIR':5700,'POSITIVE_INTERVAL':1402,'REVERSED_PAIR':1365,'ZERO_INTERVAL':2}
+    assert abs(resolution['primary']['spearman_rho'] - 0.003027047454580345) < 1e-12
+    assert resolution['primary']['shorter_interval_higher_csat_supported'] is False
+    assert resolution['audit_cases'] == 20 and resolution['audit_primary_eligible_n'] == 8
+    assert resolution['human_review_efficiency_measured'] is False and resolution['measured_profit_effect'] is None
+    assert costs['grid_rows'] == 144 and costs['base_no_observed_time_saving']['conditional_net_profit'] is None
+    assert abs(costs['base_no_observed_time_saving']['break_even_minutes_per_ticket'] - 1.2) < 1e-12
+    assert costs['ticket_interval_used_as_labour_saving'] is False
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
@@ -128,6 +142,8 @@ def main(include_scenarios=False):
               'only_plan_integration_significant_claim_supported':False,
               'resolution_text_low_csat_increment_supported':False,
               'customer_language_sentiment_validated':False,
+              'shorter_response_resolution_interval_higher_csat_supported':False,
+              'resolution_csat_cost_break_even_is_conditional':True,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

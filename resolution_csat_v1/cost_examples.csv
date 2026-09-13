@@ -1,0 +1,5 @@
+scenario,volume,fixed_cost,variable_cost_per_ticket,hourly_cost,realizable_fraction,total_extra_cost,break_even_minutes_per_ticket,break_even_state,assumed_labour_minutes_saved,conditional_net_profit,retention_conversion_contribution,actual_profit_measured,elapsed_ticket_interval_used_as_labour_saving
+base,1000,100,0.5,30,1,600.0,1.2,FINITE,2,400.0,0,False,False
+half_realizable,1000,100,0.5,30,0.5,600.0,2.4,FINITE,2,-100.0,0,False,False
+no_realizable_saving,1000,100,0.5,30,0,600.0,,NO_FINITE_BREAK_EVEN,2,-600.0,0,False,False
+twenty_ticket_volume,20,100,0.5,30,1,110.0,11.0,FINITE,2,-90.0,0,False,False

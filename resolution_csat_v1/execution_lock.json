@@ -1,0 +1,15 @@
+{
+  "source_sha256": {
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "audit_roster_sha256": "0b7fc3af050d2d56ed2082f244b18fcc1e8dc6fed482afdeea25d4c0028deb54",
+  "protocol_code_sha256": {
+    "protocol.json": "ee58aa72081f56f4d072bddad75d8ef469b2608c61b8f5b1588069ae519f9d25",
+    "protocol.md": "8413a03b46eb720b49a99229450ebf3284a4633698c0b72efe7e078419b46c2c",
+    "experiment.py": "6d807244f6c376c80d1e1f4b9e1ce6b282286eec20c39584ea50a50d9e8c6961",
+    "cost_model.py": "7906b549df69efd5520a1d9943e13c59f3204b1d7f3a16644210a9ad244243fa"
+  },
+  "frozen_at": "2026-09-13T04:54:41.467602+00:00"
+}

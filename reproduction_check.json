@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-13T04:17:52.416170+00:00",
+  "executed_at": "2026-09-13T05:02:06.151181+00:00",
   "steps_completed": [
     "inspect_case.py",
     "independent_check.py",
@@ -23,7 +23,9 @@
     "ticket_bridge_v1/uniqueness_check.py",
     "ticket_bridge_v1/uniqueness_independent.py",
     "sentiment_evidence_v1/experiment.py",
-    "sentiment_evidence_v1/independent_verify.py"
+    "sentiment_evidence_v1/independent_verify.py",
+    "resolution_csat_v1/experiment.py",
+    "resolution_csat_v1/independent_verify.py"
   ],
   "key_snapshot_claims_verified": true,
   "main_experiment_scope": "competition_csv_only",
@@ -42,6 +44,8 @@
   "only_plan_integration_significant_claim_supported": false,
   "resolution_text_low_csat_increment_supported": false,
   "customer_language_sentiment_validated": false,
+  "shorter_response_resolution_interval_higher_csat_supported": false,
+  "resolution_csat_cost_break_even_is_conditional": true,
   "business_efficacy": "UNVERIFIED",
   "real_customer_trial": "CANDIDATE-UNRUN",
   "conditional_simulation": {

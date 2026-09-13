@@ -1,0 +1,18 @@
+{
+  "version": "resolution-csat-v1",
+  "timestamp_format": "%d-%m-%Y %H:%M",
+  "hypothesis": "Shorter first-response-to-recorded-resolution intervals are associated with higher observed CSAT",
+  "primary": "spearman_duration_hours_csat",
+  "permutation_alternative": "two_sided",
+  "repetitions": 5000,
+  "seed": 2026091307,
+  "bootstrap_seed": 2026091308,
+  "fast_definition": "interval_hours <= median_of_primary_cohort",
+  "adjustment_fields": ["Product Purchased", "Ticket Priority"],
+  "audit_roster": "sentiment_evidence_v1/evidence_cards_20.json",
+  "cost_unit": "hypothetical_cost_unit_not_official_currency_or_price",
+  "cost_base": {"volume": 1000, "fixed_cost": 100, "variable_cost_per_ticket": 0.5, "hourly_cost": 30, "realizable_fraction": 1},
+  "cost_grid": {"volume": [20, 1000], "fixed_cost": [0, 100], "variable_cost_per_ticket": [0, 0.5, 1], "hourly_cost": [15, 30, 60], "realizable_fraction": [0, 0.25, 0.5, 1]},
+  "illustrative_minutes_saved": 2,
+  "retention_and_conversion_contribution": 0
+}

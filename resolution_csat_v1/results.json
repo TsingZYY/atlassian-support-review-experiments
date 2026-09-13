@@ -1,0 +1,332 @@
+{
+  "executed_at": "2026-09-13T05:01:47.069603+00:00",
+  "source_sha256": {
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "audit_roster_sha256": "0b7fc3af050d2d56ed2082f244b18fcc1e8dc6fed482afdeea25d4c0028deb54",
+  "protocol_code_sha256": {
+    "protocol.json": "ee58aa72081f56f4d072bddad75d8ef469b2608c61b8f5b1588069ae519f9d25",
+    "protocol.md": "8413a03b46eb720b49a99229450ebf3284a4633698c0b72efe7e078419b46c2c",
+    "experiment.py": "6d807244f6c376c80d1e1f4b9e1ce6b282286eec20c39584ea50a50d9e8c6961",
+    "cost_model.py": "7906b549df69efd5520a1d9943e13c59f3204b1d7f3a16644210a9ad244243fa"
+  },
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "profile": {
+    "tickets": 8469,
+    "rated_closed_n": 2769,
+    "identity_conflict_customers": 139,
+    "clean_closed_rated_n": 2663,
+    "all_time_state_counts": {
+      "MISSING_PAIR": 5700,
+      "POSITIVE_INTERVAL": 1402,
+      "REVERSED_PAIR": 1365,
+      "ZERO_INTERVAL": 2
+    },
+    "clean_closed_time_state_counts": {
+      "POSITIVE_INTERVAL": 1355,
+      "REVERSED_PAIR": 1306,
+      "ZERO_INTERVAL": 2
+    },
+    "time_quality": [
+      {
+        "time_state": "MISSING_PAIR",
+        "n": 5700,
+        "rating_n": 0,
+        "mean_csat": null,
+        "rating_1_n": 0,
+        "rating_2_n": 0,
+        "rating_3_n": 0,
+        "rating_4_n": 0,
+        "rating_5_n": 0
+      },
+      {
+        "time_state": "UNPARSEABLE_PAIR",
+        "n": 0,
+        "rating_n": 0,
+        "mean_csat": null,
+        "rating_1_n": 0,
+        "rating_2_n": 0,
+        "rating_3_n": 0,
+        "rating_4_n": 0,
+        "rating_5_n": 0
+      },
+      {
+        "time_state": "REVERSED_PAIR",
+        "n": 1365,
+        "rating_n": 1365,
+        "mean_csat": 2.9531135531135533,
+        "rating_1_n": 284,
+        "rating_2_n": 277,
+        "rating_3_n": 290,
+        "rating_4_n": 247,
+        "rating_5_n": 267
+      },
+      {
+        "time_state": "ZERO_INTERVAL",
+        "n": 2,
+        "rating_n": 2,
+        "mean_csat": 2.0,
+        "rating_1_n": 0,
+        "rating_2_n": 2,
+        "rating_3_n": 0,
+        "rating_4_n": 0,
+        "rating_5_n": 0
+      },
+      {
+        "time_state": "POSITIVE_INTERVAL",
+        "n": 1402,
+        "rating_n": 1402,
+        "mean_csat": 3.029957203994294,
+        "rating_1_n": 269,
+        "rating_2_n": 270,
+        "rating_3_n": 290,
+        "rating_4_n": 296,
+        "rating_5_n": 277
+      }
+    ],
+    "primary_n": 1357
+  },
+  "interval_name": "first_response_to_recorded_resolution_calendar_interval_hours",
+  "full_resolution_duration_available": false,
+  "labour_time_available": false,
+  "primary": {
+    "n": 1357,
+    "spearman_rho": 0.003027047454580345,
+    "bootstrap_95": [
+      -0.04839314004142792,
+      0.0573091909393939
+    ],
+    "two_sided_permutation_p": 0.9108178364327134,
+    "permutation_extreme_count": 4554,
+    "repetitions": 5000,
+    "shorter_interval_higher_csat_supported": false
+  },
+  "fast_slow": {
+    "threshold_hours": 6.383333333333334,
+    "fast_rule": "hours <= threshold",
+    "groups": [
+      {
+        "group": "fast",
+        "n": 680,
+        "interval_hours_mean": 3.013161764705882,
+        "interval_hours_median": 3.0,
+        "rating_sum": 2052,
+        "mean_csat": 3.0176470588235293,
+        "low_csat_n": 260,
+        "low_csat_fraction": 0.38235294117647056,
+        "high_csat_n": 272,
+        "high_csat_fraction": 0.4
+      },
+      {
+        "group": "slow",
+        "n": 677,
+        "interval_hours_mean": 12.247612013786314,
+        "interval_hours_median": 11.5,
+        "rating_sum": 2066,
+        "mean_csat": 3.051698670605613,
+        "low_csat_n": 257,
+        "low_csat_fraction": 0.37961595273264404,
+        "high_csat_n": 281,
+        "high_csat_fraction": 0.4150664697193501
+      }
+    ],
+    "fast_minus_slow_mean_csat": -0.03405161178208349,
+    "bootstrap_95": [
+      -0.183214712398992,
+      0.11461904813624099
+    ],
+    "adjusted": {
+      "fields": [
+        "Product Purchased",
+        "Ticket Priority"
+      ],
+      "common_support_n": 1357,
+      "excluded_strata": [],
+      "fast_minus_slow_mean_csat": -0.020361161964904687,
+      "bootstrap_95": [
+        -0.16380763895576447,
+        0.1257710428930282
+      ],
+      "strata": [
+        {
+          "product": "Bitbucket",
+          "priority": "Critical",
+          "fast_n": 41,
+          "slow_n": 34,
+          "pooled_weight": 0.0552689756816507,
+          "fast_minus_slow_csat": -0.22955523672883782
+        },
+        {
+          "product": "Bitbucket",
+          "priority": "High",
+          "fast_n": 28,
+          "slow_n": 30,
+          "pooled_weight": 0.04274134119380987,
+          "fast_minus_slow_csat": -0.27857142857142847
+        },
+        {
+          "product": "Bitbucket",
+          "priority": "Low",
+          "fast_n": 24,
+          "slow_n": 29,
+          "pooled_weight": 0.039056742815033164,
+          "fast_minus_slow_csat": -0.6163793103448274
+        },
+        {
+          "product": "Bitbucket",
+          "priority": "Medium",
+          "fast_n": 42,
+          "slow_n": 26,
+          "pooled_weight": 0.050110537951363304,
+          "fast_minus_slow_csat": 0.17765567765567747
+        },
+        {
+          "product": "Confluence",
+          "priority": "Critical",
+          "fast_n": 34,
+          "slow_n": 36,
+          "pooled_weight": 0.051584377302873984,
+          "fast_minus_slow_csat": 0.1895424836601305
+        },
+        {
+          "product": "Confluence",
+          "priority": "High",
+          "fast_n": 38,
+          "slow_n": 42,
+          "pooled_weight": 0.058953574060427415,
+          "fast_minus_slow_csat": -0.42105263157894735
+        },
+        {
+          "product": "Confluence",
+          "priority": "Low",
+          "fast_n": 19,
+          "slow_n": 37,
+          "pooled_weight": 0.04126750184229919,
+          "fast_minus_slow_csat": 0.34992887624466595
+        },
+        {
+          "product": "Confluence",
+          "priority": "Medium",
+          "fast_n": 35,
+          "slow_n": 37,
+          "pooled_weight": 0.05305821665438467,
+          "fast_minus_slow_csat": 0.4332046332046331
+        },
+        {
+          "product": "Jira",
+          "priority": "Critical",
+          "fast_n": 40,
+          "slow_n": 27,
+          "pooled_weight": 0.04937361827560796,
+          "fast_minus_slow_csat": 0.5796296296296299
+        },
+        {
+          "product": "Jira",
+          "priority": "High",
+          "fast_n": 39,
+          "slow_n": 33,
+          "pooled_weight": 0.05305821665438467,
+          "fast_minus_slow_csat": -0.4755244755244754
+        },
+        {
+          "product": "Jira",
+          "priority": "Low",
+          "fast_n": 40,
+          "slow_n": 45,
+          "pooled_weight": 0.06263817243920412,
+          "fast_minus_slow_csat": 0.125
+        },
+        {
+          "product": "Jira",
+          "priority": "Medium",
+          "fast_n": 37,
+          "slow_n": 27,
+          "pooled_weight": 0.04716285924834193,
+          "fast_minus_slow_csat": 0.3903903903903907
+        },
+        {
+          "product": "Loom",
+          "priority": "Critical",
+          "fast_n": 30,
+          "slow_n": 34,
+          "pooled_weight": 0.04716285924834193,
+          "fast_minus_slow_csat": -0.3647058823529412
+        },
+        {
+          "product": "Loom",
+          "priority": "High",
+          "fast_n": 29,
+          "slow_n": 39,
+          "pooled_weight": 0.050110537951363304,
+          "fast_minus_slow_csat": 0.18125552608311235
+        },
+        {
+          "product": "Loom",
+          "priority": "Low",
+          "fast_n": 36,
+          "slow_n": 30,
+          "pooled_weight": 0.04863669859985262,
+          "fast_minus_slow_csat": -0.19444444444444464
+        },
+        {
+          "product": "Loom",
+          "priority": "Medium",
+          "fast_n": 34,
+          "slow_n": 30,
+          "pooled_weight": 0.04716285924834193,
+          "fast_minus_slow_csat": 0.021568627450980316
+        },
+        {
+          "product": "Trello",
+          "priority": "Critical",
+          "fast_n": 50,
+          "slow_n": 36,
+          "pooled_weight": 0.06337509211495947,
+          "fast_minus_slow_csat": -0.06111111111111134
+        },
+        {
+          "product": "Trello",
+          "priority": "High",
+          "fast_n": 25,
+          "slow_n": 36,
+          "pooled_weight": 0.0449521002210759,
+          "fast_minus_slow_csat": -0.0988888888888888
+        },
+        {
+          "product": "Trello",
+          "priority": "Low",
+          "fast_n": 30,
+          "slow_n": 35,
+          "pooled_weight": 0.047899778924097275,
+          "fast_minus_slow_csat": 0.06666666666666643
+        },
+        {
+          "product": "Trello",
+          "priority": "Medium",
+          "fast_n": 29,
+          "slow_n": 34,
+          "pooled_weight": 0.04642593957258659,
+          "fast_minus_slow_csat": -0.23529411764705888
+        }
+      ]
+    },
+    "scope": "Prespecified descriptive sensitivity; no subgroup significance selection or causal interpretation"
+  },
+  "excluding_zero_sensitivity": {
+    "n": 1355,
+    "spearman_rho": 0.0010977433472969447
+  },
+  "audit_cases": 20,
+  "audit_time_state_counts": {
+    "POSITIVE_INTERVAL": 8,
+    "REVERSED_PAIR": 7,
+    "MISSING_PAIR": 5
+  },
+  "audit_primary_eligible_n": 8,
+  "human_review_efficiency_measured": false,
+  "causal_csat_improvement": null,
+  "measured_profit_effect": null
+}
