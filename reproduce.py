@@ -15,6 +15,8 @@ STEPS = [
     'product_churn_v1/experiment.py',
     'profit_opportunity_v1/experiment.py',
     'profit_evidence_v2/experiment.py',
+    'channel_hypotheses_v1/experiment.py',
+    'channel_hypotheses_v1/independent_verify.py',
 ]
 
 
@@ -31,6 +33,7 @@ def main(include_scenarios=False):
     products = read('product_churn_v1/results.json')
     profit = read('profit_opportunity_v1/results.json')
     evidence = read('profit_evidence_v2/results.json')
+    channels = read('channel_hypotheses_v1/results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -61,12 +64,24 @@ def main(include_scenarios=False):
     assert evidence['coverage']['enriched']['specific_need'] == {'NOT_ESTABLISHED':20}
     assert evidence['evidence_sufficient_for_paid_recommendation_n'] == 0 and evidence['profit_uplift'] is None
     assert evidence['route_counts'] == {'CLARIFY_REQUEST':17,'SUPPORT_FIRST':2,'REQUIREMENT_REVIEW':1}
+    assert channels['dataset_scope'] == 'competition_csv_only' and channels['new_synthetic_observations'] == 0
+    assert channels['technical_total'] == 1747 and channels['technical_rated_closed'] == 580
+    assert channels['primary']['email_n'] == 135 and channels['primary']['social_n'] == 152
+    assert abs(channels['primary']['mean_difference'] - 0.23684210526315796) < 1e-12
+    assert channels['primary']['email_higher_supported'] is False
+    assert channels['primary']['bootstrap_95'][0] < 0 < channels['primary']['bootstrap_95'][1]
+    assert channels['adjusted_sensitivity']['common_support_n'] == 287
+    assert channels['payment_closed'] == 156 and channels['payment_timestamp_states']['resolution_before_first_response'] == 82
+    assert channels['payment_chat_faster_conclusion'] == 'NOT_IDENTIFIABLE_FROM_AVAILABLE_TIMESTAMPS'
+    assert channels['source_audit_case_n'] == 20 and channels['measured_profit_effect'] is None
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
               'product_churn_ranking_established':False,
               'profit_screening_proxy_supported':False, 'profit_uplift_established':False,
               'paid_reason_evidence_established':False, 'profit_evidence_cases_verified':20,
+              'technical_email_rating_advantage_established':False,
+              'payment_channel_speed_identifiable':False,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

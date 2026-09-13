@@ -1,0 +1,16 @@
+{
+  "version": "channel-hypotheses-v1",
+  "technical_filter": {"field": "Ticket Type", "value": "Technical issue"},
+  "payment_filter": {"field": "Ticket Subject", "value": "Payment issue"},
+  "channels": ["Email", "Social media", "Chat", "Phone"],
+  "primary_channels": ["Email", "Social media"],
+  "rated_status": "Closed",
+  "rating_range": [1, 5],
+  "main_statistic": "email_minus_social_mean_rating",
+  "permutation_alternative": "two_sided",
+  "repetitions": 20000,
+  "seed": 2026091302,
+  "adjustment_fields": ["Product Purchased", "Ticket Priority"],
+  "audit_per_arm": 5,
+  "audit_salt": "channel-source-audit-v1-20260913"
+}

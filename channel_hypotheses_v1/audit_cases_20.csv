@@ -1,0 +1,21 @@
+audit_arm,source_row,Ticket ID,Ticket Type,Ticket Subject,Ticket Channel,Ticket Status,Customer Satisfaction Rating,First Response Time,Time to Resolution,timestamp_state
+technical_email,4713,4712,Technical issue,Data loss,Email,Closed,1,01-06-2023 19:43,01-06-2023 11:30,resolution_before_first_response
+technical_email,742,741,Technical issue,Integration,Email,Closed,1,01-06-2023 00:37,01-06-2023 02:52,ordered_pair
+technical_email,6060,6059,Technical issue,Product recommendation,Email,Closed,2,01-06-2023 23:27,01-06-2023 02:57,resolution_before_first_response
+technical_email,2271,2270,Technical issue,Refund request,Email,Closed,3,01-06-2023 09:34,01-06-2023 20:18,ordered_pair
+technical_email,6767,6766,Technical issue,Loading issue,Email,Closed,3,01-06-2023 03:35,01-06-2023 18:46,ordered_pair
+technical_social,1570,1569,Technical issue,Device compatibility issue,Social media,Closed,1,01-06-2023 17:40,01-06-2023 02:42,resolution_before_first_response
+technical_social,3033,3032,Technical issue,Device compatibility issue,Social media,Closed,5,01-06-2023 20:17,01-06-2023 06:46,resolution_before_first_response
+technical_social,2487,2486,Technical issue,Payment issue,Social media,Closed,2,01-06-2023 04:02,01-06-2023 07:44,ordered_pair
+technical_social,5229,5228,Technical issue,Installation support,Social media,Closed,5,01-06-2023 02:11,01-06-2023 00:23,resolution_before_first_response
+technical_social,312,311,Technical issue,Integration,Social media,Closed,2,01-06-2023 13:51,01-06-2023 04:49,resolution_before_first_response
+payment_chat,6367,6366,Billing inquiry,Payment issue,Chat,Closed,2,01-06-2023 18:54,01-06-2023 20:51,ordered_pair
+payment_chat,4082,4081,Billing inquiry,Payment issue,Chat,Closed,3,01-06-2023 15:32,01-06-2023 05:04,resolution_before_first_response
+payment_chat,928,927,Billing inquiry,Payment issue,Chat,Closed,4,01-06-2023 02:24,01-06-2023 10:38,ordered_pair
+payment_chat,2339,2338,Technical issue,Payment issue,Chat,Closed,1,01-06-2023 10:56,01-06-2023 17:14,ordered_pair
+payment_chat,8166,8165,Cancellation request,Payment issue,Chat,Closed,1,01-06-2023 21:34,01-06-2023 02:30,resolution_before_first_response
+payment_other,6269,6268,Refund request,Payment issue,Social media,Closed,3,01-06-2023 18:06,01-06-2023 05:26,resolution_before_first_response
+payment_other,2201,2200,Billing inquiry,Payment issue,Email,Closed,3,01-06-2023 21:12,01-06-2023 01:38,resolution_before_first_response
+payment_other,1115,1114,Product inquiry,Payment issue,Social media,Closed,4,01-06-2023 00:58,01-06-2023 09:57,ordered_pair
+payment_other,2841,2840,Cancellation request,Payment issue,Phone,Closed,4,01-06-2023 12:44,01-06-2023 05:38,resolution_before_first_response
+payment_other,8469,8468,Product inquiry,Payment issue,Email,Closed,3,01-06-2023 18:28,01-06-2023 05:32,resolution_before_first_response

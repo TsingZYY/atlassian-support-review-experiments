@@ -1,0 +1,167 @@
+{
+  "independent_seed": 2026091317,
+  "repetitions": 20000,
+  "source_ticket_count": 8469,
+  "technical_total": 1747,
+  "technical_rated": 580,
+  "primary_unique_customer_count": 287,
+  "channels": {
+    "Email": {
+      "n": 135,
+      "sum": 405,
+      "mean": 3.0,
+      "rating_counts": {
+        "1": 26,
+        "2": 26,
+        "3": 30,
+        "4": 28,
+        "5": 25
+      }
+    },
+    "Social media": {
+      "n": 152,
+      "sum": 420,
+      "mean": 2.763157894736842,
+      "rating_counts": {
+        "1": 36,
+        "2": 35,
+        "3": 35,
+        "4": 21,
+        "5": 25
+      }
+    },
+    "Chat": {
+      "n": 142,
+      "sum": 447,
+      "mean": 3.147887323943662,
+      "rating_counts": {
+        "1": 24,
+        "2": 23,
+        "3": 36,
+        "4": 26,
+        "5": 33
+      }
+    },
+    "Phone": {
+      "n": 151,
+      "sum": 444,
+      "mean": 2.9403973509933774,
+      "rating_counts": {
+        "1": 32,
+        "2": 32,
+        "3": 30,
+        "4": 27,
+        "5": 30
+      }
+    }
+  },
+  "primary": {
+    "difference": 0.23684210526315796,
+    "bootstrap_95_interval": [
+      -0.08406432748538029,
+      0.5552643762183236
+    ],
+    "permutation_extreme_count": 3215,
+    "permutation_p": 0.1607919604019799
+  },
+  "adjusted": {
+    "difference": 0.2938725231408158,
+    "bootstrap_95_interval": [
+      -0.013295379127260722,
+      0.6049202264054179
+    ],
+    "permutation_extreme_count": 1876,
+    "permutation_p": 0.09384530773461328,
+    "strata": 20,
+    "common_support": 287,
+    "excluded_strata": []
+  },
+  "payment_quality": {
+    "Email": {
+      "total": 137,
+      "closed": 43,
+      "missing": 94,
+      "complete": 43,
+      "unparseable": 0,
+      "reversed": 24,
+      "same": 0,
+      "ordered": 19
+    },
+    "Social media": {
+      "total": 136,
+      "closed": 36,
+      "missing": 100,
+      "complete": 36,
+      "unparseable": 0,
+      "reversed": 19,
+      "same": 0,
+      "ordered": 17
+    },
+    "Chat": {
+      "total": 127,
+      "closed": 34,
+      "missing": 93,
+      "complete": 34,
+      "unparseable": 0,
+      "reversed": 17,
+      "same": 0,
+      "ordered": 17
+    },
+    "Phone": {
+      "total": 126,
+      "closed": 43,
+      "missing": 83,
+      "complete": 43,
+      "unparseable": 0,
+      "reversed": 22,
+      "same": 0,
+      "ordered": 21
+    }
+  },
+  "audit_ticket_ids_in_order": [
+    "4712",
+    "741",
+    "6059",
+    "2270",
+    "6766",
+    "1569",
+    "3032",
+    "2486",
+    "5228",
+    "311",
+    "6366",
+    "4081",
+    "927",
+    "2338",
+    "8165",
+    "6268",
+    "2200",
+    "1114",
+    "2840",
+    "8468"
+  ],
+  "causal_effect_identified": false,
+  "speed_identified": false,
+  "verification": {
+    "status": "PASS",
+    "monte_carlo_checks": [
+      {
+        "comparison": "two_sided_permutation_p",
+        "p_difference_in_combined_mc_se": 0.0,
+        "max_ci_endpoint_gap": 0.002436647173488904
+      },
+      {
+        "comparison": "within_stratum_two_sided_permutation_p",
+        "p_difference_in_combined_mc_se": 1.1406397267101884,
+        "max_ci_endpoint_gap": 0.008361379474184472
+      }
+    ],
+    "source_and_protocol_hashes": "PASS",
+    "all_20_source_rows_and_fields": "PASS",
+    "summary_csv_consistency": "PASS",
+    "dictionary_semantics": "PASS",
+    "mc_p_tolerance": "4.5 combined Monte Carlo standard errors",
+    "bootstrap_endpoint_tolerance_points": 0.04,
+    "channel_means_submission_channel": true
+  }
+}
