@@ -1,0 +1,13 @@
+id,kind,feature,outcome,n,events,cramers_v,standardized_risk_difference,raw_p,holm_p,supported_after_holm
+ticket_type__low_csat,categorical_screen,Ticket Type,low_csat,2663,1053,0.03845854353672952,,0.40411917616476706,1.0,False
+ticket_subject__low_csat,categorical_screen,Ticket Subject,low_csat,2663,1053,0.06652179156943927,,0.6920615876824635,1.0,False
+ticket_priority__low_csat,categorical_screen,Ticket Priority,low_csat,2663,1053,0.032290629207555765,,0.42711457708458306,1.0,False
+ticket_channel__low_csat,categorical_screen,Ticket Channel,low_csat,2663,1053,0.04265840955210293,,0.18136372725454908,1.0,False
+product_purchased__low_csat,categorical_screen,Product Purchased,low_csat,2663,1053,0.018019028808298924,,0.9254149170165967,1.0,False
+plan_type__low_csat,categorical_screen,Plan Type,low_csat,2663,1053,0.029848901862983043,,0.49190161967606477,1.0,False
+plan_type__cancellation_request,categorical_screen,Plan Type,cancellation_request,8181,1634,0.0081117588744417,,0.9122175564887023,1.0,False
+plan_type__not_closed,categorical_screen,Plan Type,not_closed,8181,5518,0.008649506149075833,,0.8988202359528095,1.0,False
+relative_low_integration__low_csat,stratified_integration_bridge,relative_low_integration,low_csat,2663,1053,,0.017486981580403405,0.3739252149570086,1.0,False
+relative_low_integration__cancellation_request,stratified_integration_bridge,relative_low_integration,cancellation_request,8181,1634,,-0.0215702912907548,0.015396920615876825,0.1847630473905219,False
+relative_low_integration__technical_issue,stratified_integration_bridge,relative_low_integration,technical_issue,8181,1686,,0.009989558262983478,0.26394721055788845,1.0,False
+relative_low_integration__not_closed,stratified_integration_bridge,relative_low_integration,not_closed,8181,5518,,-0.0010021379658025076,0.9288142371525695,1.0,False

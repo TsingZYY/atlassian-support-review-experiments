@@ -1,0 +1,21 @@
+customer_id,ticket_id,customer_source_row,ticket_source_row,usage_source_rows,Product Purchased,Ticket Type,Ticket Subject,Ticket Priority,Ticket Channel,Ticket Status,Plan Type,integration_month_values,mean_integrations,rating,low_csat,cancellation_request,technical_issue,not_closed,peer_median_integrations,low_integration
+CUST00622,3825,623,3826,3132|3133|3134|3135|3136,Bitbucket,Technical issue,Loading issue,Low,Phone,Closed,Premium,3|4|2|3|4,3.2,2,1,0,1,0,4.0,1
+CUST04687,4543,4688,4544,23772|23773|23774|23775|23776,Bitbucket,Cancellation request,Email delivery problem,Medium,Social media,Pending Customer Response,Premium,3|5|3|3|5,3.8,,,1,0,1,4.0,1
+CUST04473,8189,4474,8190,22692|22693|22694|22695|22696,Bitbucket,Refund request,Network problem,Low,Social media,Pending Customer Response,Standard,2|6|2|2|3,3.0,,,0,0,1,2.4,0
+CUST04889,7735,4890,7736,24807|24808|24809|24810|24811,Bitbucket,Cancellation request,Integration,Critical,Chat,Pending Customer Response,Premium,3|5|4|5|3,4.0,,,1,0,1,4.0,0
+CUST02726,7557,2727,7558,13807|13808|13809|13810|13811,Confluence,Technical issue,Installation support,Low,Phone,Pending Customer Response,Standard,2|1|1|1|4,1.8,,,0,1,1,2.4,1
+CUST06648,2029,6649,2030,33722|33723|33724|33725|33726,Confluence,Product inquiry,Installation support,High,Chat,Pending Customer Response,Standard,4|3|0|2|0,1.8,,,0,0,1,2.4,1
+CUST04558,6783,4559,6784,23122|23123|23124|23125|23126,Confluence,Billing inquiry,Data loss,Critical,Social media,Pending Customer Response,Standard,4|3|4|1|2,2.8,,,0,0,1,2.4,0
+CUST03706,6881,3707,6882,18797|18798|18799|18800|18801,Confluence,Refund request,Product setup,Critical,Email,Open,Standard,3|2|2|4|2,2.6,,,0,0,1,2.4,0
+CUST02570,203,2571,204,13022|13023|13024|13025|13026,Jira,Billing inquiry,Product setup,Medium,Chat,Open,Free,1|1|0|1|0,0.6,,,0,0,1,1.0,1
+CUST03130,861,3131,862,15857|15858|15859|15860|15861,Jira,Billing inquiry,Data loss,High,Chat,Pending Customer Response,Enterprise,5|6|8|4|5,5.6,,,0,0,1,6.0,1
+CUST08114,4941,8115,4942,41142|41143|41144|41145|41146,Jira,Cancellation request,Product recommendation,Critical,Social media,Pending Customer Response,Standard,3|4|3|3|2,3.0,,,1,0,1,2.4,0
+CUST00661,2510,662,2511,3337|3338|3339|3340|3341,Jira,Technical issue,Account access,Critical,Email,Open,Free,1|1|2|0|1,1.0,,,0,1,1,1.0,0
+CUST00120,2020,121,2021,597|598|599|600|601,Loom,Technical issue,Product recommendation,Low,Phone,Open,Premium,3|4|2|4|3,3.2,,,0,1,1,4.0,1
+CUST05622,3472,5623,3473,28547|28548|28549|28550|28551,Loom,Product inquiry,Software bug,Low,Phone,Open,Standard,0|2|3|1|1,1.4,,,0,0,1,2.4,1
+CUST07655,4310,7656,4311,38817|38818|38819|38820|38821,Loom,Technical issue,Installation support,Low,Email,Open,Free,1|1|3|0|2,1.4,,,0,1,1,1.0,0
+CUST02461,4901,2462,4902,12472|12473|12474|12475|12476,Loom,Cancellation request,Product setup,Critical,Email,Pending Customer Response,Premium,3|6|4|5|4,4.4,,,1,0,1,4.0,0
+CUST00748,7129,749,7130,3777|3778|3779|3780|3781,Trello,Billing inquiry,Refund request,High,Social media,Pending Customer Response,Premium,3|4|5|2|3,3.4,,,0,0,1,4.2,1
+CUST00112,332,113,333,557|558|559|560|561,Trello,Cancellation request,Account access,Medium,Phone,Pending Customer Response,Premium,1|4|5|6|3,3.8,,,1,0,1,4.2,1
+CUST03629,2116,3630,2117,18407|18408|18409|18410|18411,Trello,Refund request,Integration,Low,Social media,Closed,Standard,3|4|2|2|2,2.6,3,0,0,0,0,2.4,0
+CUST05131,7040,5132,7041,26052|26053|26054|26055|26056,Trello,Product inquiry,Product recommendation,Critical,Social media,Closed,Standard,1|1|2|3|5,2.4,2,1,0,0,0,2.4,0

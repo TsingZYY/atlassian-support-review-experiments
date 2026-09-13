@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_at": "2026-09-13T03:35:01.210580+00:00",
+  "executed_at": "2026-09-13T03:56:54.505022+00:00",
   "steps_completed": [
     "inspect_case.py",
     "independent_check.py",
@@ -17,7 +17,11 @@
     "channel_hypotheses_v1/experiment.py",
     "channel_hypotheses_v1/independent_verify.py",
     "integration_plan_v1/experiment.py",
-    "integration_plan_v1/independent_verify.py"
+    "integration_plan_v1/independent_verify.py",
+    "ticket_bridge_v1/experiment.py",
+    "ticket_bridge_v1/independent_verify.py",
+    "ticket_bridge_v1/uniqueness_check.py",
+    "ticket_bridge_v1/uniqueness_independent.py"
   ],
   "key_snapshot_claims_verified": true,
   "main_experiment_scope": "competition_csv_only",
@@ -31,6 +35,9 @@
   "payment_channel_speed_identifiable": false,
   "integration_plan_association_supported": true,
   "integration_nonuse_reasons_observed": false,
+  "ticket_bridge_association_supported_after_holm": false,
+  "ticket_bridge_finite_test_family_size": 12,
+  "only_plan_integration_significant_claim_supported": false,
   "business_efficacy": "UNVERIFIED",
   "real_customer_trial": "CANDIDATE-UNRUN",
   "conditional_simulation": {

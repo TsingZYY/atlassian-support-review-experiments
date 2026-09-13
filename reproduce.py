@@ -19,6 +19,10 @@ STEPS = [
     'channel_hypotheses_v1/independent_verify.py',
     'integration_plan_v1/experiment.py',
     'integration_plan_v1/independent_verify.py',
+    'ticket_bridge_v1/experiment.py',
+    'ticket_bridge_v1/independent_verify.py',
+    'ticket_bridge_v1/uniqueness_check.py',
+    'ticket_bridge_v1/uniqueness_independent.py',
 ]
 
 
@@ -37,6 +41,8 @@ def main(include_scenarios=False):
     evidence = read('profit_evidence_v2/results.json')
     channels = read('channel_hypotheses_v1/results.json')
     integrations = read('integration_plan_v1/results.json')
+    bridge = read('ticket_bridge_v1/results.json')
+    uniqueness = read('ticket_bridge_v1/uniqueness_results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -86,6 +92,17 @@ def main(include_scenarios=False):
     assert integrations['customer_holdout']['no_customer_overlap'] is True
     assert integrations['zero_usage']['all_records_zero_customers'] == 4
     assert integrations['audit_source_customers'] == 20 and integrations['measured_profit_effect'] is None
+    assert bridge['dataset_scope'] == 'competition_csv_only' and bridge['new_synthetic_observations'] == 0
+    assert bridge['quality']['eligible_unique_customers'] == 8181 and bridge['quality']['valid_rated_closed'] == 2663
+    assert bridge['test_family_size'] == 12 and bridge['holm_supported_n'] == 0 and bridge['bridge_supported_n'] == 0
+    assert bridge['raw_p_below_05_n'] == 1
+    cancel_bridge = next(t for t in bridge['tests'] if t['id'] == 'relative_low_integration__cancellation_request')
+    assert abs(cancel_bridge['standardized_risk_difference'] + 0.0215702912907548) < 1e-12
+    assert cancel_bridge['raw_p'] < .05 < cancel_bridge['holm_p']
+    assert bridge['audit_cases_n'] == 20 and bridge['measured_profit_effect'] is None
+    assert uniqueness['counterexamples_to_only_integration_significant'] == 4
+    assert uniqueness['original_12_ticket_tests_unchanged'] is True
+    assert all(t['bonferroni_16_p'] < .05 for t in uniqueness['tests'])
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
@@ -96,6 +113,9 @@ def main(include_scenarios=False):
               'payment_channel_speed_identifiable':False,
               'integration_plan_association_supported':True,
               'integration_nonuse_reasons_observed':False,
+              'ticket_bridge_association_supported_after_holm':False,
+              'ticket_bridge_finite_test_family_size':12,
+              'only_plan_integration_significant_claim_supported':False,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

@@ -1,0 +1,22 @@
+{
+  "version": "ticket-bridge-v1",
+  "months": ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05"],
+  "products": ["Bitbucket", "Confluence", "Jira", "Loom", "Trello"],
+  "category_screens": [
+    ["Ticket Type", "low_csat"], ["Ticket Subject", "low_csat"],
+    ["Ticket Priority", "low_csat"], ["Ticket Channel", "low_csat"],
+    ["Product Purchased", "low_csat"], ["Plan Type", "low_csat"],
+    ["Plan Type", "cancellation_request"], ["Plan Type", "not_closed"]
+  ],
+  "bridge_outcomes": ["low_csat", "cancellation_request", "technical_issue", "not_closed"],
+  "integration_feature": "mean_same_product_integrations_jan_may",
+  "peer_strata": ["Product Purchased", "Plan Type"],
+  "low_integration_definition": "strictly_below_full_eligible_peer_median_ties_in_comparison",
+  "permutations": 5000,
+  "bootstrap_repetitions": 5000,
+  "family_size": 12,
+  "multiplicity": "holm",
+  "seed": 2026091304,
+  "audit_salt": "ticket-integration-bridge-source-v1",
+  "audit_per_product_per_group": 2
+}

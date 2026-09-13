@@ -1,0 +1,62 @@
+{
+  "executed_at": "2026-09-13T03:56:51.512686+00:00",
+  "scope": "post_primary_supplement_non_ticket_associations",
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "supplement_sha256": {
+    "uniqueness_protocol.md": "71778e2792ac6828fed9d2aed161424a81d8050e04be4890a4443d6da0036cfd",
+    "uniqueness_check.py": "6157f49367f149078e1c6d77fd6dabca25fc15e70a97e3387c9c726d71482495"
+  },
+  "seed": 2026091314,
+  "permutations": 5000,
+  "tests": [
+    {
+      "metric": "Active Day Rate",
+      "n": 8261,
+      "r2": 0.18488958661035865,
+      "extreme_count": 0,
+      "raw_p": 0.0001999600079984003,
+      "bonferroni_16_p": 0.003199360127974405,
+      "holm_4_p": 0.0007998400319936012
+    },
+    {
+      "metric": "Sessions",
+      "n": 8261,
+      "r2": 0.18786319475552174,
+      "extreme_count": 0,
+      "raw_p": 0.0001999600079984003,
+      "bonferroni_16_p": 0.003199360127974405,
+      "holm_4_p": 0.0007998400319936012
+    },
+    {
+      "metric": "Product Actions",
+      "n": 8261,
+      "r2": 0.17857378776688615,
+      "extreme_count": 0,
+      "raw_p": 0.0001999600079984003,
+      "bonferroni_16_p": 0.003199360127974405,
+      "holm_4_p": 0.0007998400319936012
+    },
+    {
+      "metric": "Collaborators",
+      "n": 8261,
+      "r2": 0.10149991350720691,
+      "extreme_count": 0,
+      "raw_p": 0.0001999600079984003,
+      "bonferroni_16_p": 0.003199360127974405,
+      "holm_4_p": 0.0007998400319936012
+    }
+  ],
+  "family_size": 4,
+  "conservative_current_total_family": 16,
+  "counterexamples_to_only_integration_significant": 4,
+  "original_12_ticket_tests_unchanged": true,
+  "historical_all_searches_controlled": false,
+  "ticket_effect_evidence": false,
+  "profit_effect": null
+}

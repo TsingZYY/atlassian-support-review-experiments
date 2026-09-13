@@ -14,3 +14,4 @@ reproduction.log
 # Withdrawn self-authored scenarios: excluded from competition-only deliverable.
 clarification_v1/
 product_churn_v1/run.log
+ticket_bridge_v1/run.log

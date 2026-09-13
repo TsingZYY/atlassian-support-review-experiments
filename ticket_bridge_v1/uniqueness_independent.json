@@ -1,0 +1,60 @@
+{
+  "eligible_customers": 8261,
+  "excluded_customers": 59,
+  "independent_seed": 202609140499,
+  "independent_permutations": 1000,
+  "monte_carlo_minimum_reportable_p": 0.000999000999000999,
+  "metrics": [
+    {
+      "metric": "Active Day Rate",
+      "n": 8261,
+      "r_squared": 0.1848895866103618,
+      "independent_extreme": 0,
+      "independent_p": 0.000999000999000999,
+      "independent_bonferroni_16_p": 0.015984015984015984,
+      "primary_p": 0.0001999600079984003,
+      "primary_bonferroni_16_p": 0.003199360127974405
+    },
+    {
+      "metric": "Sessions",
+      "n": 8261,
+      "r_squared": 0.18786319475552704,
+      "independent_extreme": 0,
+      "independent_p": 0.000999000999000999,
+      "independent_bonferroni_16_p": 0.015984015984015984,
+      "primary_p": 0.0001999600079984003,
+      "primary_bonferroni_16_p": 0.003199360127974405
+    },
+    {
+      "metric": "Product Actions",
+      "n": 8261,
+      "r_squared": 0.1785737877668857,
+      "independent_extreme": 0,
+      "independent_p": 0.000999000999000999,
+      "independent_bonferroni_16_p": 0.015984015984015984,
+      "primary_p": 0.0001999600079984003,
+      "primary_bonferroni_16_p": 0.003199360127974405
+    },
+    {
+      "metric": "Collaborators",
+      "n": 8261,
+      "r_squared": 0.10149991350720677,
+      "independent_extreme": 0,
+      "independent_p": 0.000999000999000999,
+      "independent_bonferroni_16_p": 0.015984015984015984,
+      "primary_p": 0.0001999600079984003,
+      "primary_bonferroni_16_p": 0.003199360127974405
+    }
+  ],
+  "customer_id_sha256": "3ec3f90049b890a0fcad12f7435f4ea54fe5ed2e919061863da83141f44fc403",
+  "verification": {
+    "status": "PASS",
+    "source_and_supplement_hashes_checked": true,
+    "independent_reconstruction_n": 8261,
+    "maximum_absolute_r_squared_difference": 5.3013149425851225e-15,
+    "primary_holm_4_and_bonferroni_16_verified": true,
+    "all_four_independent_bonferroni_16_p_below_05": true,
+    "primary_twelve_ticket_tests_modified": false,
+    "independent_script_sha256": "82d8be876940ef2aa1a390b0b5fcbb81eaab140f5d4f4979d673f0718d2e2cce"
+  }
+}

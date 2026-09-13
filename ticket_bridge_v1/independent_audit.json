@@ -1,0 +1,1452 @@
+{
+  "source_counts": {
+    "customers": 8320,
+    "tickets": 8469,
+    "usage": 42210
+  },
+  "unique_customer_emails": 8320,
+  "all_customers_with_tickets": 8320,
+  "unmatched_tickets": 0,
+  "identity_conflict_customers": 139,
+  "identity_conflict_tickets": 288,
+  "eligible_customers": 8181,
+  "eligible_tickets": 8181,
+  "invalid_or_incomplete_integration_records": [],
+  "rated_closed_n": 2663,
+  "low_integration_n": 3459,
+  "peer_summary": [
+    {
+      "product": "Bitbucket",
+      "plan": "Enterprise",
+      "n": 235,
+      "median_integrations": 6,
+      "low_n": 106,
+      "ties_n": 32
+    },
+    {
+      "product": "Bitbucket",
+      "plan": "Free",
+      "n": 241,
+      "median_integrations": 1.2,
+      "low_n": 113,
+      "ties_n": 42
+    },
+    {
+      "product": "Bitbucket",
+      "plan": "Premium",
+      "n": 445,
+      "median_integrations": 4,
+      "low_n": 163,
+      "ties_n": 60
+    },
+    {
+      "product": "Bitbucket",
+      "plan": "Standard",
+      "n": 614,
+      "median_integrations": 2.4,
+      "low_n": 287,
+      "ties_n": 84
+    },
+    {
+      "product": "Confluence",
+      "plan": "Enterprise",
+      "n": 249,
+      "median_integrations": 6,
+      "low_n": 105,
+      "ties_n": 30
+    },
+    {
+      "product": "Confluence",
+      "plan": "Free",
+      "n": 329,
+      "median_integrations": 1.2,
+      "low_n": 149,
+      "ties_n": 57
+    },
+    {
+      "product": "Confluence",
+      "plan": "Premium",
+      "n": 483,
+      "median_integrations": 4,
+      "low_n": 174,
+      "ties_n": 73
+    },
+    {
+      "product": "Confluence",
+      "plan": "Standard",
+      "n": 706,
+      "median_integrations": 2.4,
+      "low_n": 305,
+      "ties_n": 85
+    },
+    {
+      "product": "Jira",
+      "plan": "Enterprise",
+      "n": 257,
+      "median_integrations": 6,
+      "low_n": 110,
+      "ties_n": 31
+    },
+    {
+      "product": "Jira",
+      "plan": "Free",
+      "n": 304,
+      "median_integrations": 1.0,
+      "low_n": 102,
+      "ties_n": 57
+    },
+    {
+      "product": "Jira",
+      "plan": "Premium",
+      "n": 507,
+      "median_integrations": 4,
+      "low_n": 201,
+      "ties_n": 69
+    },
+    {
+      "product": "Jira",
+      "plan": "Standard",
+      "n": 650,
+      "median_integrations": 2.4,
+      "low_n": 295,
+      "ties_n": 83
+    },
+    {
+      "product": "Loom",
+      "plan": "Enterprise",
+      "n": 229,
+      "median_integrations": 6,
+      "low_n": 105,
+      "ties_n": 31
+    },
+    {
+      "product": "Loom",
+      "plan": "Free",
+      "n": 276,
+      "median_integrations": 1.0,
+      "low_n": 93,
+      "ties_n": 54
+    },
+    {
+      "product": "Loom",
+      "plan": "Premium",
+      "n": 433,
+      "median_integrations": 4,
+      "low_n": 160,
+      "ties_n": 59
+    },
+    {
+      "product": "Loom",
+      "plan": "Standard",
+      "n": 648,
+      "median_integrations": 2.4,
+      "low_n": 245,
+      "ties_n": 100
+    },
+    {
+      "product": "Trello",
+      "plan": "Enterprise",
+      "n": 222,
+      "median_integrations": 6.0,
+      "low_n": 104,
+      "ties_n": 25
+    },
+    {
+      "product": "Trello",
+      "plan": "Free",
+      "n": 290,
+      "median_integrations": 1.2,
+      "low_n": 138,
+      "ties_n": 49
+    },
+    {
+      "product": "Trello",
+      "plan": "Premium",
+      "n": 427,
+      "median_integrations": 4.2,
+      "low_n": 213,
+      "ties_n": 62
+    },
+    {
+      "product": "Trello",
+      "plan": "Standard",
+      "n": 636,
+      "median_integrations": 2.4,
+      "low_n": 291,
+      "ties_n": 90
+    }
+  ],
+  "category_screens": [
+    {
+      "feature": "Ticket Type",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 3.9387356374838434,
+      "cramers_v": 0.03845854353672952,
+      "table": [
+        {
+          "category": "Billing inquiry",
+          "n": 516,
+          "events": 209
+        },
+        {
+          "category": "Cancellation request",
+          "n": 496,
+          "events": 186
+        },
+        {
+          "category": "Product inquiry",
+          "n": 517,
+          "events": 192
+        },
+        {
+          "category": "Refund request",
+          "n": 575,
+          "events": 242
+        },
+        {
+          "category": "Technical issue",
+          "n": 559,
+          "events": 224
+        }
+      ]
+    },
+    {
+      "feature": "Ticket Subject",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 11.784171130857892,
+      "cramers_v": 0.06652179156943926,
+      "table": [
+        {
+          "category": "Account access",
+          "n": 164,
+          "events": 71
+        },
+        {
+          "category": "Cancellation request",
+          "n": 142,
+          "events": 52
+        },
+        {
+          "category": "Data loss",
+          "n": 142,
+          "events": 57
+        },
+        {
+          "category": "Device compatibility issue",
+          "n": 178,
+          "events": 69
+        },
+        {
+          "category": "Display issue",
+          "n": 151,
+          "events": 56
+        },
+        {
+          "category": "Email delivery problem",
+          "n": 168,
+          "events": 77
+        },
+        {
+          "category": "Installation support",
+          "n": 147,
+          "events": 48
+        },
+        {
+          "category": "Integration",
+          "n": 153,
+          "events": 55
+        },
+        {
+          "category": "Loading issue",
+          "n": 165,
+          "events": 72
+        },
+        {
+          "category": "Network problem",
+          "n": 194,
+          "events": 85
+        },
+        {
+          "category": "Payment issue",
+          "n": 152,
+          "events": 58
+        },
+        {
+          "category": "Product compatibility",
+          "n": 186,
+          "events": 73
+        },
+        {
+          "category": "Product recommendation",
+          "n": 183,
+          "events": 70
+        },
+        {
+          "category": "Product setup",
+          "n": 177,
+          "events": 72
+        },
+        {
+          "category": "Refund request",
+          "n": 171,
+          "events": 64
+        },
+        {
+          "category": "Software bug",
+          "n": 190,
+          "events": 74
+        }
+      ]
+    },
+    {
+      "feature": "Ticket Priority",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 2.7766694482926697,
+      "cramers_v": 0.032290629207555765,
+      "table": [
+        {
+          "category": "Critical",
+          "n": 704,
+          "events": 291
+        },
+        {
+          "category": "High",
+          "n": 669,
+          "events": 272
+        },
+        {
+          "category": "Low",
+          "n": 623,
+          "events": 233
+        },
+        {
+          "category": "Medium",
+          "n": 667,
+          "events": 257
+        }
+      ]
+    },
+    {
+      "feature": "Ticket Channel",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 4.845967368386302,
+      "cramers_v": 0.04265840955210293,
+      "table": [
+        {
+          "category": "Chat",
+          "n": 642,
+          "events": 233
+        },
+        {
+          "category": "Email",
+          "n": 701,
+          "events": 292
+        },
+        {
+          "category": "Phone",
+          "n": 658,
+          "events": 270
+        },
+        {
+          "category": "Social media",
+          "n": 662,
+          "events": 258
+        }
+      ]
+    },
+    {
+      "feature": "Product Purchased",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 0.8646372180544384,
+      "cramers_v": 0.018019028808298924,
+      "table": [
+        {
+          "category": "Bitbucket",
+          "n": 500,
+          "events": 204
+        },
+        {
+          "category": "Confluence",
+          "n": 545,
+          "events": 209
+        },
+        {
+          "category": "Jira",
+          "n": 554,
+          "events": 223
+        },
+        {
+          "category": "Loom",
+          "n": 527,
+          "events": 205
+        },
+        {
+          "category": "Trello",
+          "n": 537,
+          "events": 212
+        }
+      ]
+    },
+    {
+      "feature": "Plan Type",
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "chi_square": 2.3726183376804184,
+      "cramers_v": 0.029848901862983043,
+      "table": [
+        {
+          "category": "Enterprise",
+          "n": 384,
+          "events": 148
+        },
+        {
+          "category": "Free",
+          "n": 472,
+          "events": 185
+        },
+        {
+          "category": "Premium",
+          "n": 735,
+          "events": 278
+        },
+        {
+          "category": "Standard",
+          "n": 1072,
+          "events": 442
+        }
+      ]
+    },
+    {
+      "feature": "Plan Type",
+      "outcome": "cancellation_request",
+      "n": 8181,
+      "events": 1634,
+      "chi_square": 0.5383149706953816,
+      "cramers_v": 0.0081117588744417,
+      "table": [
+        {
+          "category": "Enterprise",
+          "n": 1192,
+          "events": 229
+        },
+        {
+          "category": "Free",
+          "n": 1440,
+          "events": 289
+        },
+        {
+          "category": "Premium",
+          "n": 2295,
+          "events": 459
+        },
+        {
+          "category": "Standard",
+          "n": 3254,
+          "events": 657
+        }
+      ]
+    },
+    {
+      "feature": "Plan Type",
+      "outcome": "not_closed",
+      "n": 8181,
+      "events": 5518,
+      "chi_square": 0.6120529791319501,
+      "cramers_v": 0.008649506149075833,
+      "table": [
+        {
+          "category": "Enterprise",
+          "n": 1192,
+          "events": 808
+        },
+        {
+          "category": "Free",
+          "n": 1440,
+          "events": 968
+        },
+        {
+          "category": "Premium",
+          "n": 2295,
+          "events": 1560
+        },
+        {
+          "category": "Standard",
+          "n": 3254,
+          "events": 2182
+        }
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "outcome": "low_csat",
+      "n": 2663,
+      "events": 1053,
+      "standardized_low_rate": 0.405089076194266,
+      "standardized_comparison_rate": 0.38760209461386264,
+      "standardized_risk_difference": 0.01748698158040335,
+      "low_n": 1131,
+      "low_events": 460,
+      "comparison_n": 1532,
+      "comparison_events": 593,
+      "permutation_seed": 202609140401,
+      "permutations": 5000,
+      "permutation_extreme": 1758,
+      "independent_permutation_p": 0.35172965406918616,
+      "strata": [
+        {
+          "product": "Bitbucket",
+          "plan": "Enterprise",
+          "n": 72,
+          "low_n": 33,
+          "low_events": 18,
+          "comparison_n": 39,
+          "comparison_events": 16,
+          "risk_difference": 0.13519813519813517
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Free",
+          "n": 75,
+          "low_n": 40,
+          "low_events": 16,
+          "comparison_n": 35,
+          "comparison_events": 11,
+          "risk_difference": 0.08571428571428574
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Premium",
+          "n": 144,
+          "low_n": 52,
+          "low_events": 18,
+          "comparison_n": 92,
+          "comparison_events": 36,
+          "risk_difference": -0.04515050167224083
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Standard",
+          "n": 209,
+          "low_n": 101,
+          "low_events": 38,
+          "comparison_n": 108,
+          "comparison_events": 51,
+          "risk_difference": -0.09598459845984597
+        },
+        {
+          "product": "Confluence",
+          "plan": "Enterprise",
+          "n": 79,
+          "low_n": 31,
+          "low_events": 11,
+          "comparison_n": 48,
+          "comparison_events": 17,
+          "risk_difference": 0.0006720430107526876
+        },
+        {
+          "product": "Confluence",
+          "plan": "Free",
+          "n": 102,
+          "low_n": 58,
+          "low_events": 26,
+          "comparison_n": 44,
+          "comparison_events": 13,
+          "risk_difference": 0.15282131661442006
+        },
+        {
+          "product": "Confluence",
+          "plan": "Premium",
+          "n": 155,
+          "low_n": 51,
+          "low_events": 19,
+          "comparison_n": 104,
+          "comparison_events": 37,
+          "risk_difference": 0.016779788838612364
+        },
+        {
+          "product": "Confluence",
+          "plan": "Standard",
+          "n": 209,
+          "low_n": 94,
+          "low_events": 44,
+          "comparison_n": 115,
+          "comparison_events": 42,
+          "risk_difference": 0.1028677150786309
+        },
+        {
+          "product": "Jira",
+          "plan": "Enterprise",
+          "n": 82,
+          "low_n": 35,
+          "low_events": 15,
+          "comparison_n": 47,
+          "comparison_events": 14,
+          "risk_difference": 0.13069908814589665
+        },
+        {
+          "product": "Jira",
+          "plan": "Free",
+          "n": 97,
+          "low_n": 32,
+          "low_events": 15,
+          "comparison_n": 65,
+          "comparison_events": 24,
+          "risk_difference": 0.09951923076923075
+        },
+        {
+          "product": "Jira",
+          "plan": "Premium",
+          "n": 152,
+          "low_n": 58,
+          "low_events": 24,
+          "comparison_n": 94,
+          "comparison_events": 38,
+          "risk_difference": 0.009537784299339713
+        },
+        {
+          "product": "Jira",
+          "plan": "Standard",
+          "n": 223,
+          "low_n": 102,
+          "low_events": 39,
+          "comparison_n": 121,
+          "comparison_events": 54,
+          "risk_difference": -0.06392805055906664
+        },
+        {
+          "product": "Loom",
+          "plan": "Enterprise",
+          "n": 81,
+          "low_n": 33,
+          "low_events": 14,
+          "comparison_n": 48,
+          "comparison_events": 20,
+          "risk_difference": 0.007575757575757569
+        },
+        {
+          "product": "Loom",
+          "plan": "Free",
+          "n": 89,
+          "low_n": 29,
+          "low_events": 11,
+          "comparison_n": 60,
+          "comparison_events": 21,
+          "risk_difference": 0.02931034482758621
+        },
+        {
+          "product": "Loom",
+          "plan": "Premium",
+          "n": 137,
+          "low_n": 45,
+          "low_events": 17,
+          "comparison_n": 92,
+          "comparison_events": 32,
+          "risk_difference": 0.02995169082125604
+        },
+        {
+          "product": "Loom",
+          "plan": "Standard",
+          "n": 220,
+          "low_n": 89,
+          "low_events": 36,
+          "comparison_n": 131,
+          "comparison_events": 54,
+          "risk_difference": -0.007719358435543389
+        },
+        {
+          "product": "Trello",
+          "plan": "Enterprise",
+          "n": 70,
+          "low_n": 31,
+          "low_events": 8,
+          "comparison_n": 39,
+          "comparison_events": 15,
+          "risk_difference": -0.12655086848635239
+        },
+        {
+          "product": "Trello",
+          "plan": "Free",
+          "n": 109,
+          "low_n": 50,
+          "low_events": 27,
+          "comparison_n": 59,
+          "comparison_events": 21,
+          "risk_difference": 0.18406779661016953
+        },
+        {
+          "product": "Trello",
+          "plan": "Premium",
+          "n": 147,
+          "low_n": 68,
+          "low_events": 23,
+          "comparison_n": 79,
+          "comparison_events": 34,
+          "risk_difference": -0.09214445271779598
+        },
+        {
+          "product": "Trello",
+          "plan": "Standard",
+          "n": 211,
+          "low_n": 99,
+          "low_events": 41,
+          "comparison_n": 112,
+          "comparison_events": 43,
+          "risk_difference": 0.03021284271284269
+        }
+      ],
+      "primary_permutation_p": 0.3739252149570086,
+      "monte_carlo_difference": -0.02219556088782243,
+      "combined_monte_carlo_se": 0.009613751121117297,
+      "absolute_mc_z": 2.308730547337374,
+      "agreement_within_four_mc_se": true
+    },
+    {
+      "outcome": "cancellation_request",
+      "n": 8181,
+      "events": 1634,
+      "standardized_low_rate": 0.1868651874690181,
+      "standardized_comparison_rate": 0.20843547875977295,
+      "standardized_risk_difference": -0.021570291290754856,
+      "low_n": 3459,
+      "low_events": 647,
+      "comparison_n": 4722,
+      "comparison_events": 987,
+      "permutation_seed": 202609140402,
+      "permutations": 5000,
+      "permutation_extreme": 78,
+      "independent_permutation_p": 0.015796840631873626,
+      "strata": [
+        {
+          "product": "Bitbucket",
+          "plan": "Enterprise",
+          "n": 235,
+          "low_n": 106,
+          "low_events": 13,
+          "comparison_n": 129,
+          "comparison_events": 20,
+          "risk_difference": -0.032397250255960214
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Free",
+          "n": 241,
+          "low_n": 113,
+          "low_events": 25,
+          "comparison_n": 128,
+          "comparison_events": 29,
+          "risk_difference": -0.005323561946902644
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Premium",
+          "n": 445,
+          "low_n": 163,
+          "low_events": 33,
+          "comparison_n": 282,
+          "comparison_events": 67,
+          "risk_difference": -0.03513466475220817
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Standard",
+          "n": 614,
+          "low_n": 287,
+          "low_events": 49,
+          "comparison_n": 327,
+          "comparison_events": 61,
+          "risk_difference": -0.015812635190572077
+        },
+        {
+          "product": "Confluence",
+          "plan": "Enterprise",
+          "n": 249,
+          "low_n": 105,
+          "low_events": 20,
+          "comparison_n": 144,
+          "comparison_events": 27,
+          "risk_difference": 0.0029761904761904656
+        },
+        {
+          "product": "Confluence",
+          "plan": "Free",
+          "n": 329,
+          "low_n": 149,
+          "low_events": 20,
+          "comparison_n": 180,
+          "comparison_events": 40,
+          "risk_difference": -0.08799403430275912
+        },
+        {
+          "product": "Confluence",
+          "plan": "Premium",
+          "n": 483,
+          "low_n": 174,
+          "low_events": 30,
+          "comparison_n": 309,
+          "comparison_events": 60,
+          "risk_difference": -0.021760964178105108
+        },
+        {
+          "product": "Confluence",
+          "plan": "Standard",
+          "n": 706,
+          "low_n": 305,
+          "low_events": 53,
+          "comparison_n": 401,
+          "comparison_events": 85,
+          "risk_difference": -0.0381995830096889
+        },
+        {
+          "product": "Jira",
+          "plan": "Enterprise",
+          "n": 257,
+          "low_n": 110,
+          "low_events": 16,
+          "comparison_n": 147,
+          "comparison_events": 39,
+          "risk_difference": -0.11985157699443416
+        },
+        {
+          "product": "Jira",
+          "plan": "Free",
+          "n": 304,
+          "low_n": 102,
+          "low_events": 18,
+          "comparison_n": 202,
+          "comparison_events": 42,
+          "risk_difference": -0.03145020384391378
+        },
+        {
+          "product": "Jira",
+          "plan": "Premium",
+          "n": 507,
+          "low_n": 201,
+          "low_events": 43,
+          "comparison_n": 306,
+          "comparison_events": 59,
+          "risk_difference": 0.021119890742366587
+        },
+        {
+          "product": "Jira",
+          "plan": "Standard",
+          "n": 650,
+          "low_n": 295,
+          "low_events": 56,
+          "comparison_n": 355,
+          "comparison_events": 65,
+          "risk_difference": 0.006731916925280496
+        },
+        {
+          "product": "Loom",
+          "plan": "Enterprise",
+          "n": 229,
+          "low_n": 105,
+          "low_events": 22,
+          "comparison_n": 124,
+          "comparison_events": 31,
+          "risk_difference": -0.04047619047619047
+        },
+        {
+          "product": "Loom",
+          "plan": "Free",
+          "n": 276,
+          "low_n": 93,
+          "low_events": 16,
+          "comparison_n": 183,
+          "comparison_events": 38,
+          "risk_difference": -0.03560726247135554
+        },
+        {
+          "product": "Loom",
+          "plan": "Premium",
+          "n": 433,
+          "low_n": 160,
+          "low_events": 25,
+          "comparison_n": 273,
+          "comparison_events": 62,
+          "risk_difference": -0.0708562271062271
+        },
+        {
+          "product": "Loom",
+          "plan": "Standard",
+          "n": 648,
+          "low_n": 245,
+          "low_events": 55,
+          "comparison_n": 403,
+          "comparison_events": 91,
+          "risk_difference": -0.0013166556945358732
+        },
+        {
+          "product": "Trello",
+          "plan": "Enterprise",
+          "n": 222,
+          "low_n": 104,
+          "low_events": 19,
+          "comparison_n": 118,
+          "comparison_events": 22,
+          "risk_difference": -0.003748370273794016
+        },
+        {
+          "product": "Trello",
+          "plan": "Free",
+          "n": 290,
+          "low_n": 138,
+          "low_events": 29,
+          "comparison_n": 152,
+          "comparison_events": 32,
+          "risk_difference": -0.0003813882532417989
+        },
+        {
+          "product": "Trello",
+          "plan": "Premium",
+          "n": 427,
+          "low_n": 213,
+          "low_events": 46,
+          "comparison_n": 214,
+          "comparison_events": 34,
+          "risk_difference": 0.05708393664165681
+        },
+        {
+          "product": "Trello",
+          "plan": "Standard",
+          "n": 636,
+          "low_n": 291,
+          "low_events": 59,
+          "comparison_n": 345,
+          "comparison_events": 83,
+          "risk_difference": -0.03783056925145675
+        }
+      ],
+      "primary_permutation_p": 0.015396920615876825,
+      "monte_carlo_difference": 0.0003999200159968009,
+      "combined_monte_carlo_se": 0.0024781911108447637,
+      "absolute_mc_z": 0.16137577697164626,
+      "agreement_within_four_mc_se": true
+    },
+    {
+      "outcome": "technical_issue",
+      "n": 8181,
+      "events": 1686,
+      "standardized_low_rate": 0.21172213413415938,
+      "standardized_comparison_rate": 0.20173257587117593,
+      "standardized_risk_difference": 0.009989558262983452,
+      "low_n": 3459,
+      "low_events": 733,
+      "comparison_n": 4722,
+      "comparison_events": 953,
+      "permutation_seed": 202609140403,
+      "permutations": 5000,
+      "permutation_extreme": 1368,
+      "independent_permutation_p": 0.27374525094981006,
+      "strata": [
+        {
+          "product": "Bitbucket",
+          "plan": "Enterprise",
+          "n": 235,
+          "low_n": 106,
+          "low_events": 23,
+          "comparison_n": 129,
+          "comparison_events": 30,
+          "risk_difference": -0.015577007459412012
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Free",
+          "n": 241,
+          "low_n": 113,
+          "low_events": 21,
+          "comparison_n": 128,
+          "comparison_events": 25,
+          "risk_difference": -0.009471792035398219
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Premium",
+          "n": 445,
+          "low_n": 163,
+          "low_events": 26,
+          "comparison_n": 282,
+          "comparison_events": 58,
+          "risk_difference": -0.04616455641126049
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Standard",
+          "n": 614,
+          "low_n": 287,
+          "low_events": 66,
+          "comparison_n": 327,
+          "comparison_events": 67,
+          "risk_difference": 0.025072190433568814
+        },
+        {
+          "product": "Confluence",
+          "plan": "Enterprise",
+          "n": 249,
+          "low_n": 105,
+          "low_events": 23,
+          "comparison_n": 144,
+          "comparison_events": 33,
+          "risk_difference": -0.01011904761904761
+        },
+        {
+          "product": "Confluence",
+          "plan": "Free",
+          "n": 329,
+          "low_n": 149,
+          "low_events": 31,
+          "comparison_n": 180,
+          "comparison_events": 33,
+          "risk_difference": 0.02472035794183447
+        },
+        {
+          "product": "Confluence",
+          "plan": "Premium",
+          "n": 483,
+          "low_n": 174,
+          "low_events": 36,
+          "comparison_n": 309,
+          "comparison_events": 70,
+          "risk_difference": -0.019640665104341037
+        },
+        {
+          "product": "Confluence",
+          "plan": "Standard",
+          "n": 706,
+          "low_n": 305,
+          "low_events": 54,
+          "comparison_n": 401,
+          "comparison_events": 82,
+          "risk_difference": -0.027439597726994003
+        },
+        {
+          "product": "Jira",
+          "plan": "Enterprise",
+          "n": 257,
+          "low_n": 110,
+          "low_events": 22,
+          "comparison_n": 147,
+          "comparison_events": 29,
+          "risk_difference": 0.0027210884353741638
+        },
+        {
+          "product": "Jira",
+          "plan": "Free",
+          "n": 304,
+          "low_n": 102,
+          "low_events": 24,
+          "comparison_n": 202,
+          "comparison_events": 45,
+          "risk_difference": 0.012521840419336044
+        },
+        {
+          "product": "Jira",
+          "plan": "Premium",
+          "n": 507,
+          "low_n": 201,
+          "low_events": 49,
+          "comparison_n": 306,
+          "comparison_events": 63,
+          "risk_difference": 0.037898741586186724
+        },
+        {
+          "product": "Jira",
+          "plan": "Standard",
+          "n": 650,
+          "low_n": 295,
+          "low_events": 74,
+          "comparison_n": 355,
+          "comparison_events": 83,
+          "risk_difference": 0.017044640725710186
+        },
+        {
+          "product": "Loom",
+          "plan": "Enterprise",
+          "n": 229,
+          "low_n": 105,
+          "low_events": 16,
+          "comparison_n": 124,
+          "comparison_events": 25,
+          "risk_difference": -0.049231950844854044
+        },
+        {
+          "product": "Loom",
+          "plan": "Free",
+          "n": 276,
+          "low_n": 93,
+          "low_events": 14,
+          "comparison_n": 183,
+          "comparison_events": 34,
+          "risk_difference": -0.03525471531817381
+        },
+        {
+          "product": "Loom",
+          "plan": "Premium",
+          "n": 433,
+          "low_n": 160,
+          "low_events": 39,
+          "comparison_n": 273,
+          "comparison_events": 53,
+          "risk_difference": 0.04961080586080585
+        },
+        {
+          "product": "Loom",
+          "plan": "Standard",
+          "n": 648,
+          "low_n": 245,
+          "low_events": 55,
+          "comparison_n": 403,
+          "comparison_events": 73,
+          "risk_difference": 0.04334835671241202
+        },
+        {
+          "product": "Trello",
+          "plan": "Enterprise",
+          "n": 222,
+          "low_n": 104,
+          "low_events": 30,
+          "comparison_n": 118,
+          "comparison_events": 19,
+          "risk_difference": 0.12744458930899608
+        },
+        {
+          "product": "Trello",
+          "plan": "Free",
+          "n": 290,
+          "low_n": 138,
+          "low_events": 25,
+          "comparison_n": 152,
+          "comparison_events": 21,
+          "risk_difference": 0.043001525553012954
+        },
+        {
+          "product": "Trello",
+          "plan": "Premium",
+          "n": 427,
+          "low_n": 213,
+          "low_events": 38,
+          "comparison_n": 214,
+          "comparison_events": 52,
+          "risk_difference": -0.06458689833706288
+        },
+        {
+          "product": "Trello",
+          "plan": "Standard",
+          "n": 636,
+          "low_n": 291,
+          "low_events": 67,
+          "comparison_n": 345,
+          "comparison_events": 58,
+          "risk_difference": 0.06212460779919318
+        }
+      ],
+      "primary_permutation_p": 0.26394721055788845,
+      "monte_carlo_difference": 0.009798040391921614,
+      "combined_monte_carlo_se": 0.008866655165605954,
+      "absolute_mc_z": 1.1050435828302576,
+      "agreement_within_four_mc_se": true
+    },
+    {
+      "outcome": "not_closed",
+      "n": 8181,
+      "events": 5518,
+      "standardized_low_rate": 0.6742958329357948,
+      "standardized_comparison_rate": 0.6752979709015972,
+      "standardized_risk_difference": -0.0010021379658024365,
+      "low_n": 3459,
+      "low_events": 2328,
+      "comparison_n": 4722,
+      "comparison_events": 3190,
+      "permutation_seed": 202609140404,
+      "permutations": 5000,
+      "permutation_extreme": 4626,
+      "independent_permutation_p": 0.9252149570085982,
+      "strata": [
+        {
+          "product": "Bitbucket",
+          "plan": "Enterprise",
+          "n": 235,
+          "low_n": 106,
+          "low_events": 73,
+          "comparison_n": 129,
+          "comparison_events": 90,
+          "risk_difference": -0.008995173321632355
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Free",
+          "n": 241,
+          "low_n": 113,
+          "low_events": 73,
+          "comparison_n": 128,
+          "comparison_events": 93,
+          "risk_difference": -0.08054480088495575
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Premium",
+          "n": 445,
+          "low_n": 163,
+          "low_events": 111,
+          "comparison_n": 282,
+          "comparison_events": 190,
+          "risk_difference": 0.007222729843797571
+        },
+        {
+          "product": "Bitbucket",
+          "plan": "Standard",
+          "n": 614,
+          "low_n": 287,
+          "low_events": 186,
+          "comparison_n": 327,
+          "comparison_events": 219,
+          "risk_difference": -0.02164114694882202
+        },
+        {
+          "product": "Confluence",
+          "plan": "Enterprise",
+          "n": 249,
+          "low_n": 105,
+          "low_events": 74,
+          "comparison_n": 144,
+          "comparison_events": 96,
+          "risk_difference": 0.03809523809523818
+        },
+        {
+          "product": "Confluence",
+          "plan": "Free",
+          "n": 329,
+          "low_n": 149,
+          "low_events": 91,
+          "comparison_n": 180,
+          "comparison_events": 136,
+          "risk_difference": -0.14481730052199848
+        },
+        {
+          "product": "Confluence",
+          "plan": "Premium",
+          "n": 483,
+          "low_n": 174,
+          "low_events": 123,
+          "comparison_n": 309,
+          "comparison_events": 205,
+          "risk_difference": 0.04346613101216379
+        },
+        {
+          "product": "Confluence",
+          "plan": "Standard",
+          "n": 706,
+          "low_n": 305,
+          "low_events": 211,
+          "comparison_n": 401,
+          "comparison_events": 286,
+          "risk_difference": -0.021413678917460488
+        },
+        {
+          "product": "Jira",
+          "plan": "Enterprise",
+          "n": 257,
+          "low_n": 110,
+          "low_events": 75,
+          "comparison_n": 147,
+          "comparison_events": 100,
+          "risk_difference": 0.0015460729746443747
+        },
+        {
+          "product": "Jira",
+          "plan": "Free",
+          "n": 304,
+          "low_n": 102,
+          "low_events": 70,
+          "comparison_n": 202,
+          "comparison_events": 137,
+          "risk_difference": 0.008056688021743308
+        },
+        {
+          "product": "Jira",
+          "plan": "Premium",
+          "n": 507,
+          "low_n": 201,
+          "low_events": 143,
+          "comparison_n": 306,
+          "comparison_events": 212,
+          "risk_difference": 0.018632328553311872
+        },
+        {
+          "product": "Jira",
+          "plan": "Standard",
+          "n": 650,
+          "low_n": 295,
+          "low_events": 193,
+          "comparison_n": 355,
+          "comparison_events": 234,
+          "risk_difference": -0.0049176414418715675
+        },
+        {
+          "product": "Loom",
+          "plan": "Enterprise",
+          "n": 229,
+          "low_n": 105,
+          "low_events": 72,
+          "comparison_n": 124,
+          "comparison_events": 76,
+          "risk_difference": 0.0728110599078341
+        },
+        {
+          "product": "Loom",
+          "plan": "Free",
+          "n": 276,
+          "low_n": 93,
+          "low_events": 64,
+          "comparison_n": 183,
+          "comparison_events": 123,
+          "risk_difference": 0.016040895469769167
+        },
+        {
+          "product": "Loom",
+          "plan": "Premium",
+          "n": 433,
+          "low_n": 160,
+          "low_events": 115,
+          "comparison_n": 273,
+          "comparison_events": 181,
+          "risk_difference": 0.05574633699633702
+        },
+        {
+          "product": "Loom",
+          "plan": "Standard",
+          "n": 648,
+          "low_n": 245,
+          "low_events": 156,
+          "comparison_n": 403,
+          "comparison_events": 272,
+          "risk_difference": -0.03820327138299495
+        },
+        {
+          "product": "Trello",
+          "plan": "Enterprise",
+          "n": 222,
+          "low_n": 104,
+          "low_events": 73,
+          "comparison_n": 118,
+          "comparison_events": 79,
+          "risk_difference": 0.032431551499348066
+        },
+        {
+          "product": "Trello",
+          "plan": "Free",
+          "n": 290,
+          "low_n": 138,
+          "low_events": 88,
+          "comparison_n": 152,
+          "comparison_events": 93,
+          "risk_difference": 0.025839054157131947
+        },
+        {
+          "product": "Trello",
+          "plan": "Premium",
+          "n": 427,
+          "low_n": 213,
+          "low_events": 145,
+          "comparison_n": 214,
+          "comparison_events": 135,
+          "risk_difference": 0.049910052213593126
+        },
+        {
+          "product": "Trello",
+          "plan": "Standard",
+          "n": 636,
+          "low_n": 291,
+          "low_events": 192,
+          "comparison_n": 345,
+          "comparison_events": 233,
+          "risk_difference": -0.015568504407590056
+        }
+      ],
+      "primary_permutation_p": 0.9288142371525695,
+      "monte_carlo_difference": -0.003599280143971262,
+      "combined_monte_carlo_se": 0.0052021263028003435,
+      "absolute_mc_z": 0.6918863430966185,
+      "agreement_within_four_mc_se": true
+    }
+  ],
+  "independent_audit_customer_ids": [
+    "CUST00112",
+    "CUST00120",
+    "CUST00622",
+    "CUST00661",
+    "CUST00748",
+    "CUST02461",
+    "CUST02570",
+    "CUST02726",
+    "CUST03130",
+    "CUST03629",
+    "CUST03706",
+    "CUST04473",
+    "CUST04558",
+    "CUST04687",
+    "CUST04889",
+    "CUST05131",
+    "CUST05622",
+    "CUST06648",
+    "CUST07655",
+    "CUST08114"
+  ],
+  "bootstrap_independently_recomputed": false,
+  "verification": {
+    "status": "PASS",
+    "primary_output_hashes_checked": true,
+    "source_and_frozen_protocol_code_hashes_checked": true,
+    "all_20_peer_strata_checked": true,
+    "categorical_point_estimates_checked": 8,
+    "bridge_point_estimates_and_all_stratum_counts_checked": 4,
+    "independent_direct_label_permutations_per_bridge": 5000,
+    "categorical_permutations_independently_recomputed": false,
+    "bootstrap_independently_recomputed": false,
+    "holm_recalculated_from_all_12_primary_p_values": {
+      "relative_low_integration__cancellation_request": 0.1847630473905219,
+      "ticket_channel__low_csat": 1.0,
+      "relative_low_integration__technical_issue": 1.0,
+      "relative_low_integration__low_csat": 1.0,
+      "ticket_type__low_csat": 1.0,
+      "ticket_priority__low_csat": 1.0,
+      "plan_type__low_csat": 1.0,
+      "ticket_subject__low_csat": 1.0,
+      "plan_type__not_closed": 1.0,
+      "plan_type__cancellation_request": 1.0,
+      "product_purchased__low_csat": 1.0,
+      "relative_low_integration__not_closed": 1.0
+    },
+    "holm_with_four_independent_bridge_p_values": {
+      "relative_low_integration__cancellation_request": 0.1895620875824835,
+      "ticket_channel__low_csat": 1.0,
+      "relative_low_integration__technical_issue": 1.0,
+      "relative_low_integration__low_csat": 1.0,
+      "ticket_type__low_csat": 1.0,
+      "ticket_priority__low_csat": 1.0,
+      "plan_type__low_csat": 1.0,
+      "ticket_subject__low_csat": 1.0,
+      "plan_type__not_closed": 1.0,
+      "plan_type__cancellation_request": 1.0,
+      "relative_low_integration__not_closed": 1.0,
+      "product_purchased__low_csat": 1.0
+    },
+    "supported_after_holm_n": 0,
+    "source_audit_cases_checked": 20,
+    "source_audit_fields_checked": 420,
+    "maximum_absolute_numerical_difference": 1.7763568394002505e-15,
+    "audit_script_sha256": "2c512f8d67d378d456e7f214ba8f9d8b27e78da85850fcf5b809efbbe5921c2f"
+  }
+}
