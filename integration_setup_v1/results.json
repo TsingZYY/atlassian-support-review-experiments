@@ -1,0 +1,61 @@
+{
+  "executed_at": "2026-09-13T05:31:32.765912+00:00",
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "customer_support_tickets.csv": "c1025a1ff1fd9b21cdd99e4b7387f353a8206e123f24cbdf00dc71445d512347",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "655d6ac085a93824edd8a07945aab361bdaf6ab51125861f567a7485d8cf4637",
+    "audit.py": "42e9295c461525aea2c930f933ff7dec04b811941bbf2cfa22ba9a6c302fbb6d"
+  },
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "snapshot_free_customers": 1472,
+  "identity_conflict_customers_all_plans": 139,
+  "identity_consistent_free_customers": 1440,
+  "raw_candidate_tickets": 89,
+  "excluded_candidate_tickets": 5,
+  "candidate_customers": 84,
+  "candidate_fraction_of_clean_free": 0.058333333333333334,
+  "by_product": {
+    "Confluence": 17,
+    "Bitbucket": 19,
+    "Jira": 14,
+    "Loom": 15,
+    "Trello": 19
+  },
+  "by_type": {
+    "Billing inquiry": 18,
+    "Product inquiry": 17,
+    "Refund request": 13,
+    "Cancellation request": 19,
+    "Technical issue": 17
+  },
+  "by_status": {
+    "Open": 27,
+    "Closed": 32,
+    "Pending Customer Response": 25
+  },
+  "rated_n": 32,
+  "same_product_five_month_complete_n": 84,
+  "any_nonzero_history_n": 84,
+  "all_zero_history_n": 0,
+  "any_zero_month_n": 77,
+  "may_zero_n": 28,
+  "configuration_need_confirmation": "NOT_ESTABLISHED_NOT_A_MEASURED_ZERO",
+  "configuration_success_rate": null,
+  "upgrade_rate": null,
+  "incremental_upgrade_rate": null,
+  "incremental_profit": null,
+  "pilot_records_prepared": 20,
+  "planned_arm_counts": {
+    "OFFER_INTEGRATION_SETUP_HELP": 10,
+    "EXISTING_SUPPORT": 10
+  },
+  "intervention_executed": false,
+  "upgrade_effect_identifiable": false,
+  "prior_usage_is_not_current_configuration_success": true,
+  "snapshot_plan_is_not_plan_history": true
+}

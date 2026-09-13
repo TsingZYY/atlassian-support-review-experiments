@@ -27,6 +27,8 @@ STEPS = [
     'sentiment_evidence_v1/independent_verify.py',
     'resolution_csat_v1/experiment.py',
     'resolution_csat_v1/independent_verify.py',
+    'integration_setup_v1/audit.py',
+    'integration_setup_v1/independent_verify.py',
 ]
 
 
@@ -50,6 +52,7 @@ def main(include_scenarios=False):
     sentiment = read('sentiment_evidence_v1/results.json')
     resolution = read('resolution_csat_v1/results.json')
     costs = read('resolution_csat_v1/cost_results.json')
+    setup = read('integration_setup_v1/results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -127,6 +130,12 @@ def main(include_scenarios=False):
     assert costs['grid_rows'] == 144 and costs['base_no_observed_time_saving']['conditional_net_profit'] is None
     assert abs(costs['base_no_observed_time_saving']['break_even_minutes_per_ticket'] - 1.2) < 1e-12
     assert costs['ticket_interval_used_as_labour_saving'] is False
+    assert setup['dataset_scope'] == 'competition_csv_only' and setup['new_synthetic_observations'] == 0
+    assert setup['candidate_customers'] == 84 and setup['identity_consistent_free_customers'] == 1440
+    assert setup['same_product_five_month_complete_n'] == 84 and setup['any_nonzero_history_n'] == 84
+    assert setup['pilot_records_prepared'] == 20 and setup['planned_arm_counts'] == {'OFFER_INTEGRATION_SETUP_HELP':10,'EXISTING_SUPPORT':10}
+    assert setup['intervention_executed'] is False and setup['upgrade_effect_identifiable'] is False
+    assert setup['configuration_success_rate'] is None and setup['upgrade_rate'] is None and setup['incremental_profit'] is None
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
@@ -144,6 +153,8 @@ def main(include_scenarios=False):
               'customer_language_sentiment_validated':False,
               'shorter_response_resolution_interval_higher_csat_supported':False,
               'resolution_csat_cost_break_even_is_conditional':True,
+              'integration_setup_candidate_roster_verified':True,
+              'integration_setup_causal_upgrade_effect_validated':False,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

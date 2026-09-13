@@ -1,0 +1,85 @@
+customer_id,ticket_id,ticket_source_row,snapshot_plan,product,ticket_type,ticket_subject,ticket_status,csat,months_observed,any_nonzero_integration_month,all_months_zero,any_zero_month,may_integrations_used,need_confirmed,setup_outcome_observed,upgrade_outcome_observed
+CUST06175,216,217,Free,Confluence,Billing inquiry,Integration,Open,,5,True,False,True,0,False,False,False
+CUST04610,238,239,Free,Bitbucket,Product inquiry,Integration,Closed,4,5,True,False,False,3,False,False,False
+CUST03838,366,367,Free,Jira,Billing inquiry,Integration,Closed,3,5,True,False,True,3,False,False,False
+CUST05157,533,534,Free,Bitbucket,Refund request,Integration,Open,,5,True,False,True,3,False,False,False
+CUST02823,642,643,Free,Jira,Billing inquiry,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST04269,689,690,Free,Confluence,Product inquiry,Integration,Closed,2,5,True,False,True,0,False,False,False
+CUST03851,709,710,Free,Jira,Product inquiry,Integration,Open,,5,True,False,True,1,False,False,False
+CUST06305,734,735,Free,Confluence,Cancellation request,Integration,Closed,4,5,True,False,False,3,False,False,False
+CUST06424,747,748,Free,Confluence,Technical issue,Integration,Closed,3,5,True,False,True,0,False,False,False
+CUST01169,807,808,Free,Confluence,Technical issue,Integration,Closed,2,5,True,False,True,2,False,False,False
+CUST06190,888,889,Free,Loom,Billing inquiry,Integration,Closed,5,5,True,False,True,1,False,False,False
+CUST04025,1119,1120,Free,Bitbucket,Technical issue,Integration,Open,,5,True,False,True,1,False,False,False
+CUST00527,1182,1183,Free,Trello,Billing inquiry,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST04297,1198,1199,Free,Loom,Product inquiry,Integration,Open,,5,True,False,True,1,False,False,False
+CUST06863,1215,1216,Free,Loom,Product inquiry,Integration,Open,,5,True,False,True,0,False,False,False
+CUST07859,1220,1221,Free,Loom,Technical issue,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST02053,1269,1270,Free,Bitbucket,Cancellation request,Integration,Open,,5,True,False,True,1,False,False,False
+CUST04339,1471,1472,Free,Trello,Refund request,Integration,Open,,5,True,False,False,1,False,False,False
+CUST07758,1519,1520,Free,Confluence,Billing inquiry,Integration,Open,,5,True,False,True,4,False,False,False
+CUST08310,1591,1592,Free,Bitbucket,Product inquiry,Integration,Closed,1,5,True,False,True,0,False,False,False
+CUST04038,1623,1624,Free,Loom,Billing inquiry,Integration,Closed,5,5,True,False,True,2,False,False,False
+CUST08162,1792,1793,Free,Confluence,Cancellation request,Integration,Open,,5,True,False,True,1,False,False,False
+CUST03586,1897,1898,Free,Trello,Product inquiry,Integration,Closed,3,5,True,False,True,0,False,False,False
+CUST05635,2146,2147,Free,Confluence,Refund request,Integration,Open,,5,True,False,True,2,False,False,False
+CUST05284,2267,2268,Free,Trello,Product inquiry,Integration,Closed,1,5,True,False,True,2,False,False,False
+CUST04963,2296,2297,Free,Jira,Billing inquiry,Integration,Open,,5,True,False,True,1,False,False,False
+CUST07227,2335,2336,Free,Trello,Cancellation request,Integration,Open,,5,True,False,True,1,False,False,False
+CUST01650,2355,2356,Free,Confluence,Product inquiry,Integration,Open,,5,True,False,True,2,False,False,False
+CUST08034,2475,2476,Free,Bitbucket,Refund request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST07819,2586,2587,Free,Confluence,Technical issue,Integration,Open,,5,True,False,False,1,False,False,False
+CUST02330,2602,2603,Free,Bitbucket,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST04385,2704,2705,Free,Jira,Billing inquiry,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST04717,2819,2820,Free,Loom,Technical issue,Integration,Closed,3,5,True,False,True,2,False,False,False
+CUST03331,2843,2844,Free,Confluence,Billing inquiry,Integration,Closed,4,5,True,False,True,2,False,False,False
+CUST02219,3130,3131,Free,Trello,Refund request,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST06955,3384,3385,Free,Trello,Refund request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST03414,3391,3392,Free,Jira,Billing inquiry,Integration,Closed,2,5,True,False,True,0,False,False,False
+CUST06020,3401,3402,Free,Confluence,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST07662,3631,3632,Free,Bitbucket,Refund request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST02831,3649,3650,Free,Jira,Cancellation request,Integration,Closed,3,5,True,False,True,0,False,False,False
+CUST05418,3696,3697,Free,Trello,Technical issue,Integration,Open,,5,True,False,True,0,False,False,False
+CUST04100,3756,3757,Free,Confluence,Billing inquiry,Integration,Pending Customer Response,,5,True,False,True,3,False,False,False
+CUST02276,3785,3786,Free,Bitbucket,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST03081,3849,3850,Free,Trello,Product inquiry,Integration,Open,,5,True,False,True,0,False,False,False
+CUST02911,3863,3864,Free,Trello,Refund request,Integration,Closed,2,5,True,False,True,1,False,False,False
+CUST04189,3936,3937,Free,Loom,Cancellation request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST01872,4004,4005,Free,Bitbucket,Cancellation request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST05198,4030,4031,Free,Confluence,Cancellation request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST00735,4124,4125,Free,Bitbucket,Cancellation request,Integration,Closed,4,5,True,False,True,1,False,False,False
+CUST07582,4152,4153,Free,Jira,Technical issue,Integration,Closed,4,5,True,False,True,1,False,False,False
+CUST08166,4347,4348,Free,Jira,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST05492,4409,4410,Free,Trello,Cancellation request,Integration,Closed,3,5,True,False,True,1,False,False,False
+CUST08305,4615,4616,Free,Loom,Product inquiry,Integration,Closed,1,5,True,False,True,1,False,False,False
+CUST05838,4697,4698,Free,Trello,Cancellation request,Integration,Closed,5,5,True,False,True,3,False,False,False
+CUST04143,4736,4737,Free,Loom,Technical issue,Integration,Closed,3,5,True,False,True,0,False,False,False
+CUST05679,4789,4790,Free,Jira,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST02615,5017,5018,Free,Trello,Billing inquiry,Integration,Open,,5,True,False,True,1,False,False,False
+CUST02940,5134,5135,Free,Confluence,Cancellation request,Integration,Closed,2,5,True,False,True,4,False,False,False
+CUST00745,5152,5153,Free,Bitbucket,Cancellation request,Integration,Closed,3,5,True,False,True,0,False,False,False
+CUST01539,5335,5336,Free,Loom,Billing inquiry,Integration,Open,,5,True,False,True,3,False,False,False
+CUST02039,5382,5383,Free,Trello,Technical issue,Integration,Pending Customer Response,,5,True,False,False,2,False,False,False
+CUST07795,5645,5646,Free,Jira,Technical issue,Integration,Open,,5,True,False,True,0,False,False,False
+CUST03192,5857,5858,Free,Bitbucket,Refund request,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST05008,5858,5859,Free,Bitbucket,Billing inquiry,Integration,Pending Customer Response,,5,True,False,True,4,False,False,False
+CUST00676,6051,6052,Free,Loom,Cancellation request,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST04581,6083,6084,Free,Trello,Cancellation request,Integration,Open,,5,True,False,True,0,False,False,False
+CUST01370,6148,6149,Free,Loom,Cancellation request,Integration,Open,,5,True,False,True,2,False,False,False
+CUST03104,6177,6178,Free,Bitbucket,Billing inquiry,Integration,Closed,4,5,True,False,True,3,False,False,False
+CUST07307,6266,6267,Free,Jira,Refund request,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST08093,6324,6325,Free,Trello,Cancellation request,Integration,Closed,5,5,True,False,True,2,False,False,False
+CUST04009,6444,6445,Free,Trello,Billing inquiry,Integration,Open,,5,True,False,False,1,False,False,False
+CUST01236,6489,6490,Free,Confluence,Billing inquiry,Integration,Open,,5,True,False,False,2,False,False,False
+CUST06879,6656,6657,Free,Bitbucket,Refund request,Integration,Open,,5,True,False,True,0,False,False,False
+CUST01871,6740,6741,Free,Loom,Technical issue,Integration,Closed,1,5,True,False,True,2,False,False,False
+CUST00105,6813,6814,Free,Trello,Technical issue,Integration,Closed,3,5,True,False,True,3,False,False,False
+CUST04597,6823,6824,Free,Bitbucket,Technical issue,Integration,Closed,3,5,True,False,True,1,False,False,False
+CUST02193,6963,6964,Free,Loom,Technical issue,Integration,Pending Customer Response,,5,True,False,True,1,False,False,False
+CUST05188,7145,7146,Free,Bitbucket,Product inquiry,Integration,Pending Customer Response,,5,True,False,True,2,False,False,False
+CUST07535,7559,7560,Free,Confluence,Technical issue,Integration,Closed,2,5,True,False,True,1,False,False,False
+CUST06341,7661,7662,Free,Jira,Refund request,Integration,Closed,5,5,True,False,True,0,False,False,False
+CUST07132,7670,7671,Free,Trello,Cancellation request,Integration,Open,,5,True,False,True,0,False,False,False
+CUST04649,7781,7782,Free,Bitbucket,Cancellation request,Integration,Pending Customer Response,,5,True,False,True,0,False,False,False
+CUST04498,8392,8393,Free,Jira,Refund request,Integration,Closed,5,5,True,False,True,2,False,False,False
+CUST03394,8418,8419,Free,Loom,Technical issue,Integration,Open,,5,True,False,True,0,False,False,False

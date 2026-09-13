@@ -1,0 +1,16 @@
+{
+  "version": "integration-setup-v1",
+  "snapshot_plan": "Free",
+  "ticket_subject": "Integration",
+  "products": ["Loom", "Trello", "Bitbucket", "Confluence", "Jira"],
+  "months": ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05"],
+  "per_product_pilot": 4,
+  "pilot_selection_salt": "integration-setup-candidate-review-20260913",
+  "pilot_assignment_salt": "integration-setup-planned-assignment-20260913",
+  "planned_arm_a": "OFFER_INTEGRATION_SETUP_HELP",
+  "planned_arm_b": "EXISTING_SUPPORT",
+  "upgrade_window_days": 30,
+  "setup_window_days": 7,
+  "intervention_executed": false,
+  "primary_effect_identified": false
+}

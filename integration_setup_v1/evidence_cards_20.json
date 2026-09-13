@@ -1,0 +1,1262 @@
+[
+  {
+    "customer_id": "CUST04143",
+    "ticket_id": "4736",
+    "ticket_source_row": 4737,
+    "snapshot_plan": "Free",
+    "product": "Loom",
+    "ticket_type": "Technical issue",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 3,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21002,
+        "month": "2023-01",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21003,
+        "month": "2023-02",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21004,
+        "month": "2023-03",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21005,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21006,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": "Represent certain six drop where.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST00676",
+    "ticket_id": "6051",
+    "ticket_source_row": 6052,
+    "snapshot_plan": "Free",
+    "product": "Loom",
+    "ticket_type": "Cancellation request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 2,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 3412,
+        "month": "2023-01",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 3413,
+        "month": "2023-02",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 3414,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 3415,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 3416,
+        "month": "2023-05",
+        "integrations_used": 2
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST01539",
+    "ticket_id": "5335",
+    "ticket_source_row": 5336,
+    "snapshot_plan": "Free",
+    "product": "Loom",
+    "ticket_type": "Billing inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 3,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 7782,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 7783,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 7784,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 7785,
+        "month": "2023-04",
+        "integrations_used": 5
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 7786,
+        "month": "2023-05",
+        "integrations_used": 3
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04038",
+    "ticket_id": "1623",
+    "ticket_source_row": 1624,
+    "snapshot_plan": "Free",
+    "product": "Loom",
+    "ticket_type": "Billing inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 5,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 2,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 20472,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 20473,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 20474,
+        "month": "2023-03",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 20475,
+        "month": "2023-04",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 20476,
+        "month": "2023-05",
+        "integrations_used": 2
+      }
+    ],
+    "resolution_record": "Image north expect.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST05838",
+    "ticket_id": "4697",
+    "ticket_source_row": 4698,
+    "snapshot_plan": "Free",
+    "product": "Trello",
+    "ticket_type": "Cancellation request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 5,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 3,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 29627,
+        "month": "2023-01",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 29628,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 29629,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 29630,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 29631,
+        "month": "2023-05",
+        "integrations_used": 3
+      }
+    ],
+    "resolution_record": "Add agency raise may only deal.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04339",
+    "ticket_id": "1471",
+    "ticket_source_row": 1472,
+    "snapshot_plan": "Free",
+    "product": "Trello",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": false,
+    "may_integrations_used": 1,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22022,
+        "month": "2023-01",
+        "integrations_used": 4
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22023,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22024,
+        "month": "2023-03",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22025,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22026,
+        "month": "2023-05",
+        "integrations_used": 1
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST05418",
+    "ticket_id": "3696",
+    "ticket_source_row": 3697,
+    "snapshot_plan": "Free",
+    "product": "Trello",
+    "ticket_type": "Technical issue",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 27497,
+        "month": "2023-01",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 27498,
+        "month": "2023-02",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 27499,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 27500,
+        "month": "2023-04",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 27501,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04581",
+    "ticket_id": "6083",
+    "ticket_source_row": 6084,
+    "snapshot_plan": "Free",
+    "product": "Trello",
+    "ticket_type": "Cancellation request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 23237,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 23238,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 23239,
+        "month": "2023-03",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 23240,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 23241,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST08034",
+    "ticket_id": "2475",
+    "ticket_source_row": 2476,
+    "snapshot_plan": "Free",
+    "product": "Bitbucket",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 40737,
+        "month": "2023-01",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 40738,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 40739,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 40740,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 40741,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST07662",
+    "ticket_id": "3631",
+    "ticket_source_row": 3632,
+    "snapshot_plan": "Free",
+    "product": "Bitbucket",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38852,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38853,
+        "month": "2023-02",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38854,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38855,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38856,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST03192",
+    "ticket_id": "5857",
+    "ticket_source_row": 5858,
+    "snapshot_plan": "Free",
+    "product": "Bitbucket",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 1,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 16172,
+        "month": "2023-01",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 16173,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 16174,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 16175,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 16176,
+        "month": "2023-05",
+        "integrations_used": 1
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST05157",
+    "ticket_id": "533",
+    "ticket_source_row": 534,
+    "snapshot_plan": "Free",
+    "product": "Bitbucket",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 3,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26182,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26183,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26184,
+        "month": "2023-03",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26185,
+        "month": "2023-04",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26186,
+        "month": "2023-05",
+        "integrations_used": 3
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST06020",
+    "ticket_id": "3401",
+    "ticket_source_row": 3402,
+    "snapshot_plan": "Free",
+    "product": "Confluence",
+    "ticket_type": "Product inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 30537,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 30538,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 30539,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 30540,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 30541,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST05198",
+    "ticket_id": "4030",
+    "ticket_source_row": 4031,
+    "snapshot_plan": "Free",
+    "product": "Confluence",
+    "ticket_type": "Cancellation request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26392,
+        "month": "2023-01",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26393,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26394,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26395,
+        "month": "2023-04",
+        "integrations_used": 3
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 26396,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04269",
+    "ticket_id": "689",
+    "ticket_source_row": 690,
+    "snapshot_plan": "Free",
+    "product": "Confluence",
+    "ticket_type": "Product inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 2,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21667,
+        "month": "2023-01",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21668,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21669,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21670,
+        "month": "2023-04",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 21671,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": "This maybe they four serious rise behind.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST07535",
+    "ticket_id": "7559",
+    "ticket_source_row": 7560,
+    "snapshot_plan": "Free",
+    "product": "Confluence",
+    "ticket_type": "Technical issue",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 2,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 1,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38207,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38208,
+        "month": "2023-02",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38209,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38210,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 38211,
+        "month": "2023-05",
+        "integrations_used": 1
+      }
+    ],
+    "resolution_record": "Culture anyone usually nor return available level.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST02831",
+    "ticket_id": "3649",
+    "ticket_source_row": 3650,
+    "snapshot_plan": "Free",
+    "product": "Jira",
+    "ticket_type": "Cancellation request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 3,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 0,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 14332,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 14333,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 14334,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 14335,
+        "month": "2023-04",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 14336,
+        "month": "2023-05",
+        "integrations_used": 0
+      }
+    ],
+    "resolution_record": "Structure article style bag produce.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04498",
+    "ticket_id": "8392",
+    "ticket_source_row": 8393,
+    "snapshot_plan": "Free",
+    "product": "Jira",
+    "ticket_type": "Refund request",
+    "ticket_subject": "Integration",
+    "ticket_status": "Closed",
+    "csat": 5,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 2,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22817,
+        "month": "2023-01",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22818,
+        "month": "2023-02",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22819,
+        "month": "2023-03",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22820,
+        "month": "2023-04",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 22821,
+        "month": "2023-05",
+        "integrations_used": 2
+      }
+    ],
+    "resolution_record": "Box professor on store final hard simply available.",
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST04963",
+    "ticket_id": "2296",
+    "ticket_source_row": 2297,
+    "snapshot_plan": "Free",
+    "product": "Jira",
+    "ticket_type": "Billing inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Open",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 1,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 25182,
+        "month": "2023-01",
+        "integrations_used": 1
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 25183,
+        "month": "2023-02",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 25184,
+        "month": "2023-03",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 25185,
+        "month": "2023-04",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 25186,
+        "month": "2023-05",
+        "integrations_used": 1
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  },
+  {
+    "customer_id": "CUST08166",
+    "ticket_id": "4347",
+    "ticket_source_row": 4348,
+    "snapshot_plan": "Free",
+    "product": "Jira",
+    "ticket_type": "Product inquiry",
+    "ticket_subject": "Integration",
+    "ticket_status": "Pending Customer Response",
+    "csat": null,
+    "months_observed": 5,
+    "any_nonzero_integration_month": true,
+    "all_months_zero": false,
+    "any_zero_month": true,
+    "may_integrations_used": 1,
+    "need_confirmed": false,
+    "setup_outcome_observed": false,
+    "upgrade_outcome_observed": false,
+    "candidate_evidence": "Snapshot Free + exact Integration ticket subject; not confirmed configuration need",
+    "usage_history": [
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 41417,
+        "month": "2023-01",
+        "integrations_used": 2
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 41418,
+        "month": "2023-02",
+        "integrations_used": 5
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 41419,
+        "month": "2023-03",
+        "integrations_used": 4
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 41420,
+        "month": "2023-04",
+        "integrations_used": 0
+      },
+      {
+        "source_file": "data/product_usage.csv",
+        "source_row": 41421,
+        "month": "2023-05",
+        "integrations_used": 1
+      }
+    ],
+    "resolution_record": null,
+    "configuration_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "paid_capability_need": "NOT_ESTABLISHED_FROM_AVAILABLE_FIELDS",
+    "configuration_success": null,
+    "paid_upgrade": null,
+    "incremental_profit": null,
+    "next_questions": [
+      "具体要连接哪个产品或系统？",
+      "目前卡在哪个配置步骤，是否有错误信息？",
+      "配置成功后要完成什么工作，是否存在需要另行核实的付费功能需求？"
+    ]
+  }
+]
