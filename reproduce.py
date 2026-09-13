@@ -17,6 +17,8 @@ STEPS = [
     'profit_evidence_v2/experiment.py',
     'channel_hypotheses_v1/experiment.py',
     'channel_hypotheses_v1/independent_verify.py',
+    'integration_plan_v1/experiment.py',
+    'integration_plan_v1/independent_verify.py',
 ]
 
 
@@ -34,6 +36,7 @@ def main(include_scenarios=False):
     profit = read('profit_opportunity_v1/results.json')
     evidence = read('profit_evidence_v2/results.json')
     channels = read('channel_hypotheses_v1/results.json')
+    integrations = read('integration_plan_v1/results.json')
     assert validation['primary']['alerts'] == 582
     assert validation['predictive_gate_pass'] is False
     assert abs(validation['month_permutation']['one_sided_p'] - 0.46553446553446554) < 1e-12
@@ -74,6 +77,15 @@ def main(include_scenarios=False):
     assert channels['payment_closed'] == 156 and channels['payment_timestamp_states']['resolution_before_first_response'] == 82
     assert channels['payment_chat_faster_conclusion'] == 'NOT_IDENTIFIABLE_FROM_AVAILABLE_TIMESTAMPS'
     assert channels['source_audit_case_n'] == 20 and channels['measured_profit_effect'] is None
+    assert integrations['dataset_scope'] == 'competition_csv_only' and integrations['new_synthetic_observations'] == 0
+    assert integrations['quality']['primary_customer_n'] == 8320
+    assert integrations['quality']['common_metrics_customer_n'] == 8261
+    assert abs(integrations['primary']['eta_squared_ols_r2'] - 0.8793435370848043) < 1e-10
+    assert integrations['common_cohort_metric_ranking']['integration_is_largest'] is True
+    assert abs(integrations['customer_holdout']['test_r2'] - 0.8726475449858313) < 1e-10
+    assert integrations['customer_holdout']['no_customer_overlap'] is True
+    assert integrations['zero_usage']['all_records_zero_customers'] == 4
+    assert integrations['audit_source_customers'] == 20 and integrations['measured_profit_effect'] is None
     report = {'status':'PASS', 'executed_at':datetime.now(timezone.utc).isoformat(),
               'steps_completed':STEPS, 'key_snapshot_claims_verified':True,
               'main_experiment_scope':'competition_csv_only', 'csat_hypothesis_supported':False,
@@ -82,6 +94,8 @@ def main(include_scenarios=False):
               'paid_reason_evidence_established':False, 'profit_evidence_cases_verified':20,
               'technical_email_rating_advantage_established':False,
               'payment_channel_speed_identifiable':False,
+              'integration_plan_association_supported':True,
+              'integration_nonuse_reasons_observed':False,
               'business_efficacy':'UNVERIFIED', 'real_customer_trial':'CANDIDATE-UNRUN'}
     if include_scenarios:
         subprocess.run([sys.executable, str(ROOT/'profit_scenarios_v1/experiment.py')], cwd=ROOT, check=True)

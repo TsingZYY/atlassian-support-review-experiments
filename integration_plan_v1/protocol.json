@@ -1,0 +1,14 @@
+{
+  "version": "integration-plan-v1",
+  "plans": ["Free", "Standard", "Premium", "Enterprise"],
+  "months": ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05"],
+  "products": ["Bitbucket", "Confluence", "Jira", "Loom", "Trello"],
+  "metrics": ["Integrations Used", "Active Day Rate", "Sessions", "Product Actions", "Collaborators"],
+  "bootstrap_repetitions": 2000,
+  "permutation_repetitions": 2000,
+  "seed": 2026091303,
+  "holdout_hash_salt": "integration-plan-holdout-v1",
+  "training_fraction": 0.8,
+  "audit_hash_salt": "integration-plan-source-audit-v1",
+  "audit_per_plan": 5
+}

@@ -1,0 +1,240 @@
+{
+  "executed_at": "2026-09-13T03:34:59.602767+00:00",
+  "dataset_scope": "competition_csv_only",
+  "new_synthetic_observations": 0,
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "297d4c61005f204db1fd7a4c35378ad09889bdfebcc6e1ff2d2480f766c19b2f",
+    "protocol.md": "32daf61f17efc8bc38fde1cb4e2252dd30e73f355e3dfd953043f1ac012c4849",
+    "experiment.py": "9e58ee73fbbab312d1bf51198ef7ba62e6a3c73017b3a357e1d38214bc4b9f68"
+  },
+  "quality": {
+    "source_customers": 8320,
+    "source_usage_rows": 42210,
+    "customer_product_pairs": 8442,
+    "unmatched_usage_ids": 0,
+    "customers_without_usage": 0,
+    "duplicate_customer_product_months": 0,
+    "incomplete_five_month_pairs": 0,
+    "invalid_numeric_counts": 0,
+    "active_days_exceed_calendar_rows": 85,
+    "active_days_exceed_calendar_customers": 59,
+    "customer_product_counts": {
+      "1": 8202,
+      "2": 114,
+      "3": 4
+    },
+    "primary_customer_n": 8320,
+    "common_metrics_customer_n": 8261
+  },
+  "primary": {
+    "customer_n": 8320,
+    "eta_squared_ols_r2": 0.8793435370848043,
+    "bootstrap_95": [
+      0.8756207595315095,
+      0.8831376680454118
+    ],
+    "permutation_extreme_count": 0,
+    "permutation_p": 0.0004997501249375312,
+    "repetitions": 2000,
+    "direction": "categorical_plan_predicts_mean_integration_count"
+  },
+  "common_cohort_metric_ranking": {
+    "comparisons": [
+      {
+        "metric": "Integrations Used",
+        "customer_n": 8261,
+        "eta_squared_ols_r2": 0.8793550134760962,
+        "bootstrap_95_lower": 0.8757470507170063,
+        "bootstrap_95_upper": 0.8831315158381153
+      },
+      {
+        "metric": "Active Day Rate",
+        "customer_n": 8261,
+        "eta_squared_ols_r2": 0.18488958661035862,
+        "bootstrap_95_lower": 0.17201147573843512,
+        "bootstrap_95_upper": 0.198517209691285
+      },
+      {
+        "metric": "Sessions",
+        "customer_n": 8261,
+        "eta_squared_ols_r2": 0.18786319475552174,
+        "bootstrap_95_lower": 0.17560570759654898,
+        "bootstrap_95_upper": 0.20115062744986686
+      },
+      {
+        "metric": "Product Actions",
+        "customer_n": 8261,
+        "eta_squared_ols_r2": 0.17857378776688615,
+        "bootstrap_95_lower": 0.1667588735668816,
+        "bootstrap_95_upper": 0.19173808000224693
+      },
+      {
+        "metric": "Collaborators",
+        "customer_n": 8261,
+        "eta_squared_ols_r2": 0.10149991350720693,
+        "bootstrap_95_lower": 0.08995312362533181,
+        "bootstrap_95_upper": 0.11346301069333924
+      }
+    ],
+    "integration_is_largest": true,
+    "integration_minus_largest_other": 0.6914918187205745,
+    "gap_bootstrap_95": [
+      0.6777563678676086,
+      0.7040951361421564
+    ],
+    "scope": "five_prespecified_usage_metrics_univariate_association_not_causal_importance"
+  },
+  "plan_summary": [
+    {
+      "plan": "Free",
+      "customer_n": 1472,
+      "mean_customer_integrations": 1.1380434782608695,
+      "median_customer_integrations": 1.2,
+      "any_zero_record_customers": 1299,
+      "all_records_zero_customers": 4,
+      "product_month_records": 7495,
+      "zero_product_month_records": 2672
+    },
+    {
+      "plan": "Standard",
+      "customer_n": 3309,
+      "mean_customer_integrations": 2.3961619824720457,
+      "median_customer_integrations": 2.4,
+      "any_zero_record_customers": 1095,
+      "all_records_zero_customers": 0,
+      "product_month_records": 16800,
+      "zero_product_month_records": 1277
+    },
+    {
+      "plan": "Premium",
+      "customer_n": 2337,
+      "mean_customer_integrations": 4.100128369704749,
+      "median_customer_integrations": 4.0,
+      "any_zero_record_customers": 30,
+      "all_records_zero_customers": 0,
+      "product_month_records": 11855,
+      "zero_product_month_records": 30
+    },
+    {
+      "plan": "Enterprise",
+      "customer_n": 1202,
+      "mean_customer_integrations": 5.991846921797005,
+      "median_customer_integrations": 6.0,
+      "any_zero_record_customers": 0,
+      "all_records_zero_customers": 0,
+      "product_month_records": 6060,
+      "zero_product_month_records": 0
+    }
+  ],
+  "raw_product_month_descriptive_r2": 0.5913504678421866,
+  "monthly_descriptive_r2": [
+    {
+      "month": "2023-01",
+      "product_customer_rows": 8442,
+      "eta_squared_ols_r2": 0.5983992952939544
+    },
+    {
+      "month": "2023-02",
+      "product_customer_rows": 8442,
+      "eta_squared_ols_r2": 0.5942852380620818
+    },
+    {
+      "month": "2023-03",
+      "product_customer_rows": 8442,
+      "eta_squared_ols_r2": 0.5833850897715022
+    },
+    {
+      "month": "2023-04",
+      "product_customer_rows": 8442,
+      "eta_squared_ols_r2": 0.5826252547987513
+    },
+    {
+      "month": "2023-05",
+      "product_customer_rows": 8442,
+      "eta_squared_ols_r2": 0.5986837045007706
+    }
+  ],
+  "product_sensitivity": [
+    {
+      "product": "Bitbucket",
+      "customer_n": 1590,
+      "eta_squared_ols_r2": 0.8762554254052392
+    },
+    {
+      "product": "Confluence",
+      "customer_n": 1825,
+      "eta_squared_ols_r2": 0.875260792159468
+    },
+    {
+      "product": "Jira",
+      "customer_n": 1779,
+      "eta_squared_ols_r2": 0.8796093311536791
+    },
+    {
+      "product": "Loom",
+      "customer_n": 1627,
+      "eta_squared_ols_r2": 0.8814958975493816
+    },
+    {
+      "product": "Trello",
+      "customer_n": 1621,
+      "eta_squared_ols_r2": 0.8807834962635546
+    }
+  ],
+  "customer_holdout": {
+    "train_n": 6654,
+    "test_n": 1666,
+    "by_plan": [
+      {
+        "plan": "Free",
+        "train_n": 1177,
+        "test_n": 295
+      },
+      {
+        "plan": "Standard",
+        "train_n": 2647,
+        "test_n": 662
+      },
+      {
+        "plan": "Premium",
+        "train_n": 1869,
+        "test_n": 468
+      },
+      {
+        "plan": "Enterprise",
+        "train_n": 961,
+        "test_n": 241
+      }
+    ],
+    "trained_plan_means": {
+      "Free": 1.1282922684791843,
+      "Standard": 2.4002140788313815,
+      "Premium": 4.103638309256287,
+      "Enterprise": 5.9739854318418315
+    },
+    "training_global_mean": 3.1698326820959823,
+    "test_r2": 0.8726475449858313,
+    "test_mse": 0.349669420203816,
+    "training_global_mean_baseline_test_mse": 2.7457668557924255,
+    "mse_reduction_vs_training_global_mean": 0.8726514527385458,
+    "no_customer_overlap": true,
+    "not_a_forecast_or_upgrade_model": true
+  },
+  "zero_usage": {
+    "zero_product_month_records": 3979,
+    "product_month_denominator": 42210,
+    "any_zero_record_customers": 2424,
+    "all_records_zero_customers": 4,
+    "customer_denominator": 8320
+  },
+  "audit_source_customers": 20,
+  "nonuse_reasons_observed": false,
+  "monthly_plan_history_available": false,
+  "causal_upgrade_effect": "UNVERIFIED",
+  "measured_profit_effect": null
+}

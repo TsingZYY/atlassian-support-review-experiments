@@ -1,0 +1,5 @@
+plan,customer_n,mean_customer_integrations,median_customer_integrations,any_zero_record_customers,all_records_zero_customers,product_month_records,zero_product_month_records
+Free,1472,1.1380434782608695,1.2,1299,4,7495,2672
+Standard,3309,2.3961619824720457,2.4,1095,0,16800,1277
+Premium,2337,4.100128369704749,4.0,30,0,11855,30
+Enterprise,1202,5.991846921797005,6.0,0,0,6060,0

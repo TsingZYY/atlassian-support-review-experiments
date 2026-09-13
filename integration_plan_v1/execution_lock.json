@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "customers.csv": "bb52312c947b0043df5b068ed96d0cd70e28ed7551ceff1ee16732cd817adc1a",
+    "product_usage.csv": "e4cd675688ec7e10ba27f04488825737f131bcbe2239adb969e550b54ed07ebb",
+    "README.md": "f8a8e73dfaf7628d706d69e0fc80b209a67e95bd84854d76fb843e10b1e461cc"
+  },
+  "protocol_code_sha256": {
+    "protocol.json": "297d4c61005f204db1fd7a4c35378ad09889bdfebcc6e1ff2d2480f766c19b2f",
+    "protocol.md": "32daf61f17efc8bc38fde1cb4e2252dd30e73f355e3dfd953043f1ac012c4849",
+    "experiment.py": "9e58ee73fbbab312d1bf51198ef7ba62e6a3c73017b3a357e1d38214bc4b9f68"
+  },
+  "frozen_at": "2026-09-13T03:29:24.349256+00:00"
+}
