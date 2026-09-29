@@ -1,5 +1,12 @@
 # Atlassian 利润机会研究：实验与结论
 
+## 项目档案：时间线、笔记、代码与反思
+
+[项目总览](https://github.com/TsingZYY/project-experience/blob/main/projects/atlassian-analytics/README.md) · [时间线](https://github.com/TsingZYY/project-experience/blob/main/projects/atlassian-analytics/TIMELINE.md) · [开发／研究笔记](https://github.com/TsingZYY/project-experience/blob/main/projects/atlassian-analytics/NOTES.md) · [实际代码与入口](https://github.com/TsingZYY/project-experience/blob/main/projects/atlassian-analytics/CODE.md) · [最终反思](https://github.com/TsingZYY/project-experience/blob/main/projects/atlassian-analytics/REFLECTION.md)
+
+以上档案于2026-09-30依据跨对话记录及现存文件整理，保留原始结果的适用范围；此次整理没有重新运行实验。
+
+
 本仓库保存比赛中的数据检查、最小规则模型与离线验证。**当前研究怎样增加利润；实证样本和观测标签只采用比赛提供的三张合成CSV，另按用户明确要求开展转化机制与集成配置协助的条件模拟**，详见[数据范围](EXPERIMENT_SCOPE.md)。未进行降价或折扣实验。
 
 **利润实证结论：已完成两轮20条验证。高协作筛选未显示清晰优势；加入客户和使用背景，也未在第二轮20条中补齐具体付费理由。模型现在输出可追溯证据和待确认问题，实际付费与利润提升仍未知。最新20人集成配置协助模拟试点、机制与候选核对，以及此前时间、满意度、成本保本线等研究见下文。**
